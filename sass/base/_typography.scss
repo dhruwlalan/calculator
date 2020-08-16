@@ -1,0 +1,4 @@
+
+body {
+	@include typo( $c: white , $ff: $opensans , $fw: 600 , $fs: 3.5rem );
+}

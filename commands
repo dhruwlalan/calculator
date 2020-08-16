@@ -1,0 +1,9 @@
+
+1.	npm init
+2.	npm install node-sass --save-dev
+
+"scripts": {
+      "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+
+3. npm run sass
