@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "digital7";
-	src: url("../../assets/fonts/digital7.ttf");
+	src: url("./assets/fonts/digital7.ttf");
 }
 
 /* font-family */
@@ -13,5 +13,6 @@ $primary: var(--primary);
 $primary-dark: var(--primary-dark);
 $button: var(--button);
 $numbers: var(--numbers);
+$numbers-dark: var(--numbers-dark);
 $operators: var(--operators);
 $others: var(--others);

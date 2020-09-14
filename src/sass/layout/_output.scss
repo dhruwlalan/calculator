@@ -1,8 +1,6 @@
 
 #output {
-	@include typo( $c: $numbers , $ff: $digital7 , $fs: 5rem , $ls: 2px );
-	@include box( $p: .5rem );
-	@include grid( $jc: end , $ac: end);
+	@include typo( $ff: $digital7 , $ls: 2px );
 	background-color: $primary;
 	border: 2px solid $primary;
 	border-radius: 1rem;
@@ -10,4 +8,18 @@
 				4px 4px 8px rgba(67, 75, 75, 0.3),
 				inset -3px -3px 6px white, 
 				inset 3px 3px 6px rgba(67, 75, 75, 0.3);
+	@include pos-relative;
+}
+
+.output {
+
+	&__expression {
+		@include pos-absolute( $t: 1rem , $b: null , $l: null , $r: 1rem , $z: null );
+		@include typo( $c: $numbers , $fs: 6rem );
+	}
+	&__result {
+		@include pos-absolute( $t: 1rem , $b: null , $l: null , $r: 1.1rem , $z: null );
+		@include typo( $c: $numbers-dark, $fs: 3rem );
+		transform: translateY(6.8rem);
+	}
 }

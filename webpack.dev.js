@@ -46,7 +46,14 @@ module.exports = {
 				test: /\.svg$/ ,
 				use: {
 					loader: 'file-loader' ,
-					options: { name: '[name].[ext]' , outputPath: 'assets/svg' } ,
+					options: { name: '[name].[ext]' , outputPath: 'assets/svg' , esModule: false } ,
+				} ,
+			} ,
+			{
+				test: /\.ttf$/ ,
+				use: {
+					loader: 'file-loader' ,
+					options: { name: '[name].[ext]' , outputPath: 'assets/fonts' } ,
 				} ,
 			} ,
 			{

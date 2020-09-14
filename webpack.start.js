@@ -44,7 +44,7 @@ module.exports = {
 				test: /\.svg$/ ,
 				use: {
 					loader: 'file-loader' ,
-					options: { name: '[name].[ext]' , outputPath: 'assets/svg' , esModule: false} ,
+					options: { name: '[name].[ext]' , outputPath: 'assets/svg' , esModule: false } ,
 				} ,
 			} ,
 			{
