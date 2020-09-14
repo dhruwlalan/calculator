@@ -28,9 +28,7 @@
 						{s:'four',v:4},{s:'five',v:5},{s:'six',v:6},{s:'seven',v:7},
 						{s:'eight',v:8},{s:'nine',v:9},{s:'dot',v:'.'},
 				] ,
-				ops: [ {s:'plus',v:'+',d:'+'},{s:'minus',v:'-',d:'-'},{s:'multiply',v:'*',d:'x'},
-					   {s:'divide',v:'/',d:'÷'},{s:'modulus',v:'%',d:'%'},
-				] ,
+				ops: [ {s:'plus',v:'+'},{s:'minus',v:'-'},{s:'multiply',v:'*'},{s:'divide',v:'/'},{s:'modulus',v:'%'} ] ,
 				expr: '0' ,
 				res: '0' ,
 				operands: [] ,
@@ -48,7 +46,12 @@
 						}
 					} else {
 						if (key === '.') {
-							console.log('here');
+							const latestOperand = this.operands[this.operands.length-1];
+							if (!latestOperand.includes('.') && latestOperand !== '') {
+								if (this.expr.length !== 11) {
+									this.expr = this.expr + key;
+								}
+							}
 						} else {
 							this.expr = this.expr + key;
 						}
@@ -70,17 +73,29 @@
 			insertOp (e) {
 				const op = this.ops.find((opb) => {
 					return opb.s === e.target.closest('button').id;
-				});
-				if (this.expr.length < 11 && this.expr !== '0') {
-					this.expr = this.expr + op.d;
+				}).v;
+				const latestOperand = this.operands[this.operands.length-1];
+				if (this.expr.length < 12 && this.expr !== '0') {
+					if (latestOperand !== '') {
+						const isLastDot = latestOperand.indexOf('.') === (latestOperand.length - 1);
+						if (!isLastDot) {
+							if (Number(latestOperand) > 0) {
+								if (this.expr.length !== 11) {
+									this.expr = this.expr + op;
+								}
+							}
+						}
+					} else {
+						this.expr = this.expr.slice(0 , this.expr.length-1);
+						this.expr = this.expr + op;
+					}
 				}
 			} ,
 		} ,
 		computed: {
 			result () {
-				return this.res = this.expr;
 				this.operands = this.expr.split(/[\+\-\*\%\/]+/);
-				console.log(this.operands);
+				return this.res = this.expr;
 			} ,
 		} ,
 	}
