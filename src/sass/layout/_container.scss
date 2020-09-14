@@ -18,4 +18,5 @@
 	background: $primary;
 	box-shadow: -1rem -1rem 2rem rgb(255 255 255),
 				1rem 1rem 2rem rgb(70 81 81 / 10%);
+	@include disable-selection;
 }

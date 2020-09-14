@@ -1,6 +1,6 @@
 
 #output {
-	@include typo( $ff: $digital7 , $ls: 2px );
+	@include typo( $ff: $opensans , $ls: 1px );
 	background-color: $primary;
 	border: 2px solid $primary;
 	border-radius: 1rem;
@@ -15,7 +15,7 @@
 
 	&__expression {
 		@include pos-absolute( $t: 1rem , $b: null , $l: null , $r: 1rem , $z: null );
-		@include typo( $c: $numbers , $fs: 6rem );
+		@include typo( $c: $numbers , $fs: 5.5rem );
 	}
 	&__result {
 		@include pos-absolute( $t: 1rem , $b: null , $l: null , $r: 1.1rem , $z: null );

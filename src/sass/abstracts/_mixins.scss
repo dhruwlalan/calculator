@@ -102,6 +102,15 @@
 	position: relative;
 }
 
+@mixin disable-selection {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
 @mixin pos-fixed( $t: null , $b: null , $l: null , $r: null , $z: null ) {
 	position: fixed;
 	@if $t != null {
