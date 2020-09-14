@@ -1,13 +1,13 @@
 
 #output {
-	@include typo( $c: $numbers , $ff: Digital-7 , $fw: 300 , $fs: 5rem , $ls: 2px );
-	@include box( $p: 1.5rem );
+	@include typo( $c: $numbers , $ff: $digital7 , $fs: 5rem , $ls: 2px );
+	@include box( $p: .5rem );
 	@include grid( $jc: end , $ac: end);
 	background-color: $primary;
 	border: 2px solid $primary;
 	border-radius: 1rem;
 	box-shadow: -4px -4px 8px white, 
 				4px 4px 8px rgba(67, 75, 75, 0.3),
-				inset -4px -4px 8px white, 
-				inset 4px 4px 8px rgba(67, 75, 75, 0.3);
+				inset -3px -3px 6px white, 
+				inset 3px 3px 6px rgba(67, 75, 75, 0.3);
 }

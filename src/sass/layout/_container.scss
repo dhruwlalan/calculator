@@ -1,9 +1,9 @@
 
 .container {
-	@include box( $h: 64rem , $w: 42rem );
+	@include box( $h: 66rem , $w: 42rem );
 	@include grid(
 		$cols:	repeat( 4 , 8rem ) ,
-		$rows:	10rem repeat( 5 , 8rem) ,
+		$rows:	12rem repeat( 5 , 8rem) ,
 		$gap:	2rem ,
 		$jc: 	center ,
 		$ac: 	center ,
@@ -14,16 +14,8 @@
 				'one 	two 	three 	plus'
 				'zero 	zero 	dot 	equals'
 	);
-	border-radius: 1rem;
+	border-radius: 2rem;
 	background: $primary;
 	box-shadow: -1rem -1rem 2rem rgb(255 255 255),
 				1rem 1rem 2rem rgb(70 81 81 / 10%);
-
-	// @media (max-width: 450px) {
-	// 	@include box( $w: 100% , $h: 145vw , $p: 1rem , $m: 0 auto );
-	// 	@include grid( 
-	// 		$cols:	repeat( 4 , 1fr ) ,
-	// 		$rows:	11rem repeat( 5 , 1fr)
-	// 	);
-	// }
 }

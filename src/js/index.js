@@ -1,5 +1,5 @@
 // ASSETS
-import './assets/assets.js';
+import './include/assets.js';
 
 // MAIN
 import Vue from 'vue';

@@ -1,45 +1,41 @@
 
 .btn {
-	@include grid( $jc: center , $ac: center);
-	@include typo( $ff: $opensans , $fw: 600 , $fs: 3.5rem );
+	@include flex( $jc: center , $ai: center );
+	@include typo( $c: $numbers , $ff: $ocanium , $fw: 400 , $fs: 3.5rem );
 	border: 2px solid $primary;
 	outline: none;
 	cursor: pointer;
 	border-radius: 5rem;
-	color: $numbers;
 	background: linear-gradient(145deg, #ffffff, #d6d6d6);
-	box-shadow: -4px -4px 8px rgb(255 255 255) , 4px 4px 8px rgb(67 75 75 / 20%);
+	box-shadow: -4px -4px 8px rgb(255 255 255) , 
+				4px 4px 8px rgb(67 75 75 / 20%);
 
 	&:active {
-		box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-	    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
-	}
+		background: linear-gradient(145deg, #ffffff, #d6d6d6);
+		border: 2px solid $primary;
+		font-size: 3.4rem;
+		box-shadow: inset -3px -3px 6px white, 
+					inset 3px 3px 6px rgba(67, 75, 75, 0.2), 
+					-4px -4px 8px rgb(255 255 255), 
+					4px 4px 8px rgb(67 75 75 / 20%);
 
-	&--gray {
-		color: $numbers;
-
-		&:active {
-			box-shadow: none;
-			transform: scale(0.98);
+		.btn-ot {
+			transform: scale(.9);
+		}
+		.btn-op {
+			transform: scale(.9);
 		}
 	}
 
-	&--orange {
-		background-color: #61d9ff;
-		color: black;
-
-		&:active {
-			box-shadow: none;
-			transform: scale(0.98);
-		}
+	&-num {
+		height: 3.5rem;
 	}
-
-}
-
-.numbers {
-	@include typo( $c: null , $ff: Oxanium , $fw: 400 , $fs: null );
-}
-
-.fix-font {
-	height: 3.5rem;
+	&-op {
+		@include box( $h: 1.8rem , $w: 1.8rem );
+		filter: $operators;
+	}
+	&-ot {
+		@include box( $h: 1.8rem , $w: 1.8rem );
+		filter: $others;
+	}
 }
