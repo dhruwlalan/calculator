@@ -1,0 +1,19 @@
+
+:root {
+	--primary: #eeeeee;
+	--numbers: #318a9d;
+	--operators: green;
+	--others: blue;
+}
+
+body {
+	@include flex( $jc: center , $ai: center );
+	@include box( $h: 100vh , $w: 100vw );
+	background-color: $primary;
+	-webkit-tap-highlight-color: transparent;
+
+	// @media (max-width: 450px) {
+	// 	@include flex( $jc: center , $ai: flex-start );
+	// 	height: auto;
+	// }
+}

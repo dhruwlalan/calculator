@@ -1,0 +1,45 @@
+
+.btn {
+	@include grid( $jc: center , $ac: center);
+	@include typo( $ff: $opensans , $fw: 600 , $fs: 3.5rem );
+	border: 2px solid $primary;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5rem;
+	color: $numbers;
+	background: linear-gradient(145deg, #ffffff, #d6d6d6);
+	box-shadow: -4px -4px 8px rgb(255 255 255) , 4px 4px 8px rgb(67 75 75 / 20%);
+
+	&:active {
+		box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+	    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+	}
+
+	&--gray {
+		color: $numbers;
+
+		&:active {
+			box-shadow: none;
+			transform: scale(0.98);
+		}
+	}
+
+	&--orange {
+		background-color: #61d9ff;
+		color: black;
+
+		&:active {
+			box-shadow: none;
+			transform: scale(0.98);
+		}
+	}
+
+}
+
+.numbers {
+	@include typo( $c: null , $ff: Oxanium , $fw: 400 , $fs: null );
+}
+
+.fix-font {
+	height: 3.5rem;
+}

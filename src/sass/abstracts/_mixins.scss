@@ -1,0 +1,245 @@
+
+@mixin typo( $c: null , $ff: null , $fw: null , $fs: null , $lh: null , $td: null , $ws: null , $ls: null , $tt: null , $style: null) {
+	@if $c != null {
+		color: $c;
+	}
+	@if $ff != null {
+		font-family: $ff;
+	}
+	@if $fw != null {
+		font-weight: $fw;
+	}
+	@if $fs != null {
+		font-size: $fs;
+	}
+	@if $lh != null {
+		line-height: $lh;
+	}
+	@if $td != null {
+		text-decoration: $td;
+	}
+	@if $ws != null {
+		word-spacing: $ws;
+	}
+	@if $ls != null {
+		letter-spacing: $ls;
+	}
+	@if $tt != null {
+		text-transform: $tt;
+	}
+	@if $style != null {
+		font-style: $style;
+	}
+}
+
+@mixin box( $h: null , $w: null , $maxh: null , $maxw: null , $minh: null , $minw: null , $p: null , $pt: null, $pr: null, $pb: null, $pl: null , $b: null , $bt: null , $br: null , $bb: null , $bl: null , $m: null , $mt: null , $mr: null , $mb: null , $ml: null ) {
+	@if $h != null {
+		height: $h;
+	}
+	@if $w != null {
+		width: $w;
+	}
+	@if $maxh != null {
+		max-height: $maxh;
+	}
+	@if $maxw != null {
+		max-width: $maxw;
+	}
+	@if $minh != null {
+		min-height: $minh;
+	}
+	@if $minw != null {
+		min-width: $minw;
+	}
+	@if $p != null {
+		padding: $p;
+	}
+	@if $pt != null {
+		padding-top: $pt;
+	}
+	@if $pr != null {
+		padding-right: $pr;
+	}
+	@if $pb != null {
+		padding-bottom: $pb;
+	}
+	@if $pl != null {
+		padding-left: $pl;
+	}
+	@if $b != null {
+		border: $b;
+	}
+	@if $bt != null {
+		border-top: $bt;
+	}
+	@if $br != null {
+		border-right: $br;
+	}
+	@if $bb != null {
+		border-bottom: $bb;
+	}
+	@if $bl != null {
+		border-left: $bl;
+	}
+	@if $m != null {
+		margin: $m;
+	}
+	@if $mt != null {
+		margin-top: $mt;
+	}
+	@if $mr != null {
+		margin-right: $mr;
+	}
+	@if $mb != null {
+		margin-bottom: $mb;
+	}
+	@if $ml != null {
+		margin-left: $ml;
+	}
+}
+
+@mixin pos-relative {
+	position: relative;
+}
+
+@mixin pos-fixed( $t: null , $b: null , $l: null , $r: null , $z: null ) {
+	position: fixed;
+	@if $t != null {
+		top: $t;
+	}
+	@if $b != null {
+		bottom: $b;
+	}
+	@if $l != null {
+		left: $l;
+	}
+	@if $r != null {
+		right: $r;
+	}
+	@if $z != null {
+		z-index: $z;
+	}
+}
+
+@mixin pos-absolute( $t: null , $b: null , $l: null , $r: null , $z: null ) {
+	position: absolute;
+	@if $t != null {
+		top: $t;
+	}
+	@if $b != null {
+		bottom: $b;
+	}
+	@if $l != null {
+		left: $l;
+	}
+	@if $r != null {
+		right: $r;
+	}
+	@if $z != null {
+		z-index: $z;
+	}
+}
+
+@mixin flex( $fd: null , $jc: null , $ai: null , $ac: null , $fw: null ) {
+	display: flex;
+	@if $fd != null {
+		flex-direction: $fd;
+	}
+	@if $jc != null {
+		justify-content: $jc;
+	}
+	@if $ai != null {
+		align-items: $ai;
+	}
+	@if $ac != null {
+		align-content: $ac;
+	}
+	@if $fw != null {
+		flex-wrap: $fw;
+	}
+}
+
+@mixin flex-item( $flex: null , $grow: null , $shrink: null , $basis: null , $order: null , $as: null ) {
+	@if $flex != null {
+		flex: $flex;
+	}
+	@if $grow != null {
+		flex-grow: $grow;
+	}
+	@if $shrink != null {
+		flex-shrink: $shrink;
+	}
+	@if $basis != null {
+		flex-basis: $basis;
+	}
+	@if $order != null {
+		order: $order;
+	}
+	@if $as != null {
+		align-self: $as;
+	}
+}
+
+@mixin grid( $rows: null , $cols: null , $areas: null , $arows: null , $acols: null , $aflow: null , $gap: null , $rgap: null , $cgap: null , $ji: null , $ai: null , $jc: null , $ac: null ) {
+	display: grid;
+	@if $rows != null {
+		grid-template-rows: $rows;
+	}
+	@if $cols != null {
+		grid-template-columns: $cols;
+	}
+	@if $areas != null {
+		grid-template-areas: $areas;
+	}
+	@if $arows != null {
+		grid-auto-rows: $arows;
+	}
+	@if $acols != null {
+		grid-auto-columns: $acols;
+	}
+	@if $aflow != null {
+		grid-auto-flow: $aflow;
+	}
+	@if $gap != null {
+		gap: $gap;
+	}
+	@if $rgap != null {
+		row-gap: $rgap;
+	}
+	@if $cgap != null {
+		column-gap: $cgap;
+	}
+	@if $ji != null {
+		justify-items: $ji;
+	}
+	@if $ai != null {
+		align-items: $ai;
+	}
+	@if $jc != null {
+		justify-content: $jc;
+	}
+	@if $ac != null {
+		align-content: $ac;
+	}
+}
+
+@mixin grid-item( $row: null , $col: null , $js: null , $as: null , $order: null , $area: null) {
+	@if $row != null {
+		grid-row: $row;
+	}
+	@if $col != null {
+		grid-column: $col;
+	}
+	@if $js != null {
+		justify-self: $js;
+	}
+	@if $as != null {
+		align-self: $as;
+	}
+	@if $order != null {
+		order: $order;
+	}
+	@if $area != null {
+		grid-area: $area;
+	}
+}

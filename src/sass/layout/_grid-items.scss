@@ -1,0 +1,21 @@
+
+#output 	{ @include grid-item( $area: output ); 		}
+#clear 		{ @include grid-item( $area: clear ); 		}
+#backspace 	{ @include grid-item( $area: back ); 		}
+#modulus 	{ @include grid-item( $area: mod ); 		}
+#divide 	{ @include grid-item( $area: divide ); 		}
+#multiply 	{ @include grid-item( $area: multiply );	}
+#minus 		{ @include grid-item( $area: minus ); 		}
+#plus 		{ @include grid-item( $area: plus ); 		}
+#equals 	{ @include grid-item( $area: equals ); 		}
+#one 		{ @include grid-item( $area: one ); 		}
+#two 		{ @include grid-item( $area: two ); 		}
+#three 		{ @include grid-item( $area: three ); 		}
+#four 		{ @include grid-item( $area: four ); 		}
+#five 		{ @include grid-item( $area: five ); 		}
+#six 		{ @include grid-item( $area: six ); 		}
+#seven 		{ @include grid-item( $area: seven ); 		}
+#eight 		{ @include grid-item( $area: eight ); 		}
+#nine 		{ @include grid-item( $area: nine ); 		}
+#zero 		{ @include grid-item( $area: zero ); 		}
+#dot 		{ @include grid-item( $area: dot ); 		}
