@@ -14,9 +14,16 @@
 		<!-- equals -->
 		<button class="btn" id="equals" @click="display"><img class="btn-op" src="../assets/svg/equals.svg"></button>
 		<div id="output">
-			<div class="output__expression">
-				<span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
-			</div>
+			<transition name="fade">
+				<div class="output__expression" v-if="oldResult">
+					<span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
+				</div>
+			</transition>
+			<transition name="fade">
+				<div class="output__expression" v-if="!oldResult">
+					<span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
+				</div>
+			</transition>
 			<span class="output__result">{{ result }}</span>
 		</div>
 	</div>
@@ -38,6 +45,7 @@
 				curExprArr: [] ,
 				operands: [] ,
 				operators: [] ,
+				oldResult: true,
 			}
 		} ,
 		methods: {
@@ -122,7 +130,10 @@
 				}
 			} ,
 			display () {
-				this.expr = String(this.res);
+				if (typeof this.res === 'number') {
+					this.expr = String(this.res);
+					this.oldResult = !this.oldResult;
+				}
 			} ,
 			calculate (a , op , b) {
 				switch (op) {
@@ -223,5 +234,33 @@
 </script>
 
 <style lang="scss">
-	
+	.fade {
+		&-leave-active {
+	        animation: fade-out .5s ease forwards;
+	    }
+	    &-enter-active {
+	        animation: fade-in .5s ease forwards;
+	    }
+	}
+	@keyframes fade-out {
+	    from {
+	        opacity: 1;
+	    }
+	    to {
+	        transform: rotateX(90deg);
+	        opacity: 0;
+	    }
+	}
+	@keyframes fade-in {
+	    from {
+	        opacity: 1;
+	        color: #9eb2b7;
+	        font-size: 3rem;
+	        height: 3rem;
+	        transform: translateY(6.8rem);
+	    }
+	    to {
+	        opacity: 1;
+	    }
+	}
 </style>

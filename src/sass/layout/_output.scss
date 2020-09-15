@@ -20,11 +20,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+		color: $numbers;
+		font-size: 4rem;
+		overflow: hidden;
 
 		&--num {
 			font-family: $digital7;
-			color: $numbers;
-			font-size: 4rem;
 		}
 
 		&--op {
@@ -48,6 +49,9 @@
 	&__result {
 		@include pos-absolute( $t: 1rem , $r: 1.1rem );
 		@include typo( $c: $numbers-dark, $fs: 3rem, $ff: $digital7 );
+		display: flex;
+		align-items: center;
+		// height: 6rem;
 		transform: translateY(6.8rem);
 	}
 }

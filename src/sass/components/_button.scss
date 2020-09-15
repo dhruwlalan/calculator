@@ -6,12 +6,12 @@
 	outline: none;
 	cursor: pointer;
 	border-radius: 5rem;
-	background: linear-gradient(145deg, #ffffff, #d6d6d6);
+	// background: linear-gradient(145deg, #ffffff, #d6d6d6);
 	box-shadow: -4px -4px 8px rgb(255 255 255) , 
 				4px 4px 8px rgb(67 75 75 / 20%);
 
 	&:active {
-		background: linear-gradient(145deg, #ffffff, #d6d6d6);
+		// background: linear-gradient(145deg, #d6d6d6, #ffffff);
 		border: 2px solid $primary;
 		font-size: 3.4rem;
 		box-shadow: inset -3px -3px 6px white, 
