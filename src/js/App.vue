@@ -32,7 +32,7 @@
 				precedence: { '+':2 , '^':2 , '*':5, '/':5, '%':1 } ,
 				
 				expr: '0' ,
-				res: '0' ,
+				res: '' ,
 				curExprArr: [] ,
 				operands: [] ,
 				operators: [] ,
@@ -120,7 +120,7 @@
 				}
 			} ,
 			display () {
-				this.expr = this.res;
+				this.expr = String(this.res);
 			} ,
 			calculate (a , op , b) {
 				switch (op) {
@@ -159,7 +159,13 @@
 									let b = Number(localOperands.pop());
 									let a = Number(localOperands.pop());
 									let ans = this.calculate(a , localOperators.pop() , b);
-									localOperands.push(ans.toFixed(2));
+									let isDec = Number(ans.toFixed(0)) === Number(ans.toFixed(2));
+									if (isDec) {
+										localOperands.push(ans);
+									} else {
+										localOperands.push(ans.toFixed(2));
+									}
+
 									if (localOperators.length > 0) {
 										topOpPrecedence = this.precedence[localOperators[localOperators.length - 1]];
 									} else {
@@ -177,13 +183,18 @@
 						let b = Number(localOperands.pop());
 						let a = Number(localOperands.pop());
 						let ans = this.calculate(a , localOperators.pop() , b);
-						localOperands.push(ans.toFixed(2));
+						let isDec = Number(ans.toFixed(0)) === Number(ans.toFixed(2));
+						if (isDec) {
+							localOperands.push(ans);
+						} else {
+							localOperands.push(ans.toFixed(2));
+						}
 					}
 				}
-				console.log(localOperands);
-				console.log(localOperators);
 				this.res = localOperands.pop();
-				return this.res;
+				if (typeof this.res === 'number') {
+					return this.res;
+				}
 			} ,
 		} ,
 	}
