@@ -2,5 +2,9 @@
 import '../../sass/main.scss';
 
 // ASSETS
-import '../../assets/favicon/favicon.ico';
-import '../../assets/fonts/digital7.ttf';
+	// favicon
+	import '../../assets/favicon/favicon.ico';
+	// fonts
+	import '../../assets/fonts/digital7.ttf';
+	import '../../assets/fonts/Solway.ttf';
+	import '../../assets/fonts/Coustard.ttf';

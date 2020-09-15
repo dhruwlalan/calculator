@@ -2,11 +2,17 @@
 	font-family: "digital7";
 	src: url("./assets/fonts/digital7.ttf");
 }
+@font-face {
+	font-family: "Coustard";
+	src: url("./assets/fonts/Coustard.ttf");
+}
+@font-face {
+	font-family: "Solway";
+	src: url("./assets/fonts/Solway.ttf");
+}
 
 /* font-family */
 $digital7: 'digital7';
-$opensans: 'Open Sans', sans-serif;
-$ocanium: 'Oxanium', cursive;
 $solway: 'Solway', serif;
 $coustard: 'Coustard', serif;
 

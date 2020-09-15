@@ -1,6 +1,6 @@
 
 #output {
-	@include typo( $ff: $opensans , $ls: 1px );
+	@include typo( $ls: 1px );
 	background-color: $primary;
 	border: 2px solid $primary;
 	border-radius: 1rem;
@@ -15,13 +15,9 @@
 
 	&__expression {
 		@include pos-absolute( $t: 1rem , $r: 1rem );
-		height: 6rem;
-		width: 94%;
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		color: $numbers;
-		font-size: 4rem;
+		@include box( $h: 6rem , $w: 94% );
+		@include flex( $jc: flex-end , $ai: center );
+		@include typo( $c: $numbers , $fs: 4rem );
 		overflow: hidden;
 
 		&--num {
@@ -29,29 +25,21 @@
 		}
 
 		&--op {
-			font-family: $solway;
-			color: #9f3430;
-			font-size: 2.5rem;
-			font-weight: 700;
+			@include typo( $c: #9f3430 , $ff: $solway , $fw: 700 , $fs: 2.5rem );
 			margin: 0 5px;
 		}
 
 		&--mod {
-			font-family: $coustard;
-			color: #9f3430;
-			font-size: 1.8rem;
-			font-weight: 700;
-			transform: translateY(2px);
+			@include typo( $c: #9f3430 , $ff: $coustard , $fw: 700 , $fs: 1.8rem );
 			margin: 0 5px;
+			transform: translateY(2px);
 		}
 	}
 
 	&__result {
-		@include pos-absolute( $t: 1rem , $r: 1.1rem );
 		@include typo( $c: $numbers-dark, $fs: 3rem, $ff: $digital7 );
-		display: flex;
-		align-items: center;
-		// height: 6rem;
+		@include pos-absolute( $t: 1rem , $r: 1.1rem );
+		@include flex( $ai: center );
 		transform: translateY(6.8rem);
 	}
 }

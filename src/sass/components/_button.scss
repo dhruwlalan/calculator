@@ -1,7 +1,7 @@
 
 .btn {
 	@include flex( $jc: center , $ai: center );
-	@include typo( $c: $numbers , $ff: $ocanium , $fw: 400 , $fs: 3.5rem );
+	@include typo( $c: $numbers , $ff: $digital7 , $fw: 500 , $fs: 3.6rem );
 	border: 2px solid $primary;
 	outline: none;
 	cursor: pointer;
