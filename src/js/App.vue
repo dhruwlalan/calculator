@@ -109,7 +109,6 @@
 						} else {
 							this.expr = this.expr.slice(0 , this.expr.length-1);
 							this.expr = this.expr + op;
-							console.log('here');
 							this.operators.pop();
 							this.operators.push(`${op }`);
 						}
@@ -129,7 +128,7 @@
 					case '^': return a - b;
 					case '*': return a * b;
 					case '/': return a / b;
-					case '%': return a % b;
+					case '%': return ((b / a) * 100);
 					default: return null;
 				}
 			} ,
@@ -150,23 +149,39 @@
 						let curExpr = this.curExprArr[i];
 						let isOperand = (curExpr.split(/[\+\^\*\%\/]+/)).length === 1;
 						let isOperator = (curExpr.split(/[\+\^\*\%\/]+/)).length === 2;
-						let topPrecidence = 0;
 						if (isOperand) {
 							localOperands.push(curExpr);
 						} else if (isOperator) {
+							let curOpPrecedence = this.precedence[curExpr];
+							if (localOperators.length > 0) {
+								let topOpPrecedence = this.precedence[localOperators[localOperators.length - 1]];
+								while (curOpPrecedence <= topOpPrecedence) {
+									let b = Number(localOperands.pop());
+									let a = Number(localOperands.pop());
+									let ans = this.calculate(a , localOperators.pop() , b);
+									localOperands.push(ans.toFixed(2));
+									if (localOperators.length > 0) {
+										topOpPrecedence = this.precedence[localOperators[localOperators.length - 1]];
+									} else {
+										break;
+									}
+								}
+							}
 							localOperators.push(curExpr);
 						}
 						i++;
 					}
 				}
 				if (localOperators.length > 0) {
-					localOperators.forEach((op) => {
+					while(localOperators.length !== 0) {
 						let b = Number(localOperands.pop());
 						let a = Number(localOperands.pop());
-						let ans = this.calculate(a , op , b);
+						let ans = this.calculate(a , localOperators.pop() , b);
 						localOperands.push(ans.toFixed(2));
-					})
+					}
 				}
+				console.log(localOperands);
+				console.log(localOperators);
 				this.res = localOperands.pop();
 				return this.res;
 			} ,
