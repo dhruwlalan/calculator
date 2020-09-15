@@ -12,7 +12,7 @@
 			<img class="btn-op" :src="require(`../assets/svg/${op.s }.svg`)" :alt="op.s"></button>
 		</button>
 		<!-- equals -->
-		<button class="btn" id="equals"><img class="btn-op" src="../assets/svg/equals.svg"></button>
+		<button class="btn" id="equals" @click="display"><img class="btn-op" src="../assets/svg/equals.svg"></button>
 		<div id="output">
 			<span class="output__expression">{{ expr }}</span>
 			<span class="output__result">{{ result }}</span>
@@ -32,6 +32,8 @@
 				expr: '0' ,
 				res: '0' ,
 				operands: [] ,
+				operators: [] ,
+				precedence: { '+':2 , '^':2 , '*':5, '/':5, '%':1 } ,
 			}
 		} ,
 		methods: {
@@ -62,9 +64,14 @@
 				this.expr = '0';
 				this.res = '0';
 				this.operands = [];
+				this.operators = [];
 			} ,
 			backspace () {
 				if (this.expr.length > 1) {
+					const pop = this.expr[this.expr.length-1];
+					if (pop.match(/[\+\^\*\%\/]+/)) {
+						this.operators.pop();
+					}
 					this.expr = this.expr.substring(0 , this.expr.length - 1);
 				} else {
 					this.expr = '0';
@@ -75,27 +82,49 @@
 					return opb.s === e.target.closest('button').id;
 				}).v;
 				const latestOperand = this.operands[this.operands.length-1];
-				if (this.expr.length < 12 && this.expr !== '0') {
+				if (this.expr.length < 12 && this.expr !== '0' && this.expr !== '-') {
 					if (latestOperand !== '') {
 						const isLastDot = latestOperand.indexOf('.') === (latestOperand.length - 1);
-						if (!isLastDot) {
-							if (Number(latestOperand) > 0) {
+						const isLastMinus = latestOperand.indexOf('-') === (latestOperand.length - 1);
+						if (!isLastDot && !isLastMinus) {
+							if (Number(latestOperand) !== 0) {
 								if (this.expr.length !== 11) {
-									this.expr = this.expr + op;
+									if (op === '-') {
+										this.expr += '^';
+										this.operators.push('^');
+
+									} else {
+										this.expr = this.expr + op;
+										this.operators.push(`${op }`);
+									}
 								}
 							}
 						}
 					} else {
-						this.expr = this.expr.slice(0 , this.expr.length-1);
-						this.expr = this.expr + op;
+						if (op === '-') {
+							this.expr += op;
+						} else {
+							this.expr = this.expr.slice(0 , this.expr.length-1);
+							this.expr = this.expr + op;
+							console.log('here');
+							this.operators.pop();
+							this.operators.push(`${op }`);
+						}
+					}
+				} else {
+					if (op === '-') {
+						this.expr = op;
 					}
 				}
+			} ,
+			display () {
+				this.expr = this.res;
 			} ,
 		} ,
 		computed: {
 			result () {
-				this.operands = this.expr.split(/[\+\-\*\%\/]+/);
-				return this.res = this.expr;
+				this.operands = this.expr.split(/[\+\^\*\%\/]+/);
+				console.log('her');
 			} ,
 		} ,
 	}
