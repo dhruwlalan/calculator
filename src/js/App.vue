@@ -14,7 +14,9 @@
 		<!-- equals -->
 		<button class="btn" id="equals" @click="display"><img class="btn-op" src="../assets/svg/equals.svg"></button>
 		<div id="output">
-			<span class="output__expression">{{ expr }}</span>
+			<div class="output__expression">
+				<span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
+			</div>
 			<span class="output__result">{{ result }}</span>
 		</div>
 	</div>
@@ -30,7 +32,7 @@
 				] ,
 				ops: [ {s:'plus',v:'+'},{s:'minus',v:'-'},{s:'multiply',v:'*'},{s:'divide',v:'/'},{s:'modulus',v:'%'} ] ,
 				precedence: { '+':2 , '^':2 , '*':5, '/':5, '%':1 } ,
-				
+
 				expr: '0' ,
 				res: '' ,
 				curExprArr: [] ,
@@ -187,7 +189,7 @@
 						if (isDec) {
 							localOperands.push(ans);
 						} else {
-							localOperands.push(ans.toFixed(2));
+							localOperands.push( Number(ans.toFixed(2)) );
 						}
 					}
 				}
@@ -196,6 +198,26 @@
 					return this.res;
 				}
 			} ,
+			tokens () {
+				let arr = [];
+				let cexpr = this.expr.split('');
+				cexpr.forEach((ex) => {
+					if (ex === '+') {
+						arr.push({s:'op' , v: '+'});
+					} else if (ex === '^') {
+						arr.push({s:'op' , v: '-'});
+					} else if (ex === '*') {
+						arr.push({s:'op' , v: '×'});
+					} else if (ex === '/') {
+						arr.push({s:'op' , v: '÷'});
+					} else if (ex === '%') {
+						arr.push({s:'mod' , v: '%'});
+					} else {
+						arr.push({s:'num' , v:ex});
+					}
+				});
+				return arr;
+			}
 		} ,
 	}
 </script>

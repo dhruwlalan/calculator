@@ -14,12 +14,40 @@
 .output {
 
 	&__expression {
-		@include pos-absolute( $t: 1rem , $b: null , $l: null , $r: 1rem , $z: null );
-		@include typo( $c: $numbers , $fs: 5.5rem );
+		@include pos-absolute( $t: 1rem , $r: 1rem );
+		height: 6rem;
+		width: 94%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		&--num {
+			font-family: $digital7;
+			color: $numbers;
+			font-size: 4rem;
+		}
+
+		&--op {
+			font-family: $solway;
+			color: #9f3430;
+			font-size: 2.5rem;
+			font-weight: 700;
+			margin: 0 5px;
+		}
+
+		&--mod {
+			font-family: $coustard;
+			color: #9f3430;
+			font-size: 1.8rem;
+			font-weight: 700;
+			transform: translateY(2px);
+			margin: 0 5px;
+		}
 	}
+
 	&__result {
-		@include pos-absolute( $t: 1rem , $b: null , $l: null , $r: 1.1rem , $z: null );
-		@include typo( $c: $numbers-dark, $fs: 3rem );
+		@include pos-absolute( $t: 1rem , $r: 1.1rem );
+		@include typo( $c: $numbers-dark, $fs: 3rem, $ff: $digital7 );
 		transform: translateY(6.8rem);
 	}
 }
