@@ -29,14 +29,34 @@
 						{s:'eight',v:8},{s:'nine',v:9},{s:'dot',v:'.'},
 				] ,
 				ops: [ {s:'plus',v:'+'},{s:'minus',v:'-'},{s:'multiply',v:'*'},{s:'divide',v:'/'},{s:'modulus',v:'%'} ] ,
+				precedence: { '+':2 , '^':2 , '*':5, '/':5, '%':1 } ,
+				
 				expr: '0' ,
 				res: '0' ,
+				curExprArr: [] ,
 				operands: [] ,
 				operators: [] ,
-				precedence: { '+':2 , '^':2 , '*':5, '/':5, '%':1 } ,
 			}
 		} ,
 		methods: {
+			clear () {
+				this.expr = '0';
+				this.res = '0';
+				this.curExprArr = [];
+				this.operands = [];
+				this.operators = [];
+			} ,
+			backspace () {
+				if (this.expr.length > 1) {
+					const pop = this.expr[this.expr.length-1];
+					if (pop.match(/[\+\^\*\%\/]+/)) {
+						this.operators.pop();
+					}
+					this.expr = this.expr.substring(0 , this.expr.length - 1);
+				} else {
+					this.expr = '0';
+				}
+			} ,
 			insertNum (e) {
 				const key = e.target.textContent;
 				if (this.expr.length < 12) {
@@ -58,23 +78,6 @@
 							this.expr = this.expr + key;
 						}
 					}
-				}
-			} ,
-			clear () {
-				this.expr = '0';
-				this.res = '0';
-				this.operands = [];
-				this.operators = [];
-			} ,
-			backspace () {
-				if (this.expr.length > 1) {
-					const pop = this.expr[this.expr.length-1];
-					if (pop.match(/[\+\^\*\%\/]+/)) {
-						this.operators.pop();
-					}
-					this.expr = this.expr.substring(0 , this.expr.length - 1);
-				} else {
-					this.expr = '0';
 				}
 			} ,
 			insertOp (e) {
@@ -120,11 +123,52 @@
 			display () {
 				this.expr = this.res;
 			} ,
+			calculate (a , op , b) {
+				switch (op) {
+					case '+': return a + b;
+					case '^': return a - b;
+					case '*': return a * b;
+					case '/': return a / b;
+					case '%': return a % b;
+					default: return null;
+				}
+			} ,
 		} ,
 		computed: {
 			result () {
 				this.operands = this.expr.split(/[\+\^\*\%\/]+/);
-				console.log('her');
+				this.curExprArr = this.expr.split(/([\+\^\*\%\/]+)/g);
+				let localOperands = [];
+				let localOperators = [];
+				let i = 0;
+				let l = this.curExprArr.length;
+				if ( this.curExprArr[l-1] === '' || this.curExprArr[l-1] === '-' ) {
+					l -= 2;
+				}
+				if (i < l) {
+					while (i < l) {
+						let curExpr = this.curExprArr[i];
+						let isOperand = (curExpr.split(/[\+\^\*\%\/]+/)).length === 1;
+						let isOperator = (curExpr.split(/[\+\^\*\%\/]+/)).length === 2;
+						let topPrecidence = 0;
+						if (isOperand) {
+							localOperands.push(curExpr);
+						} else if (isOperator) {
+							localOperators.push(curExpr);
+						}
+						i++;
+					}
+				}
+				if (localOperators.length > 0) {
+					localOperators.forEach((op) => {
+						let b = Number(localOperands.pop());
+						let a = Number(localOperands.pop());
+						let ans = this.calculate(a , op , b);
+						localOperands.push(ans.toFixed(2));
+					})
+				}
+				this.res = localOperands.pop();
+				return this.res;
 			} ,
 		} ,
 	}
