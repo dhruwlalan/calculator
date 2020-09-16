@@ -13,13 +13,14 @@
 		</button>
 		<!-- equals -->
 		<button class="btn" id="equals" @click="display"><img class="btn-op" src="../assets/svg/equals.svg"></button>
+		<!-- output -->
 		<div id="output">
-			<transition name="fade">
+			<transition :name="atype">
 				<div class="output__expression" v-if="oldResult">
 					<span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
 				</div>
 			</transition>
-			<transition name="fade">
+			<transition :name="atype">
 				<div class="output__expression" v-if="!oldResult">
 					<span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
 				</div>
@@ -46,15 +47,20 @@
 				operands: [] ,
 				operators: [] ,
 				oldResult: true,
+				atype: 'fade' ,
 			}
 		} ,
 		methods: {
 			clear () {
-				this.expr = '0';
-				this.res = '0';
-				this.curExprArr = [];
-				this.operands = [];
-				this.operators = [];
+				if (this.expr !== '0') {
+					this.expr = '0';
+					this.res = '0';
+					this.curExprArr = [];
+					this.operands = [];
+					this.operators = [];
+					this.oldResult = !this.oldResult;
+					this.atype = 'clear';
+				}				
 			} ,
 			backspace () {
 				if (this.expr.length > 1) {
@@ -132,6 +138,7 @@
 			display () {
 				if (typeof this.res === 'number') {
 					this.expr = String(this.res);
+					this.atype = 'fade';
 					this.oldResult = !this.oldResult;
 				}
 			} ,
@@ -261,6 +268,23 @@
 	    }
 	    to {
 	        opacity: 1;
+	    }
+	}
+	@keyframes clear-in {
+	    from {
+	        opacity: 0;
+	        transform: translateX(-10rem);
+	    }
+	    to {
+	        opacity: 1;
+	    }
+	}
+	.clear {
+		&-leave-active {
+	        animation: fade-out .5s ease forwards;
+	    }
+	    &-enter-active {
+	        animation: clear-in .5s ease forwards;
 	    }
 	}
 </style>

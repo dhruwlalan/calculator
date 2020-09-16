@@ -12,4 +12,5 @@ body {
 	@include box( $h: 100vh , $w: 100vw );
 	background-color: $primary;
 	-webkit-tap-highlight-color: transparent;
+	overflow: hidden;
 }
