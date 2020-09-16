@@ -14,16 +14,21 @@
 							<div class="modal__content--card">
 								<h1 class="modal__content--card-heading">Design</h1>
 								<div class="modal__content--card-body">
-									<span class="active">NeuPlane</span>
-									<span class="">Neu3d</span>
-									<span class="">Material</span>
+									<span :class="{active:designThemeActive.neuplane}"
+										  @click="$emit('changeDesign', 'neu-plane')" id="neuplane">NeuPlane</span>
+									<span :class="{active:designThemeActive.neu3d}"
+										  @click="$emit('changeDesign', 'neu-3d')" id="neu3d">Neu3d</span>
+									<span :class="{active:designThemeActive.material}"
+										  @click="$emit('changeDesign', 'material')" id="material">Material</span>
 								</div>
 							</div>
 							<div class="modal__content--card">
 								<h1 class="modal__content--card-heading">Theme</h1>
 								<div class="modal__content--card-body">
-									<span class="active">Light</span>
-									<span class="">Dark</span>
+									<span :class="{active:designThemeActive.light}"
+										  @click="$emit('changeTheme', 'light')" id="light">Light</span>
+									<span :class="{active:designThemeActive.dark}"
+										  @click="$emit('changeTheme', 'dark')" id="dark">Dark</span>
 								</div>
 							</div>
 						</div>
@@ -43,7 +48,14 @@
 				showInnerModal: false ,
 				currentDesign: 'neu-plane' ,
 				currentTheme: 'light' ,
-			}
+				designThemeActive: {
+					neuplane: true ,
+					neu3d: false ,
+					material: false ,
+					light: true ,
+					dark: false ,
+				} ,
+			};
 		} ,
 		methods: {
 			exitModal () {
@@ -51,6 +63,36 @@
 				setTimeout(() => {
 					this.showModal = false;
 				}, 300);
+			} ,
+		} ,
+		created () {
+			console.log(this.design);
+			console.log(this.theme);
+		} ,
+		watch: {
+			design (newVal , oldVal) {
+				if (newVal === 'neu-plane') {
+					this.designThemeActive.neuplane = true;
+					this.designThemeActive.neu3d = false;
+					this.designThemeActive.material = false;
+				} else if (newVal === 'neu-3d') {
+					this.designThemeActive.neuplane = false;
+					this.designThemeActive.neu3d = true;
+					this.designThemeActive.material = false;
+				} else if (newVal === 'material') {
+					this.designThemeActive.neuplane = false;
+					this.designThemeActive.neu3d = false;
+					this.designThemeActive.material = true;
+				} 
+			} ,
+			theme (newVal , oldVal) {
+				if (newVal === 'light') {
+					this.designThemeActive.light = true;
+					this.designThemeActive.dark = false;
+				} else if (newVal === 'dark') {
+					this.designThemeActive.light = false;
+					this.designThemeActive.dark = true;
+				}
 			} ,
 		} ,
 	}

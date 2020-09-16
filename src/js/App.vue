@@ -1,8 +1,8 @@
 <template>
     <div class="container" :class="designTheme">
         <div class="grid" :class="`grid--${design }`">
-            <app-settings :design="design" @changeDesign="this.design = $event" 
-                          :theme="theme" @changeTheme="this.theme = $event">
+            <app-settings :design="design" @changeDesign="design = $event" 
+                          :theme="theme" @changeTheme="theme = $event">
             </app-settings>
             <!-- numbers -->
             <button class="btn" :class="`btn--${design }`" :id="num.s" v-for="num in nums" @click="insertNum">
