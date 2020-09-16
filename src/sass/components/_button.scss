@@ -1,41 +1,37 @@
 
 .btn {
 	@include flex( $jc: center , $ai: center );
-	@include typo( $c: $numbers , $ff: $digital7 , $fw: 500 , $fs: 3.6rem );
-	border: 2px solid $primary;
+	@include typo( $ff: $digital7 , $fw: 500 , $fs: 3.6rem );
 	outline: none;
 	cursor: pointer;
-	border-radius: 5rem;
-	// background: linear-gradient(145deg, #ffffff, #d6d6d6);
-	box-shadow: -4px -4px 8px $shadow-white , 
-				4px 4px 8px $shadow-dark2;
+	&-num { height: 3.5rem; }
 
-	&:active {
-		// background: linear-gradient(145deg, #d6d6d6, #ffffff);
+	&--neu-plane {
+		color: $numbers;
 		border: 2px solid $primary;
-		font-size: 3.4rem;
-		box-shadow: inset -3px -3px 6px $shadow-white,
-					inset 3px 3px 6px $shadow-dark2,
-					-4px -4px 8px $shadow-white,
+		border-radius: 5rem;
+		box-shadow: -4px -4px 8px $shadow-white , 
 					4px 4px 8px $shadow-dark2;
 
-		.btn-ot {
-			transform: scale(.9);
-		}
-		.btn-op {
-			transform: scale(.9);
-		}
-	}
+		&:active {
+			font-size: 3.4rem;
+			box-shadow: inset -3px -3px 6px $shadow-white,
+						inset 3px 3px 6px $shadow-dark2,
+						-4px -4px 8px $shadow-white,
+						4px 4px 8px $shadow-dark2;
 
-	&-num {
-		height: 3.5rem;
+			.btn-ot { transform: scale(.9); }
+			.btn-op { transform: scale(.9); }
+		}
 	}
+	
 	&-op {
 		@include box( $h: 1.8rem , $w: 1.8rem );
-		filter: $operators-filter;
+		&--neu-plane { filter: $operators-filter; }
 	}
+
 	&-ot {
 		@include box( $h: 1.8rem , $w: 1.8rem );
-		filter: $others-filter;
+		&--neu-plane { filter: $others-filter; }
 	}
 }

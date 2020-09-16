@@ -19,7 +19,7 @@
             <img class="btn-op" :class="`btn-op--${theme }`" src="../assets/svg/equals.svg">
         </button>
         <!-- output -->
-        <div id="output" :class="`output--${theme }`">
+        <div id="output" class="output" :class="`output--${theme }`">
             <transition :name="animationType">
                 <div class="output__expression" v-if="switchResult">
                     <span :class="`output__expression--${token.s }--${theme }`" v-for="token in tokens">{{ token.v }}</span>
@@ -285,50 +285,5 @@
 </script>
 
 <style lang="scss">
-    .fade {
-        &-leave-active {
-            animation: fade-out .5s ease forwards;
-        }
-        &-enter-active {
-            animation: fade-in .5s ease forwards;
-        }
-    }
-    .clear {
-        &-leave-active {
-            animation: fade-out .5s ease forwards;
-        }
-        &-enter-active {
-            opacity: 0;
-            animation: clear-in .5s ease forwards .3s;
-        }
-    }
-    @keyframes fade-out {
-        from {
-            opacity: 1;
-        }
-        to {
-            transform: rotateX(90deg);
-            opacity: 0;
-        }
-    }
-    @keyframes fade-in {
-        from {
-            opacity: 1;
-            color: #9eb2b7;
-            font-size: 3rem;
-            height: 3rem;
-            transform: translateY(6.8rem);
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    @keyframes clear-in {
-        from {
-            transform: rotateX(90deg);
-        }
-        to {
-            opacity: 1;
-        }
-    }
+    
 </style>

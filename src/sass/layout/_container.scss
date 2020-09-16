@@ -14,10 +14,21 @@
 				'one 	two 	three 	plus'
 				'zero 	zero 	dot 	equals'
 	);
-	border-radius: 2rem;
+	@include disable-selection;
+}
+
+.neu-plane {
 	border: 3px solid $primary;
+	border-radius: 2rem;
 	background: $primary;
 	box-shadow: -1rem -1rem 2rem $shadow-white,
 				1rem 1rem 2rem $shadow-dark1;
-	@include disable-selection;
+}
+
+.neu-3d {
+
+}
+
+.material {
+	
 }

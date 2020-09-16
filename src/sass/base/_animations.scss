@@ -1,0 +1,51 @@
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 1;
+        color: $result;
+        font-size: 3rem;
+        height: 3rem;
+        transform: translateY(6.8rem);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes clear-in {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    &-leave-active {
+        animation: fade-out .5s ease forwards;
+    }
+    &-enter-active {
+        animation: fade-in .5s ease forwards;
+    }
+}
+
+.clear {
+    &-leave-active {
+        animation: fade-out .5s ease forwards;
+    }
+    &-enter-active {
+        opacity: 0;
+        animation: clear-in .5s ease forwards .3s;
+    }
+}

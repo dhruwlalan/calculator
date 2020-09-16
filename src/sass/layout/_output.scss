@@ -1,17 +1,18 @@
 
-#output {
-	@include typo( $ls: 1px );
-	background-color: $primary;
-	border: 2px solid $primary;
-	border-radius: 1rem;
-	box-shadow: -4px -4px 8px $shadow-white,
-				4px 4px 8px $shadow-dark2,
-				inset -3px -3px 6px $shadow-white,
-				inset 3px 3px 6px $shadow-dark2;
-	@include pos-relative;
-}
-
 .output {
+	@include typo( $ls: 1px );
+	@include pos-relative;
+
+	&--neu-plane {
+		background-color: $primary;
+		border: 2px solid $primary;
+		border-radius: 1rem;
+		box-shadow: -4px -4px 8px $shadow-white,
+					4px 4px 8px $shadow-dark2,
+					inset -3px -3px 6px $shadow-white,
+					inset 3px 3px 6px $shadow-dark2;
+	}
+
 
 	&__expression {
 		@include pos-absolute( $t: 1rem , $r: 1rem );
@@ -21,7 +22,7 @@
 		overflow: hidden;
 
 		&--num--neu-plane {
-			font-family: $digital7;
+			@include typo( $c: inherit , $ff: $digital7 );
 		}
 
 		&--op--neu-plane {
@@ -37,9 +38,13 @@
 	}
 
 	&__result {
-		@include typo( $c: $result, $fs: 3rem, $ff: $digital7 );
+		@include typo( $fs: 3rem , $ff: $digital7 );
 		@include pos-absolute( $t: 1rem , $r: 1.1rem );
 		@include flex( $ai: center );
 		transform: translateY(6.8rem);
+
+		&--neu-plane {
+			@include typo( $c: $result );
+		}
 	}
 }
