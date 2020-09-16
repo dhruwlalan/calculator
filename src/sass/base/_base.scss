@@ -13,11 +13,3 @@
 	--shadow-dark1: rgb(70 81 81 / 10%);
 	--shadow-dark2: rgb(67 75 75 / 20%);
 }
-
-body {
-	@include flex( $jc: center , $ai: center );
-	@include box( $h: 100vh , $w: 100vw );
-	background-color: $primary;
-	-webkit-tap-highlight-color: transparent;
-	overflow: hidden;
-}

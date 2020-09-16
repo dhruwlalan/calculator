@@ -36,13 +36,11 @@
 
 <script>
 	export default {
-		props: ['theme'] ,
+		props: ['design' , 'theme'] ,
 		data () {
 			return {
 				showModal: false ,
 				showInnerModal: false ,
-				selectedTheme: '' ,
-				mode: 'light' ,
 			}
 		} ,
 		methods: {

@@ -1,34 +1,8 @@
 
 .container {
-	@include box( $h: 66rem , $w: 42rem );
-	@include grid(
-		$cols:	repeat( 4 , 8rem ) ,
-		$rows:	12rem repeat( 5 , 8rem) ,
-		$gap:	2rem ,
-		$jc: 	center ,
-		$ac: 	center ,
-		$areas: 'output output 	output 	output'
-				'clear 	back 	mod 	divide'
-				'seven 	eight 	nine 	multiply'
-				'four 	five 	six 	minus'
-				'one 	two 	three 	plus'
-				'zero 	zero 	dot 	equals'
-	);
-	@include disable-selection;
-
-	&--neu-plane {
-		border: 3px solid $primary;
-		border-radius: 2rem;
-		background: $primary;
-		box-shadow: -1rem -1rem 2rem $shadow-white,
-					1rem 1rem 2rem $shadow-dark1;
-	}
-}
-
-.neu-3d {
-
-}
-
-.material {
-	
+	@include flex( $jc: center , $ai: center );
+	@include box( $h: 100vh , $w: 100vw );
+	background-color: $primary;
+	-webkit-tap-highlight-color: transparent;
+	overflow: hidden;
 }
