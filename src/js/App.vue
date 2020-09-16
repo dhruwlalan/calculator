@@ -1,12 +1,13 @@
 <template>
-    <div class="container" :class="`${theme }`">
+    <div class="container" :class="`container--${theme }`">
+        <app-settings :theme="theme" @changeTheme="this.theme = $event"></app-settings>
         <!-- numbers -->
         <button class="btn" :class="`btn--${theme }`" :id="num.s" v-for="num in nums" @click="insertNum">
             <span class="btn-num">{{ num.v }}</span>
         </button>
         <!-- operators -->
         <button class="btn" :class="`btn--${theme }`" v-for="op in ops" :id="op.s" @click="insertOp">
-            <img class="btn-op" :class="`btn-op--${theme }`" :src="require(`../assets/svg/${op.s }.svg`)" :alt="op.s"></button>
+            <img class="btn-op" :class="`btn-op--${theme }`" :src="require(`../assets/svg/${op.s }.svg`)" :alt="op.s">
         </button>
         <!-- clear , backspace & equals -->
         <button class="btn" :class="`btn--${theme }`" id="clear" @click="clear">
@@ -36,7 +37,11 @@
 </template>
 
 <script>
+    import Settings from './components/Settings.vue';
     export default {
+        components: {
+            appSettings: Settings ,
+        } ,
         data () {
             return {
                 nums: [ {s:'zero',v:0},{s:'one',v:1},{s:'two',v:2},{s:'three',v:3},{s:'four',v:4},{s:'five',v:5},
@@ -285,5 +290,4 @@
 </script>
 
 <style lang="scss">
-    
 </style>

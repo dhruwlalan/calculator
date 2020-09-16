@@ -15,8 +15,8 @@
 
 
 	&__expression {
-		@include pos-absolute( $t: 1rem , $r: 1rem );
-		@include box( $h: 6rem , $w: 94% );
+		@include pos-absolute( $t: 1rem , $r: 1rem , $z: 1 );
+		@include box( $h: 6rem );
 		@include flex( $jc: flex-end , $ai: center );
 		@include typo( $c: $numbers , $fs: 4rem );
 		overflow: hidden;

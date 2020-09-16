@@ -7,6 +7,7 @@
 	&-num { height: 3.5rem; }
 
 	&--neu-plane {
+		background-color: $primary;
 		color: $numbers;
 		border: 2px solid $primary;
 		border-radius: 5rem;

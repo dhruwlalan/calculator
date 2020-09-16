@@ -1,0 +1,87 @@
+
+.settings {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    height: 3rem;
+	width: 3rem;
+    z-index: 100;
+	cursor: pointer;
+
+    &-btn {
+    	height: 100%;
+    	width: 100%;
+    	cursor: pointer;
+    	fill: $numbers;
+        transition: all .3s;
+
+        &:hover {
+            fill: $operators;
+            transform: rotate(45deg) scale(1.2);
+        }
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__body {
+        background-color: $numbers;
+        height: 40rem;
+        width: 40rem;
+        z-index: 200;
+        border-radius: 2rem;
+        @include pos-relative;
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 3rem;
+        border-radius: 5rem;
+        color: snow;
+        font-weight: 900;
+        cursor: pointer;
+        @include flex( $jc: center , $ai: center );
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        @include flex( $fd: column, $jc: null , $ai: null );
+
+        &--card {
+            margin-top: 3rem;
+
+            &-heading {
+                font-family: sans-serif;
+                font-size: 4rem;
+                color: white;
+                letter-spacing: 3px;
+            }
+            &-body {
+                font-family: sans-serif;
+                font-size: 3rem;
+                color: white;
+                @include flex( $jc: space-evenly , $ai: center );
+            }
+        }
+    }
+}
