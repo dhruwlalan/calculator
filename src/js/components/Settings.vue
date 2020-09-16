@@ -14,7 +14,8 @@
 							<div class="modal__content--card">
 								<h1 class="modal__content--card-heading">Design</h1>
 								<div class="modal__content--card-body">
-									<span>Neumorphic</span>
+									<span class="active">NeuPlane</span>
+									<span>Neu3d</span>
 									<span>Material</span>
 								</div>
 							</div>

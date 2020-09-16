@@ -35,14 +35,13 @@
     align-items: center;
 
     &__body {
-        background-color: $numbers;
+        background: linear-gradient(to bottom right , #45639d , #289799 );
         height: 40rem;
         width: 40rem;
         z-index: 200;
         border-radius: 2rem;
-        @include pos-relative;
         padding: 1rem;
-        padding-top: 5rem;
+        @include pos-relative;
     }
 
     &__close {
@@ -65,23 +64,37 @@
     &__content {
         height: 100%;
         width: 100%;
-        @include flex( $fd: column, $jc: null , $ai: null );
+        @include flex( $fd: column );
 
         &--card {
-            margin-top: 3rem;
+            @include flex( $fd: column, $jc: center , $ai: center );
 
             &-heading {
                 font-family: sans-serif;
                 font-size: 4rem;
                 color: white;
                 letter-spacing: 3px;
+                text-align: center;
+                font-style: italic;
+                border-bottom: 1px dotted white;
+                margin-bottom: 2rem;
             }
             &-body {
                 font-family: sans-serif;
+                width: 100%;
                 font-size: 3rem;
                 color: white;
                 @include flex( $jc: space-evenly , $ai: center );
+                flex-wrap: wrap;
+            }
+
+            &:not(last-child) {
+                margin-top: 5rem;
             }
         }
     }
+}
+
+.active {
+    border-bottom: 2px solid white;
 }
