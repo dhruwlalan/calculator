@@ -20,16 +20,16 @@
 		@include typo( $c: $numbers , $fs: 4rem );
 		overflow: hidden;
 
-		&--num {
+		&--num--neu-plane {
 			font-family: $digital7;
 		}
 
-		&--op {
+		&--op--neu-plane {
 			@include typo( $c: $operators , $ff: $solway , $fw: 700 , $fs: 2.5rem );
 			margin: 0 5px;
 		}
 
-		&--mod {
+		&--mod--neu-plane {
 			@include typo( $c: $operators , $ff: $coustard , $fw: 700 , $fs: 1.8rem );
 			margin: 0 5px;
 			transform: translateY(2px);

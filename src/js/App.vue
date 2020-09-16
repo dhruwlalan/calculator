@@ -1,30 +1,36 @@
 <template>
-    <div class="container">
+    <div class="container" :class="`${theme }`">
         <!-- numbers -->
-        <button class="btn" :id="num.s" v-for="num in nums" @click="insertNum">
+        <button class="btn" :class="`btn--${theme }`" :id="num.s" v-for="num in nums" @click="insertNum">
             <span class="btn-num">{{ num.v }}</span>
         </button>
         <!-- operators -->
-        <button class="btn" v-for="op in ops" :id="op.s" @click="insertOp">
-            <img class="btn-op" :src="require(`../assets/svg/${op.s }.svg`)" :alt="op.s"></button>
+        <button class="btn" :class="`btn--${theme }`" v-for="op in ops" :id="op.s" @click="insertOp">
+            <img class="btn-op" :class="`btn-op--${theme }`" :src="require(`../assets/svg/${op.s }.svg`)" :alt="op.s"></button>
         </button>
         <!-- clear , backspace & equals -->
-        <button class="btn" id="clear" @click="clear"><img class="btn-ot" src="../assets/svg/clear.svg"></button>
-        <button class="btn" id="backspace" @click="backspace"><img class="btn-ot" src="../assets/svg/backspace.svg"></button>
-        <button class="btn" id="equals" @click="display"><img class="btn-op" src="../assets/svg/equals.svg"></button>
+        <button class="btn" :class="`btn--${theme }`" id="clear" @click="clear">
+            <img class="btn-ot" :class="`btn-ot--${theme }`" src="../assets/svg/clear.svg">
+        </button>
+        <button class="btn" :class="`btn--${theme }`" id="backspace" @click="backspace">
+            <img class="btn-ot" :class="`btn-ot--${theme }`" src="../assets/svg/backspace.svg">
+        </button>
+        <button class="btn" :class="`btn--${theme }`" id="equals" @click="display">
+            <img class="btn-op" :class="`btn-op--${theme }`" src="../assets/svg/equals.svg">
+        </button>
         <!-- output -->
-        <div id="output">
+        <div id="output" :class="`output--${theme }`">
             <transition :name="animationType">
                 <div class="output__expression" v-if="switchResult">
-                    <span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
+                    <span :class="`output__expression--${token.s }--${theme }`" v-for="token in tokens">{{ token.v }}</span>
                 </div>
             </transition>
             <transition :name="animationType">
                 <div class="output__expression" v-if="!switchResult">
-                    <span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
+                    <span :class="`output__expression--${token.s }--${theme }`" v-for="token in tokens">{{ token.v }}</span>
                 </div>
             </transition>
-            <span class="output__result">{{ result }}</span>
+            <span class="output__result" :class="`output__result--${theme }`">{{ result }}</span>
         </div>
     </div>
 </template>
@@ -45,6 +51,7 @@
                 operators: [] ,
                 switchResult: true ,
                 animationType: 'fade' ,
+                theme: 'neu-plane' ,
             }
         } ,
         methods: {
@@ -291,7 +298,8 @@
             animation: fade-out .5s ease forwards;
         }
         &-enter-active {
-            animation: clear-in .5s ease forwards;
+            opacity: 0;
+            animation: clear-in .5s ease forwards .3s;
         }
     }
     @keyframes fade-out {
@@ -317,8 +325,7 @@
     }
     @keyframes clear-in {
         from {
-            opacity: 0;
-            transform: translateX(-10rem);
+            transform: rotateX(90deg);
         }
         to {
             opacity: 1;
