@@ -1,3 +1,20 @@
+
+/* colors */
+$primary: var(--primary);
+$numbers: var(--numbers);
+$result: var(--result);
+$operators: var(--operators);
+$operators-filter: var(--operators-filter);
+$others: var(--others);
+$others-filter: var(--others-filter);
+/* shadow colors */
+$shadow-white: var(--shadow-white);
+$shadow-dark1: var(--shadow-dark1);
+$shadow-dark2: var(--shadow-dark2);
+
+
+
+/* font-family */
 @font-face {
 	font-family: "digital7";
 	src: url("./assets/fonts/digital7.ttf");
@@ -10,17 +27,6 @@
 	font-family: "Solway";
 	src: url("./assets/fonts/Solway.ttf");
 }
-
-/* font-family */
 $digital7: 'digital7';
 $solway: 'Solway', serif;
 $coustard: 'Coustard', serif;
-
-/* colors */
-$primary: var(--primary);
-$primary-dark: var(--primary-dark);
-$button: var(--button);
-$numbers: var(--numbers);
-$numbers-dark: var(--numbers-dark);
-$operators: var(--operators);
-$others: var(--others);

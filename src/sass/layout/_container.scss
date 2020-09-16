@@ -17,7 +17,7 @@
 	border-radius: 2rem;
 	border: 3px solid $primary;
 	background: $primary;
-	box-shadow: -1rem -1rem 2rem rgb(255 255 255),
-				1rem 1rem 2rem rgb(70 81 81 / 10%);
+	box-shadow: -1rem -1rem 2rem $shadow-white,
+				1rem 1rem 2rem $shadow-dark1;
 	@include disable-selection;
 }

@@ -1,10 +1,17 @@
 
 :root {
+	/* colors */
 	--primary: #eeeeee;
 	--numbers: #318a9d;
-	--numbers-dark: #9eb2b7;
-	--operators: invert(19%) sepia(55%) saturate(1781%) hue-rotate(332deg) brightness(116%) contrast(91%);
-	--others: invert(52%) sepia(15%) saturate(1759%) hue-rotate(88deg) brightness(94%) contrast(90%);
+	--result: #9eb2b7;
+	--operators: #9f3430;
+	--operators-filter: invert(19%) sepia(55%) saturate(1781%) hue-rotate(332deg) brightness(116%) contrast(91%);
+	--others: #3ea362;
+	--others-filter: invert(52%) sepia(15%) saturate(1759%) hue-rotate(88deg) brightness(94%) contrast(90%);
+	/* shadow colors */
+	--shadow-white: rgb(255 255 255);
+	--shadow-dark1: rgb(70 81 81 / 10%);
+	--shadow-dark2: rgb(67 75 75 / 20%);
 }
 
 body {

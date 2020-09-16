@@ -7,17 +7,17 @@
 	cursor: pointer;
 	border-radius: 5rem;
 	// background: linear-gradient(145deg, #ffffff, #d6d6d6);
-	box-shadow: -4px -4px 8px rgb(255 255 255) , 
-				4px 4px 8px rgb(67 75 75 / 20%);
+	box-shadow: -4px -4px 8px $shadow-white , 
+				4px 4px 8px $shadow-dark2;
 
 	&:active {
 		// background: linear-gradient(145deg, #d6d6d6, #ffffff);
 		border: 2px solid $primary;
 		font-size: 3.4rem;
-		box-shadow: inset -3px -3px 6px white, 
-					inset 3px 3px 6px rgba(67, 75, 75, 0.2), 
-					-4px -4px 8px rgb(255 255 255), 
-					4px 4px 8px rgb(67 75 75 / 20%);
+		box-shadow: inset -3px -3px 6px $shadow-white,
+					inset 3px 3px 6px $shadow-dark2,
+					-4px -4px 8px $shadow-white,
+					4px 4px 8px $shadow-dark2;
 
 		.btn-ot {
 			transform: scale(.9);
@@ -32,10 +32,10 @@
 	}
 	&-op {
 		@include box( $h: 1.8rem , $w: 1.8rem );
-		filter: $operators;
+		filter: $operators-filter;
 	}
 	&-ot {
 		@include box( $h: 1.8rem , $w: 1.8rem );
-		filter: $others;
+		filter: $others-filter;
 	}
 }
