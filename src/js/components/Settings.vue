@@ -15,15 +15,15 @@
 								<h1 class="modal__content--card-heading">Design</h1>
 								<div class="modal__content--card-body">
 									<span class="active">NeuPlane</span>
-									<span>Neu3d</span>
-									<span>Material</span>
+									<span class="">Neu3d</span>
+									<span class="">Material</span>
 								</div>
 							</div>
 							<div class="modal__content--card">
 								<h1 class="modal__content--card-heading">Theme</h1>
 								<div class="modal__content--card-body">
-									<span>Light</span>
-									<span>Dark</span>
+									<span class="active">Light</span>
+									<span class="">Dark</span>
 								</div>
 							</div>
 						</div>
@@ -41,6 +41,8 @@
 			return {
 				showModal: false ,
 				showInnerModal: false ,
+				currentDesign: 'neu-plane' ,
+				currentTheme: 'light' ,
 			}
 		} ,
 		methods: {
