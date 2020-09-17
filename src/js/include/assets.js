@@ -8,3 +8,4 @@ import '../../sass/main.scss';
 	import '../../assets/fonts/digital7.ttf';
 	import '../../assets/fonts/Solway.ttf';
 	import '../../assets/fonts/Coustard.ttf';
+	import '../../assets/fonts/Zcool.ttf';

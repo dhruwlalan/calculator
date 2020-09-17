@@ -8,27 +8,27 @@
 		<transition name="modal-fade" @enter="showInnerModal = true">
 			<div class="modal" v-if="modal" @click.self="exitModal">
 				<transition name="modal-zoom">
-					<div class="modal__body" v-if="showInnerModal">
+					<div class="modal__box" v-if="showInnerModal">
 						<div class="modal__close" @click="exitModal">×</div>
 						<div class="modal__content">
 							<div class="modal__content--card">
 								<h1 class="modal__content--card-heading">Design</h1>
 								<div class="modal__content--card-body">
-									<span :class="{active: design==='neu-plane'?true:false}"
-										  @click="$emit('changeDesign', 'neu-plane')" id="neuplane">NeuPlane</span>
-									<span :class="{active: design==='neu-3d'?true:false}"
-										  @click="$emit('changeDesign', 'neu-3d')" id="neu3d">Neu3d</span>
-									<span :class="{active: design==='material'?true:false}"
-										  @click="$emit('changeDesign', 'material')" id="material">Material</span>
+									<span :class="{active:design==='neu-plane'?true:false}"
+										  @click="updateDesignTheme" id="neu-plane">Neu-Plane</span>
+									<span :class="{active:design==='neu-3d'?true:false}"
+										  @click="updateDesignTheme" id="neu-3d">Neu-3d</span>
+									<span :class="{active:design==='material'?true:false}"
+										  @click="updateDesignTheme" id="material">Material</span>
 								</div>
 							</div>
 							<div class="modal__content--card">
 								<h1 class="modal__content--card-heading">Theme</h1>
 								<div class="modal__content--card-body">
-									<span :class="{active: theme==='light'?true:false}"
-										  @click="$emit('changeTheme', 'light')" id="light">Light</span>
-									<span :class="{active: theme==='dark'?true:false}"
-										  @click="$emit('changeTheme', 'dark')" id="dark">Dark</span>
+									<span :class="{active:theme==='light'?true:false}"
+										  @click="updateDesignTheme" id="light">Light</span>
+									<span :class="{active:theme==='dark'?true:false}"
+										  @click="updateDesignTheme" id="dark">Dark</span>
 								</div>
 							</div>
 						</div>
@@ -49,17 +49,23 @@
 		} ,
 		methods: {
 			showModal () {
-				this.$emit('modalToogle');
+				this.$emit('openModal');
 			} ,
 			exitModal () {
 				this.showInnerModal = false;
 				setTimeout(() => {
-					this.$emit('modalToogle');
+					this.$emit('closeModal');
 				}, 200);
 			} ,
+			updateDesignTheme (e) {
+				if ((e.target.id === 'neu-plane') || (e.target.id === 'neu-3d') || (e.target.id === 'material')) {
+					this.$emit('changeDesign' , e.target.id);
+				}
+				if ((e.target.id === 'light') || (e.target.id === 'dark')) {
+					this.$emit('changeTheme' , e.target.id);
+				}
+				this.exitModal();
+			}
 		} ,
 	}
 </script>
-
-<style lang="scss">
-</style>

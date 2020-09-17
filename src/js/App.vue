@@ -2,7 +2,7 @@
     <div>
         <app-settings :design="design" @changeDesign="design = $event" 
                       :theme="theme" @changeTheme="theme = $event"
-                      :modal="modal" @modalToogle="modal = !modal">
+                      :modal="modal" @openModal="modal = true" @closeModal="modal = false">
         </app-settings>
         <div class="container" :class="[designTheme , {blur: modal}]">
             <div class="grid" :class="`grid--${design }`">

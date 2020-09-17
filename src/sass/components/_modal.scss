@@ -1,0 +1,87 @@
+
+.modal {
+    @include pos-fixed( $t: 0 , $l: 0 , $z: 150 );
+    @include box( $h: 100vh , $w: 100vw );
+    @include flex( $jc: center , $ai: center );
+    background-color: rgba(255,255,255,0.4);
+
+    &__box {
+        @include pos-relative;
+        @include box( $h: 40rem , $w: 40rem );
+        @include disable-selection;
+        background: linear-gradient(to bottom right , #45639d , #289799 );
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow: 0 0 5rem 1rem rgb(0 0 0 / 30%);
+    }
+
+    &__close {
+        @include pos-absolute( $t: 1rem , $r: 2rem );
+        @include typo( $c: snow , $fs: 3rem , $fw: 900);
+        @include flex( $jc: center , $ai: center );
+        border-radius: 5rem;
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+
+    &__content {
+        @include box( $h: 100% , $w: 100% );
+        @include flex( $fd: column, $jc: center );
+
+        &--card {
+            @include flex( $fd: column, $jc: center , $ai: center );
+
+            &-heading {
+                @include typo( $c: #0c6699 , $ff: $digital7 , $fw: 900 , $fs: 4rem , $ls: 3px );
+                @include box( $mb: 2rem , $p: .5rem 2rem );
+                background-color: #fdfeff;
+                border-radius: 2rem;
+                box-shadow: 0 0 2rem rgb(10 10 93 / 63%);
+            }
+            &-body {
+                @include typo( $c: white , $ff: $zcool , $fw: 300 , $fs: 3rem );
+                @include flex( $jc: space-evenly , $ai: center , $fw: wrap);
+                @include box( $w: 100% , $h: 5rem );
+
+                span {
+                    @include flex( $fd: column, $ai: center );
+                    cursor: pointer;
+                    
+                    &::after {
+                        content: '';
+                        margin-top: 5px;
+                        display: inline-block;
+                        border-radius: 5rem;
+                        background: radial-gradient(circle, white 30%, transparent 100% );
+                        height: 2px;
+                        width: 0px;
+                        transition: width .4s;
+                    }
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .active {
+                    @include flex( $fd: column );
+                    cursor: pointer;
+                    
+                    &::after {
+                        width: 100%;
+                    }    
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
