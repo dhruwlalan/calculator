@@ -43,7 +43,7 @@
                 box-shadow: 0 0 2rem $modal-shadow;
             }
             &-body {
-                @include typo( $c: $modal-text , $ff: $zcool , $fw: 300 , $fs: 3rem );
+                @include typo( $c: $modal-text , $ff: sans-serif , $fw: 400 , $fs: 2.5rem );
                 @include flex( $jc: space-evenly , $ai: center , $fw: wrap);
                 @include box( $w: 100% , $h: 5rem );
 
