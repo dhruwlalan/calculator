@@ -1,13 +1,4 @@
 
-@keyframes fade-out {
-    from {
-        opacity: 1;
-    }
-    to {
-        transform: perspective(300px) rotateX(90deg);
-        opacity: 0;
-    }
-}
 @keyframes fade-in {
     from {
         opacity: 1;
@@ -16,79 +7,46 @@
         height: 3rem;
         transform: translateY(6.8rem);
     }
-    to {
-        opacity: 1;
-    }
+    to { opacity: 1; }
+}
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { transform: perspective(300px) rotateX(90deg); opacity: 0; }
 }
 @keyframes clear-in {
-    from {
-        transform: perspective(100px) rotateX(-90deg);
-    }
-    to {
-        opacity: 1;
-    }
+    from { transform: perspective(100px) rotateX(-90deg); }
+    to { opacity: 1; }
 }
 @keyframes modal-zoom-in {
-    from {
-        transform: scale(0);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 @keyframes modal-fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .loader {
-    &-leave-active {
-        animation: modal-fade .5s ease reverse;
-    }
-    &-enter-active {
-        animation: modal-fade .5s ease forwards;
-    }
+    &-leave-active { animation: modal-fade .5s ease reverse; }
+    &-enter-active { animation: modal-fade .5s ease forwards; }
 }
 .fade {
-    &-leave-active {
-        animation: fade-out .5s ease forwards;
-    }
-    &-enter-active {
-        animation: fade-in .5s ease forwards;
-    }
+    &-leave-active { animation: fade-out .5s ease forwards; }
+    &-enter-active { animation: fade-in .5s ease forwards; }
 }
 .clear {
-    &-leave-active {
-        animation: fade-out .5s ease forwards;
-    }
-    &-enter-active {
-        opacity: 0;
-        animation: clear-in .5s ease forwards .3s;
-    }
+    &-leave-active { animation: fade-out .5s ease forwards; }
+    &-enter-active { opacity: 0; animation: clear-in .5s ease forwards .3s; }
 }
 .modal-zoom {
-    &-enter-active {
-        animation: modal-zoom-in .5s ease forwards;
-    }
-    &-leave-active {
-        animation: modal-zoom-in .5s ease reverse;
-    }
+    &-enter-active { animation: modal-zoom-in .5s ease forwards; }
+    &-leave-active { animation: modal-zoom-in .5s ease reverse; }
 }
 .modal-fade {
-    &-enter-active {
-        animation: modal-fade .5s ease forwards;
-    }
-    &-leave-active {
-        animation: modal-fade .5s ease reverse;
-    }
+    &-enter-active { animation: modal-fade .5s ease forwards; }
+    &-leave-active { animation: modal-fade .5s ease reverse; }
 }

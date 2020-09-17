@@ -2,35 +2,30 @@
 .output {
 	@include typo( $ls: 1px );
 	@include pos-relative;
+	background-color: $primary;
+	border-radius: 1rem;
+	border: 2px solid $primary;
 
 	&--neu-plane {
-		background-color: $primary;
-		border: 2px solid $primary;
-		border-radius: 1rem;
 		box-shadow: -4px -4px 8px $shadow-white1,
 					4px 4px 8px $shadow-dark2,
 					inset -3px -3px 6px $shadow-white1,
 					inset 3px 3px 6px $shadow-dark2;
 	}
 	&--neu-3d {
-		background-color: $primary;
-		border: 2px solid $primary;
-		border-radius: 1rem;
 		box-shadow: inset -3px -3px 6px $shadow-white1,
 					inset 3px 3px 6px $shadow-dark2;
 	}
 	&--material {
-		background-color: $primary;
 		border: 1px solid $numbers;
-		border-radius: 1rem;
 		box-shadow: 0 0 1rem $shadow;
 	}
 
 	&__expression {
-		@include pos-absolute( $t: 1rem , $r: 1rem , $z: 1 );
-		@include box( $h: 6rem );
-		@include flex( $jc: flex-end , $ai: center );
 		@include typo( $c: $numbers , $fs: 4rem );
+		@include flex( $jc: flex-end , $ai: center );
+		@include box( $h: 6rem );
+		@include pos-absolute( $t: 1rem , $r: 1rem , $z: 1 );
 		overflow: hidden;
 
 		&--num {

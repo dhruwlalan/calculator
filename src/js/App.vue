@@ -1,3 +1,4 @@
+
 <template>
     <div>
         <app-settings :design="design" @changeDesign="design = $event" 
@@ -64,7 +65,7 @@
                 operators: [] ,
                 switchResult: true ,
                 animationType: 'fade' ,
-                design: 'material' ,
+                design: 'neu-plane' ,
                 theme: 'light' ,
                 modal: false ,
             }
@@ -301,6 +302,3 @@
         } ,
     }
 </script>
-
-<style lang="scss">
-</style>

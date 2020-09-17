@@ -4,106 +4,78 @@
 	@include typo( $ff: $digital7 , $fw: 500 , $fs: 3.6rem );
 	outline: none;
 	cursor: pointer;
+	background-color: $primary;
+	color: $numbers;
+	border-radius: 5rem;
+	border: 2px solid $primary;
+	&-num { height: 3.5rem; }
+	&-op { @include box( $h: 1.8rem , $w: 1.8rem ); filter: $operators-filter; }
+	&-ot { @include box( $h: 1.8rem , $w: 1.8rem ); filter: $others-filter; }
+
 
 	&--neu-plane {
-		background-color: $primary;
-		color: $numbers;
-		border: 2px solid $primary;
-		border-radius: 5rem;
-		box-shadow: -4px -4px 8px $shadow-white2 , 
-					4px 4px 8px $shadow-dark2;
+		box-shadow: -4px -4px 8px $shadow-white2 , 4px 4px 8px $shadow-dark2;
 
 		&:active {
 			font-size: 3.4rem;
-			box-shadow: inset -3px -3px 6px $shadow-white2,
-						inset 3px 3px 6px $shadow-dark2,
-						-4px -4px 8px $shadow-white2,
-						4px 4px 8px $shadow-dark2;
-
+			box-shadow: -4px -4px 8px $shadow-white2 , 4px 4px 8px $shadow-dark2 ,
+						inset -3px -3px 6px $shadow-white2 , inset 3px 3px 6px $shadow-dark2;
 			.btn-ot { transform: scale(.9); }
 			.btn-op { transform: scale(.9); }
 		}
 	}
 	&--neu-3d {
-		background-color: $primary;
 		background: linear-gradient(145deg, $gd-in, $gd-out);
-		color: $numbers;
-		border: 2px solid $primary;
-		border-radius: 5rem;
-		box-shadow: -4px -4px 8px $shadow-white2 , 
-					4px 4px 8px $shadow-dark2;
+		box-shadow: -4px -4px 8px $shadow-white2 , 4px 4px 8px $shadow-dark2;
 
 		&:active {
 			background: linear-gradient(145deg, $gd-out, $gd-in);
 			font-size: 3.4rem;
-			box-shadow: inset -3px -3px 6px $shadow-white2,
-						inset 3px 3px 6px $shadow-dark2,
-						-4px -4px 8px $shadow-white2,
-						4px 4px 8px $shadow-dark2;
-
+			box-shadow: -4px -4px 8px $shadow-white2 , 4px 4px 8px $shadow-dark2 ,
+						inset -3px -3px 6px $shadow-white2 , inset 3px 3px 6px $shadow-dark2;
 			.btn-ot { transform: scale(.9); }
 			.btn-op { transform: scale(.9); }
 		}
 	}
 	&--material {
-		background-color: $primary;
-		color: $numbers;
 		border: 1px solid $numbers;
 		box-shadow: 0 0 1rem $shadow;
-		border-radius: 5rem;
 
 		&:hover {
 			background: $numbers;
 			color: $primary;
-			.btn-op {
-				filter: $primary-filter;
-			}
-			.btn-ot {
-				filter: $primary-filter;
-			}
+			.btn-op { filter: $primary-filter; }
+			.btn-ot { filter: $primary-filter; }
 		}
-
 		&:active {
 			font-size: 3.4rem;
 			transform: scale(.95);
 		}
 	}
-	
-	&-num { height: 3.5rem; }
-	&-op { @include box( $h: 1.8rem , $w: 1.8rem ); filter: $operators-filter; }
-	&-ot { @include box( $h: 1.8rem , $w: 1.8rem ); filter: $others-filter; }
 }
 
 
 #plus.btn--material { 
 	border: 1px solid $operators; 
-	&:hover { background: $operators; }
-}
+	&:hover { background: $operators; } }
 #minus.btn--material { 
 	border: 1px solid $operators;
-	&:hover { background: $operators; }
-}
+	&:hover { background: $operators; } }
 #divide.btn--material { 
 	border: 1px solid $operators;
-	&:hover { background: $operators; }
-}
+	&:hover { background: $operators; } }
 #multiply.btn--material { 
 	border: 1px solid $operators;
-	&:hover { background: $operators; }
-}
+	&:hover { background: $operators; } }
 #modulus.btn--material { 
 	border: 1px solid $operators;
-	&:hover { background: $operators; }
-}
+	&:hover { background: $operators; } }
 #equals.btn--material { 
 	border: 1px solid $operators;
-	&:hover { background: $operators;}
-}
+	&:hover { background: $operators;} }
 #clear.btn--material { 
 	border: 1px solid $others;
-	&:hover { background: $others; }
-}
+	&:hover { background: $others; } }
 #backspace.btn--material { 
 	border: 1px solid $others;
-	&:hover { background: $others; }
-}
+	&:hover { background: $others; } }

@@ -5,9 +5,9 @@
 	background-color: $primary;
 	-webkit-tap-highlight-color: transparent;
 	overflow: hidden;
+	transition: filter .5s;
 }
 
 .blur {
 	filter: blur(2px);
-	transition: blur .3s;
 }

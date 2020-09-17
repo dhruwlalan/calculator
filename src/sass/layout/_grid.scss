@@ -14,29 +14,22 @@
 				'one 	two 	three 	plus'
 				'zero 	zero 	dot 	equals'
 	);
+	border-radius: 2rem;
+	background: $primary;
+	border: 3px solid $primary;
 	@include disable-selection;
 
 	&--neu-plane {
-		border: 3px solid $primary;
-		border-radius: 2rem;
-		background: $primary;
 		box-shadow: -1rem -1rem 2rem $shadow-white1,
 					1rem 1rem 2rem $shadow-dark1;
 	}
-
 	&--neu-3d {
-		border: 3px solid $primary;
-		border-radius: 2rem;
-		background: $primary;
 		box-shadow: -1rem -1rem 2rem $shadow-white1,
 					1rem 1rem 2rem $shadow-dark1,
 					inset 1rem 1rem 2rem $shadow-white1,
 					inset -1rem -1rem 2rem $shadow-dark1;
 	}
-
 	&--material {
-		border-radius: 2rem;
-		background: $primary;
 		border: 1px solid $numbers;
 		box-shadow: 0 0 4rem $shadow;
 	}

@@ -1,3 +1,4 @@
+
 <template>
 	<transition name="loader">
 		<div class="loader" v-if="!loaded"></div>
@@ -20,7 +21,3 @@
 		} ,
 	}
 </script>
-
-<style lang="scss">
-	
-</style>

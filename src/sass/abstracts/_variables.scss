@@ -28,20 +28,16 @@ $shadow: var(--shadow);
 @font-face {
 	font-family: "digital7";
 	src: url("./assets/fonts/digital7.ttf");
-}
+} $digital7: 'digital7';
 @font-face {
 	font-family: "Coustard";
 	src: url("./assets/fonts/Coustard.ttf");
-}
+} $coustard: 'Coustard', serif;
 @font-face {
 	font-family: "Solway";
 	src: url("./assets/fonts/Solway.ttf");
-}
+} $solway: 'Solway', serif;
 @font-face {
 	font-family: "Zcool";
 	src: url("./assets/fonts/Zcool.ttf");
-}
-$digital7: 'digital7';
-$solway: 'Solway', serif;
-$coustard: 'Coustard', serif;
-$zcool: 'Zcool', cursive;
+} $zcool: 'Zcool', cursive;

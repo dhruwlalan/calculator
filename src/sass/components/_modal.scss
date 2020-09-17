@@ -8,7 +8,6 @@
         @include pos-relative;
         @include box( $h: 40rem , $w: 40rem );
         @include disable-selection;
-        // background: linear-gradient(to bottom right , #45639d , #289799 );
         background: linear-gradient(to bottom right , $modal-g-start , $modal-g-end );
         padding: 1rem;
         border-radius: 2rem;
