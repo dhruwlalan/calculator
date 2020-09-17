@@ -3,6 +3,7 @@
 	&--light {
 		/* colors */
 		--primary: #eeeeee;
+		--primary-filter: invert(100%) sepia(0%) saturate(5266%) hue-rotate(264deg) brightness(114%) contrast(87%);
 		--numbers: #318a9d;
 		--result: #84b6c1;
 		--operators: #9f3430;
@@ -15,14 +16,12 @@
 		--modal-text: white;
 		--modal-shadow: rgb(10 10 93 / 63%);
 		/* shadow colors */
-		--shadow-white1: rgb(255 255 255);
-		--shadow-white2: rgb(255 255 255);
-		--shadow-dark1: rgb(70 81 81 / 10%);
-		--shadow-dark2: rgb(67 75 75 / 20%);
+		--shadow: rgb(0 0 0 / 10%);
 	}
 	&--dark {
 		/* colors */
 		--primary: #243441;
+		--primary-filter: invert(15%) sepia(45%) saturate(452%) hue-rotate(165deg) brightness(95%) contrast(89%);
 		--numbers: #0affef;
 		--result: #00879b;
 		--operators: #ff565d;
@@ -33,11 +32,8 @@
 		--modal-g-start: #003231;
 		--modal-g-end: #000b1e;
 		--modal-text: #00ffd8;
-		/* shadow colors */
 		--modal-shadow: rgb(0 225 255 / 60%);
-		--shadow-white1: rgb(44 64 80 / 70%);
-		--shadow-white2: rgb(44 64 80 / 80%);
-		--shadow-dark1: rgb(0 0 0 / 16%);
-		--shadow-dark2: rgb(0 0 0 / 26%);
+		/* shadow colors */
+		--shadow: rgb(255 255 255 / 10%);
 	}
 }

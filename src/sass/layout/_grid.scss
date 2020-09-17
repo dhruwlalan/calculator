@@ -35,11 +35,9 @@
 	}
 
 	&--material {
-		border: 3px solid $primary;
 		border-radius: 2rem;
 		background: $primary;
-		box-shadow: -1rem -1rem 2rem $shadow-white1,
-					1rem 1rem 2rem $shadow-dark1;
+		border: 1px solid $numbers;
+		box-shadow: 0 0 4rem $shadow;
 	}
-
 }

@@ -13,31 +13,31 @@
                 </button>
                 <!-- operators -->
                 <button class="btn" :class="`btn--${design }`" v-for="op in ops" :id="op.s" @click="insertOp">
-                    <img class="btn-op" :class="`btn-op--${design }`" :src="require(`../assets/svg/${op.s }.svg`)" :alt="op.s">
+                    <img class="btn-op" :src="require(`../assets/svg/${op.s }.svg`)" :alt="op.s">
                 </button>
                 <!-- clear , backspace & equals -->
                 <button class="btn" :class="`btn--${design }`" id="clear" @click="clear">
-                    <img class="btn-ot" :class="`btn-ot--${design }`" src="../assets/svg/clear.svg">
+                    <img class="btn-ot" src="../assets/svg/clear.svg">
                 </button>
                 <button class="btn" :class="`btn--${design }`" id="backspace" @click="backspace">
-                    <img class="btn-ot" :class="`btn-ot--${design }`" src="../assets/svg/backspace.svg">
+                    <img class="btn-ot" src="../assets/svg/backspace.svg">
                 </button>
                 <button class="btn" :class="`btn--${design }`" id="equals" @click="display">
-                    <img class="btn-op" :class="`btn-op--${design }`" src="../assets/svg/equals.svg">
+                    <img class="btn-op" src="../assets/svg/equals.svg">
                 </button>
                 <!-- output -->
                 <div id="output" class="output" :class="`output--${design }`">
                     <transition :name="animationType">
                         <div class="output__expression" v-if="switchResult">
-                            <span :class="`output__expression--${token.s }--${design }`" v-for="token in tokens">{{ token.v }}</span>
+                            <span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
                         </div>
                     </transition>
                     <transition :name="animationType">
                         <div class="output__expression" v-if="!switchResult">
-                            <span :class="`output__expression--${token.s }--${design }`" v-for="token in tokens">{{ token.v }}</span>
+                            <span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
                         </div>
                     </transition>
-                    <span class="output__result" :class="`output__result--${design }`">{{ result }}</span>
+                    <span class="output__result" :class="`output__result`">{{ result }}</span>
                 </div>
             </div>
         </div>
@@ -64,7 +64,7 @@
                 operators: [] ,
                 switchResult: true ,
                 animationType: 'fade' ,
-                design: 'neu-3d' ,
+                design: 'material' ,
                 theme: 'light' ,
                 modal: false ,
             }
