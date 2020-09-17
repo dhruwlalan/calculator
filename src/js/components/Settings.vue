@@ -62,6 +62,11 @@
 					this.$emit('changeDesign' , e.target.id);
 				}
 				if ((e.target.id === 'light') || (e.target.id === 'dark')) {
+					if (e.target.id === 'dark') {
+						document.body.style.backgroundColor = '#262626';
+					} else {
+						document.body.style.backgroundColor = '#eeeeee';
+					}
 					this.$emit('changeTheme' , e.target.id);
 				}
 				this.exitModal();

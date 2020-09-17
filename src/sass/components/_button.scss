@@ -11,14 +11,14 @@
 		color: $numbers;
 		border: 2px solid $primary;
 		border-radius: 5rem;
-		box-shadow: -4px -4px 8px $shadow-white , 
+		box-shadow: -4px -4px 8px $shadow-white2 , 
 					4px 4px 8px $shadow-dark2;
 
 		&:active {
 			font-size: 3.4rem;
-			box-shadow: inset -3px -3px 6px $shadow-white,
+			box-shadow: inset -3px -3px 6px $shadow-white2,
 						inset 3px 3px 6px $shadow-dark2,
-						-4px -4px 8px $shadow-white,
+						-4px -4px 8px $shadow-white2,
 						4px 4px 8px $shadow-dark2;
 
 			.btn-ot { transform: scale(.9); }

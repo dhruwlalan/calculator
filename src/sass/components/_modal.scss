@@ -3,13 +3,13 @@
     @include pos-fixed( $t: 0 , $l: 0 , $z: 150 );
     @include box( $h: 100vh , $w: 100vw );
     @include flex( $jc: center , $ai: center );
-    background-color: rgba(255,255,255,0.4);
 
     &__box {
         @include pos-relative;
         @include box( $h: 40rem , $w: 40rem );
         @include disable-selection;
-        background: linear-gradient(to bottom right , #45639d , #289799 );
+        // background: linear-gradient(to bottom right , #45639d , #289799 );
+        background: linear-gradient(to bottom right , $modal-g-start , $modal-g-end );
         padding: 1rem;
         border-radius: 2rem;
         box-shadow: 0 0 5rem 1rem rgb(0 0 0 / 30%);
@@ -17,15 +17,15 @@
 
     &__close {
         @include pos-absolute( $t: 1rem , $r: 2rem );
-        @include typo( $c: snow , $fs: 3rem , $fw: 900);
+        @include typo( $c: $modal-text , $ff: $solway , $fs: 3rem , $fw: 900);
         @include flex( $jc: center , $ai: center );
         border-radius: 5rem;
         cursor: pointer;
-        transform: scale(1.2);
+        transform: scale(1.4);
         transition: transform .3s;
 
         &:hover {
-            transform: scale(1.4);
+            transform: scale(1.7);
         }
     }
 
@@ -37,14 +37,14 @@
             @include flex( $fd: column, $jc: center , $ai: center );
 
             &-heading {
-                @include typo( $c: #0c6699 , $ff: $digital7 , $fw: 900 , $fs: 4rem , $ls: 3px );
+                @include typo( $c: $modal-g-start , $ff: $digital7 , $fw: 900 , $fs: 4rem , $ls: 3px );
                 @include box( $mb: 2rem , $p: .5rem 2rem );
-                background-color: #fdfeff;
+                background-color: $modal-text;
                 border-radius: 2rem;
-                box-shadow: 0 0 2rem rgb(10 10 93 / 63%);
+                box-shadow: 0 0 2rem $modal-shadow;
             }
             &-body {
-                @include typo( $c: white , $ff: $zcool , $fw: 300 , $fs: 3rem );
+                @include typo( $c: $modal-text , $ff: $zcool , $fw: 300 , $fs: 3rem );
                 @include flex( $jc: space-evenly , $ai: center , $fw: wrap);
                 @include box( $w: 100% , $h: 5rem );
 
@@ -57,7 +57,7 @@
                         margin-top: 5px;
                         display: inline-block;
                         border-radius: 5rem;
-                        background: radial-gradient(circle, white 30%, transparent 100% );
+                        background: radial-gradient(circle, $modal-text 30%, transparent 100% );
                         height: 2px;
                         width: 0px;
                         transition: width .4s;
