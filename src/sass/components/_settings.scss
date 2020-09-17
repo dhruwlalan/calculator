@@ -1,4 +1,4 @@
-
+    
 .settings {
     position: fixed;
     top: 2rem;
@@ -42,6 +42,7 @@
         border-radius: 2rem;
         padding: 1rem;
         @include pos-relative;
+        box-shadow: 0 0 5rem 1rem rgb(0 0 0 / 30%);
     }
 
     &__close {

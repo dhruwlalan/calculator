@@ -1,40 +1,43 @@
 <template>
-    <div class="container" :class="designTheme">
-        <div class="grid" :class="`grid--${design }`">
-            <app-settings :design="design" @changeDesign="design = $event" 
-                          :theme="theme" @changeTheme="theme = $event">
-            </app-settings>
-            <!-- numbers -->
-            <button class="btn" :class="`btn--${design }`" :id="num.s" v-for="num in nums" @click="insertNum">
-                <span class="btn-num">{{ num.v }}</span>
-            </button>
-            <!-- operators -->
-            <button class="btn" :class="`btn--${design }`" v-for="op in ops" :id="op.s" @click="insertOp">
-                <img class="btn-op" :class="`btn-op--${design }`" :src="require(`../assets/svg/${op.s }.svg`)" :alt="op.s">
-            </button>
-            <!-- clear , backspace & equals -->
-            <button class="btn" :class="`btn--${design }`" id="clear" @click="clear">
-                <img class="btn-ot" :class="`btn-ot--${design }`" src="../assets/svg/clear.svg">
-            </button>
-            <button class="btn" :class="`btn--${design }`" id="backspace" @click="backspace">
-                <img class="btn-ot" :class="`btn-ot--${design }`" src="../assets/svg/backspace.svg">
-            </button>
-            <button class="btn" :class="`btn--${design }`" id="equals" @click="display">
-                <img class="btn-op" :class="`btn-op--${design }`" src="../assets/svg/equals.svg">
-            </button>
-            <!-- output -->
-            <div id="output" class="output" :class="`output--${design }`">
-                <transition :name="animationType">
-                    <div class="output__expression" v-if="switchResult">
-                        <span :class="`output__expression--${token.s }--${design }`" v-for="token in tokens">{{ token.v }}</span>
-                    </div>
-                </transition>
-                <transition :name="animationType">
-                    <div class="output__expression" v-if="!switchResult">
-                        <span :class="`output__expression--${token.s }--${design }`" v-for="token in tokens">{{ token.v }}</span>
-                    </div>
-                </transition>
-                <span class="output__result" :class="`output__result--${design }`">{{ result }}</span>
+    <div>
+        <app-settings :design="design" @changeDesign="design = $event" 
+                      :theme="theme" @changeTheme="theme = $event"
+                      :modal="modal" @modalToogle="modal = !modal">
+        </app-settings>
+        <div class="container" :class="[designTheme , {blur: modal}]">
+            <div class="grid" :class="`grid--${design }`">
+                <!-- numbers -->
+                <button class="btn" :class="`btn--${design }`" :id="num.s" v-for="num in nums" @click="insertNum">
+                    <span class="btn-num">{{ num.v }}</span>
+                </button>
+                <!-- operators -->
+                <button class="btn" :class="`btn--${design }`" v-for="op in ops" :id="op.s" @click="insertOp">
+                    <img class="btn-op" :class="`btn-op--${design }`" :src="require(`../assets/svg/${op.s }.svg`)" :alt="op.s">
+                </button>
+                <!-- clear , backspace & equals -->
+                <button class="btn" :class="`btn--${design }`" id="clear" @click="clear">
+                    <img class="btn-ot" :class="`btn-ot--${design }`" src="../assets/svg/clear.svg">
+                </button>
+                <button class="btn" :class="`btn--${design }`" id="backspace" @click="backspace">
+                    <img class="btn-ot" :class="`btn-ot--${design }`" src="../assets/svg/backspace.svg">
+                </button>
+                <button class="btn" :class="`btn--${design }`" id="equals" @click="display">
+                    <img class="btn-op" :class="`btn-op--${design }`" src="../assets/svg/equals.svg">
+                </button>
+                <!-- output -->
+                <div id="output" class="output" :class="`output--${design }`">
+                    <transition :name="animationType">
+                        <div class="output__expression" v-if="switchResult">
+                            <span :class="`output__expression--${token.s }--${design }`" v-for="token in tokens">{{ token.v }}</span>
+                        </div>
+                    </transition>
+                    <transition :name="animationType">
+                        <div class="output__expression" v-if="!switchResult">
+                            <span :class="`output__expression--${token.s }--${design }`" v-for="token in tokens">{{ token.v }}</span>
+                        </div>
+                    </transition>
+                    <span class="output__result" :class="`output__result--${design }`">{{ result }}</span>
+                </div>
             </div>
         </div>
     </div>
@@ -62,6 +65,7 @@
                 animationType: 'fade' ,
                 design: 'neu-plane' ,
                 theme: 'light' ,
+                modal: false ,
             }
         } ,
         methods: {

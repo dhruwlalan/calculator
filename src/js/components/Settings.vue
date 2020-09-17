@@ -1,12 +1,12 @@
 <template>
 	<div>
-		<div class="settings" @click="showModal = !showModal">
+		<div class="settings" @click="showModal">
 			<svg width="1em" height="1em" viewBox="0 0 16 16" class="settings-btn" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 			  <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
 			</svg>
 		</div>
 		<transition name="modal-fade" @enter="showInnerModal = true">
-			<div class="modal" v-if="showModal">
+			<div class="modal" v-if="modal" @click.self="exitModal">
 				<transition name="modal-zoom">
 					<div class="modal__body" v-if="showInnerModal">
 						<div class="modal__close" @click="exitModal">×</div>
@@ -14,20 +14,20 @@
 							<div class="modal__content--card">
 								<h1 class="modal__content--card-heading">Design</h1>
 								<div class="modal__content--card-body">
-									<span :class="{active:designThemeActive.neuplane}"
+									<span :class="{active: design==='neu-plane'?true:false}"
 										  @click="$emit('changeDesign', 'neu-plane')" id="neuplane">NeuPlane</span>
-									<span :class="{active:designThemeActive.neu3d}"
+									<span :class="{active: design==='neu-3d'?true:false}"
 										  @click="$emit('changeDesign', 'neu-3d')" id="neu3d">Neu3d</span>
-									<span :class="{active:designThemeActive.material}"
+									<span :class="{active: design==='material'?true:false}"
 										  @click="$emit('changeDesign', 'material')" id="material">Material</span>
 								</div>
 							</div>
 							<div class="modal__content--card">
 								<h1 class="modal__content--card-heading">Theme</h1>
 								<div class="modal__content--card-body">
-									<span :class="{active:designThemeActive.light}"
+									<span :class="{active: theme==='light'?true:false}"
 										  @click="$emit('changeTheme', 'light')" id="light">Light</span>
-									<span :class="{active:designThemeActive.dark}"
+									<span :class="{active: theme==='dark'?true:false}"
 										  @click="$emit('changeTheme', 'dark')" id="dark">Dark</span>
 								</div>
 							</div>
@@ -41,58 +41,21 @@
 
 <script>
 	export default {
-		props: ['design' , 'theme'] ,
+		props: ['design' , 'theme' , 'modal'] ,
 		data () {
 			return {
-				showModal: false ,
 				showInnerModal: false ,
-				currentDesign: 'neu-plane' ,
-				currentTheme: 'light' ,
-				designThemeActive: {
-					neuplane: true ,
-					neu3d: false ,
-					material: false ,
-					light: true ,
-					dark: false ,
-				} ,
 			};
 		} ,
 		methods: {
+			showModal () {
+				this.$emit('modalToogle');
+			} ,
 			exitModal () {
 				this.showInnerModal = false;
 				setTimeout(() => {
-					this.showModal = false;
-				}, 300);
-			} ,
-		} ,
-		created () {
-			console.log(this.design);
-			console.log(this.theme);
-		} ,
-		watch: {
-			design (newVal , oldVal) {
-				if (newVal === 'neu-plane') {
-					this.designThemeActive.neuplane = true;
-					this.designThemeActive.neu3d = false;
-					this.designThemeActive.material = false;
-				} else if (newVal === 'neu-3d') {
-					this.designThemeActive.neuplane = false;
-					this.designThemeActive.neu3d = true;
-					this.designThemeActive.material = false;
-				} else if (newVal === 'material') {
-					this.designThemeActive.neuplane = false;
-					this.designThemeActive.neu3d = false;
-					this.designThemeActive.material = true;
-				} 
-			} ,
-			theme (newVal , oldVal) {
-				if (newVal === 'light') {
-					this.designThemeActive.light = true;
-					this.designThemeActive.dark = false;
-				} else if (newVal === 'dark') {
-					this.designThemeActive.light = false;
-					this.designThemeActive.dark = true;
-				}
+					this.$emit('modalToogle');
+				}, 200);
 			} ,
 		} ,
 	}
