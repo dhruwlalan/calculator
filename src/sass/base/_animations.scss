@@ -46,7 +46,19 @@
         opacity: 1;
     }
 }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
+.loader {
+    &-leave-active {
+        animation: modal-fade .5s ease reverse;
+    }
+    &-enter-active {
+        animation: modal-fade .5s ease forwards;
+    }
+}
 .fade {
     &-leave-active {
         animation: fade-out .5s ease forwards;

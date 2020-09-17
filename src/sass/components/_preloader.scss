@@ -1,5 +1,5 @@
 
-#preloader {
+.loader {
 	@include pos-fixed( $t: 0 , $l: 0 , $z: 9999 );
 	@include box( $h: 100vh , $w: 100vw );
 	@include flex( $jc: center , $ai: center );
@@ -14,9 +14,4 @@
 		border-bottom: 4px solid #c4c4c4;
 		animation: spin 1s linear infinite;
 	}
-}
-
-@keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
 }

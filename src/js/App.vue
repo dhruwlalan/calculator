@@ -64,7 +64,7 @@
                 operators: [] ,
                 switchResult: true ,
                 animationType: 'fade' ,
-                design: 'neu-plane' ,
+                design: 'neu-3d' ,
                 theme: 'light' ,
                 modal: false ,
             }

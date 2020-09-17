@@ -12,7 +12,22 @@
 					inset -3px -3px 6px $shadow-white1,
 					inset 3px 3px 6px $shadow-dark2;
 	}
-
+	&--neu-3d {
+		background-color: $primary;
+		border: 2px solid $primary;
+		border-radius: 1rem;
+		box-shadow: inset -3px -3px 6px $shadow-white1,
+					inset 3px 3px 6px $shadow-dark2;
+	}
+	&--material {
+		background-color: $primary;
+		border: 2px solid $primary;
+		border-radius: 1rem;
+		box-shadow: -4px -4px 8px $shadow-white1,
+					4px 4px 8px $shadow-dark2,
+					inset -3px -3px 6px $shadow-white1,
+					inset 3px 3px 6px $shadow-dark2;
+	}
 
 	&__expression {
 		@include pos-absolute( $t: 1rem , $r: 1rem , $z: 1 );
@@ -24,13 +39,37 @@
 		&--num--neu-plane {
 			@include typo( $c: inherit , $ff: $digital7 );
 		}
-
 		&--op--neu-plane {
 			@include typo( $c: $operators , $ff: $solway , $fw: 700 , $fs: 2.5rem );
 			margin: 0 5px;
 		}
-
 		&--mod--neu-plane {
+			@include typo( $c: $operators , $ff: $coustard , $fw: 700 , $fs: 1.8rem );
+			margin: 0 5px;
+			transform: translateY(2px);
+		}
+
+		&--num--neu-3d {
+			@include typo( $c: inherit , $ff: $digital7 );
+		}
+		&--op--neu-3d {
+			@include typo( $c: $operators , $ff: $solway , $fw: 700 , $fs: 2.5rem );
+			margin: 0 5px;
+		}
+		&--mod--neu-3d {
+			@include typo( $c: $operators , $ff: $coustard , $fw: 700 , $fs: 1.8rem );
+			margin: 0 5px;
+			transform: translateY(2px);
+		}
+
+		&--num--material {
+			@include typo( $c: inherit , $ff: $digital7 );
+		}
+		&--op--material {
+			@include typo( $c: $operators , $ff: $solway , $fw: 700 , $fs: 2.5rem );
+			margin: 0 5px;
+		}
+		&--mod--material {
 			@include typo( $c: $operators , $ff: $coustard , $fw: 700 , $fs: 1.8rem );
 			margin: 0 5px;
 			transform: translateY(2px);
@@ -44,6 +83,12 @@
 		transform: translateY(6.8rem);
 
 		&--neu-plane {
+			@include typo( $c: $result );
+		}
+		&--neu-3d {
+			@include typo( $c: $result );
+		}
+		&--material {
 			@include typo( $c: $result );
 		}
 	}
