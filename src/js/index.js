@@ -9,3 +9,9 @@ new Vue({
 	el: '#app',
 	render: h => h(App),
 })
+
+window.addEventListener('load', () => {
+	setTimeout(() => {
+		document.getElementById('preloader').remove();
+	} , 300)
+});

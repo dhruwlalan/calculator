@@ -1,0 +1,21 @@
+
+#preloader {
+	@include pos-fixed( $t: 0 , $l: 0 , $z: 9999 );
+	@include box( $h: 100vh , $w: 100vw );
+	background-color: $primary;
+	@include flex( $jc: center , $ai: center );
+
+	span {
+		@include box( $h: 3rem , $w: 3rem );
+		border: 4px solid $primary;
+		border-radius: 50%;
+		border-top: 4px solid #c4c4c4;
+		border-bottom: 4px solid #c4c4c4;
+		animation: spin .7s linear infinite;
+	}
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
