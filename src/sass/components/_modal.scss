@@ -41,7 +41,7 @@
 
             &-heading {
                 @include typo( $c: $modal-g-start , $ff: $digital7 , $fw: 900 , $fs: 4rem , $ls: 3px );
-                @include box( $mb: 2rem , $p: .5rem 2rem );
+                @include box( $mb: 2rem , $p: 1rem 2rem );
                 background-color: $modal-text;
                 border-radius: 2rem;
                 box-shadow: 0 0 2rem $modal-shadow;
