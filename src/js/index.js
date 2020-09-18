@@ -15,3 +15,9 @@ new Vue({
 	el: '#app',
 	render: h => h(App),
 });
+
+window.oncontextmenu = function(event) {
+     event.preventDefault();
+     event.stopPropagation();
+     return false;
+};
