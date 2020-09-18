@@ -1,8 +1,8 @@
 
 <template>
     <div>
-        <app-settings :design="design" @changeDesign="design = $event" 
-                      :theme="theme" @changeTheme="theme = $event"
+        <app-settings :design="design" @changeDesign="updateDesign"
+                      :theme="theme" @changeTheme="updateTheme"
                       :class="designTheme"
                       :modal="modal" @openModal="modal = true" @closeModal="modal = false">
         </app-settings>
@@ -68,6 +68,20 @@
                 design: 'neu-plane' ,
                 theme: 'light' ,
                 modal: false ,
+
+            }
+        } ,
+        created () {
+            const d = localStorage.getItem('calcDesign');
+            const t = localStorage.getItem('calcTheme');
+            if (d && t) {
+                this.design = localStorage.getItem('calcDesign');
+                this.theme = localStorage.getItem('calcTheme');
+                if (this.theme === 'dark') {
+                    document.body.style.backgroundColor = '#262626';
+                } else {
+                    document.body.style.backgroundColor = '#eeeeee';
+                }
             }
         } ,
         methods: {
@@ -199,6 +213,14 @@
                 } else {
                     return Number(ans.toFixed(2));
                 }
+            } ,
+            updateDesign (e) {
+                this.design = e;
+                localStorage.setItem('calcDesign' , e);
+            } ,
+            updateTheme (e) {
+                this.theme = e;
+                localStorage.setItem('calcTheme' , e);
             } ,
         } ,
         computed: {

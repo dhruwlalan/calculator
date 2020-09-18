@@ -46,5 +46,8 @@
 		border: none;
 		box-shadow: none;
 		border: 1px solid $numbers;
+		@media (max-width: 450px) {
+			border: none;
+		}
 	}
 }
