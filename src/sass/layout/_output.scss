@@ -17,15 +17,28 @@
 					inset 3px 3px 6px $shadow-dark2;
 	}
 	&--material {
-		border: 1px solid $numbers;
-		box-shadow: 0 0 1rem $shadow;
+		border: none;
+		box-shadow: none;
+		border-radius: 0rem;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			bottom: 0;
+			height: 1px;
+			width: 100%;
+			border-radius: 5rem;
+            background: radial-gradient(circle, $numbers 70%, transparent 100% );
+		}
 	}
 
 	&__expression {
 		@include typo( $c: $numbers , $fs: 4rem );
 		@include flex( $jc: flex-end , $ai: center );
-		@include box( $h: 6rem );
-		@include pos-absolute( $t: 1rem , $r: 1rem , $z: 1 );
+		@include box( $h: 4rem );
+		@include pos-absolute( $t: 1.1rem , $r: 1rem , $z: 1 );
 		overflow: hidden;
 
 		&--num {
@@ -44,8 +57,9 @@
 
 	&__result {
 		@include typo( $c: $result , $fs: 3rem , $ff: $digital7 );
-		@include pos-absolute( $t: 1rem , $r: 1.1rem );
+		@include pos-absolute( $t: 1rem , $r: 1rem );
 		@include flex( $ai: center );
-		transform: translateY(6.8rem);
+		height: 4rem;
+		transform: translateY(6.2rem);	
 	}
 }

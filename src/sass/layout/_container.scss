@@ -6,6 +6,10 @@
 	-webkit-tap-highlight-color: transparent;
 	overflow: hidden;
 	transition: filter .5s;
+
+	@media (max-width: 450px) {
+		align-items: flex-start;
+	}
 }
 
 .blur {

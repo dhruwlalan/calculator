@@ -4,6 +4,13 @@
     @include box( $h: 3rem , $w: 3rem );
 	cursor: pointer;
 
+    @media (max-width: 450px) {
+        top: unset;
+        bottom: 1rem;
+        right: 1rem;
+
+    }
+
     &-btn {
         @include box( $h: 100% , $w: 100% );
     	cursor: pointer;
