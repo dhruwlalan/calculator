@@ -38,6 +38,11 @@
                             <span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
                         </div>
                     </transition>
+                    <transition name="modal-fade">
+                        <div v-if="neverSettle" class="output__never-settle">
+                            NEVER SETTLE
+                        </div>
+                    </transition>
                     <span class="output__result" :class="`output__result`">{{ result }}</span>
                 </div>
             </div>
@@ -70,6 +75,7 @@
                 modal: false ,
                 devMode: false ,
                 devCount: 0 ,
+                neverSettle: false ,
             }
         } ,
         created () {
@@ -200,6 +206,12 @@
                     }
                 } else {
                     this.devCount = 0;
+                }
+                if (this.expr === '1+') {
+                    this.neverSettle = true;
+                    setTimeout(() => {
+                        this.neverSettle = false;
+                    } , 2000);
                 }
             } ,
             calculate (a , op , b) {

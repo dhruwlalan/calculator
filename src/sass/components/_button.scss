@@ -1,14 +1,13 @@
 
 .btn {
 	@include flex( $jc: center , $ai: center );
-	@include typo( $ff: $digital7 , $fw: 500 , $fs: 3.6rem );
+	@include typo( $ff: $digital7 , $fw: 500 , $fs: 3.3rem );
 	outline: none;
 	cursor: pointer;
 	background-color: $primary;
 	color: $numbers;
 	border-radius: 5rem;
 	border: 2px solid $primary;
-	&-num { height: 3.5rem; }
 	&-op { @include box( $h: 1.8rem , $w: 1.8rem ); filter: $operators-filter; }
 	&-ot { @include box( $h: 1.8rem , $w: 1.8rem ); filter: $others-filter; }
 
