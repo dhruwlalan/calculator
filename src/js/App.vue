@@ -3,7 +3,7 @@
     <div>
         <app-settings :design="design" @changeDesign="updateDesign"
                       :theme="theme" @changeTheme="updateTheme"
-                      :class="designTheme"
+                      :class="designTheme" :devMode="devMode"
                       :modal="modal" @openModal="modal = true" @closeModal="modal = false">
         </app-settings>
         <div class="container" :class="[designTheme , {blur: modal}]">
@@ -65,23 +65,29 @@
                 operators: [] ,
                 switchResult: true ,
                 animationType: 'fade' ,
-                design: 'neu-plane' ,
-                theme: 'light' ,
+                design: '' ,
+                theme: '' ,
                 modal: false ,
-
+                devMode: false ,
+                devCount: 0 ,
             }
         } ,
         created () {
             const d = localStorage.getItem('calcDesign');
             const t = localStorage.getItem('calcTheme');
             if (d && t) {
-                this.design = localStorage.getItem('calcDesign');
-                this.theme = localStorage.getItem('calcTheme');
-                if (this.theme === 'dark') {
+                this.design = d
+                this.theme = t
+                if (t === 'dark') {
                     document.body.style.backgroundColor = '#262626';
                 } else {
                     document.body.style.backgroundColor = '#eeeeee';
                 }
+            } else {
+                localStorage.setItem('calcDesign' , 'neu-plane');
+                localStorage.setItem('calcTheme' , 'light');
+                this.design = 'neu-plane';
+                this.theme = 'light';
             }
         } ,
         methods: {
@@ -185,6 +191,15 @@
                     this.expr = String(this.res);
                     this.animationType = 'fade';
                     this.switchResult = !this.switchResult;
+                }
+                if (this.res === '69') {
+                    this.devCount++;
+                    if (this.devCount === 3) {
+                        this.devMode = !this.devMode;
+                        this.devCount = 0;
+                    }
+                } else {
+                    this.devCount = 0;
                 }
             } ,
             calculate (a , op , b) {

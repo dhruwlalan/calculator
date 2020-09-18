@@ -21,7 +21,7 @@
 
 
 	@media (max-width: 450px) {
-		@include box( $h: calc(92vw * 1.57) , $w: 92% );
+		@include box( $h: calc(92vw * 1.58) , $w: 92% );
 		@include grid(
 			$cols:	repeat( 4 , 1fr ) ,
 			$rows:	12rem repeat( 5 , 1fr) ,
@@ -29,6 +29,9 @@
 		);
 		margin-top: 1rem;
 		padding: 1.5rem;
+	}
+	@media (max-width: 400px) {
+		@include box( $h: calc(96vw * 1.58) , $w: 92% );
 	}
 
 
