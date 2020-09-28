@@ -5,7 +5,7 @@
 	background-color: $primary;
 	border-radius: 1rem;
 	border: 2px solid $primary;
-	@include pos-relative;
+	overflow: hidden;
 
 	&--neu-plane {
 		box-shadow: -4px -4px 8px $shadow-white1,
