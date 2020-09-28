@@ -1,6 +1,7 @@
 
 .grid {
 	@include box( $h: 66rem , $w: 42rem );
+	margin-bottom: 3rem;
 	@include grid(
 		$cols:	repeat( 4 , 8rem ) ,
 		$rows:	12rem repeat( 5 , 8rem) ,

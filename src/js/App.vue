@@ -83,7 +83,7 @@
                 this.design = d
                 this.theme = t
                 if (t === 'dark') {
-                    document.body.style.backgroundColor = '#262626';
+                    document.body.style.backgroundColor = '#243441';
                 } else {
                     document.body.style.backgroundColor = '#eeeeee';
                 }

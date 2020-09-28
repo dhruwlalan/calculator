@@ -1,21 +1,21 @@
 
 .modal {
-    @include pos-fixed( $t: 0 , $l: 0 , $z: 150 );
-    @include box( $h: 100vh , $w: 100vw );
-    @include flex( $jc: center , $ai: center );
+    @include box( $h: 40rem , $w: 40rem );
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: linear-gradient(to bottom right , $modal-g-start , $modal-g-end );
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 5rem 1rem rgb(0 0 0 / 30%);
+    @include disable-selection;
 
-    &__box {
-        @include pos-relative;
-        @include box( $h: 40rem , $w: 40rem );
-        @include disable-selection;
-        background: linear-gradient(to bottom right , $modal-g-start , $modal-g-end );
-        padding: 1rem;
-        border-radius: 2rem;
-        box-shadow: 0 0 5rem 1rem rgb(0 0 0 / 30%);
-
-        @media (max-width: 450px) {
-            width: 90vw;
-        }
+    @media (max-width: 450px) {
+        width: 90vw;
     }
 
     &__close {
