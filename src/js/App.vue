@@ -3,7 +3,7 @@
     <div>
         <app-settings :design="design" @changeDesign="updateDesign"
                       :theme="theme" @changeTheme="updateTheme"
-                      :class="designTheme" :devMode="devMode"
+                      :class="designTheme"
                       :modal="modal" @openModal="modal = true" @closeModal="modal = false">
         </app-settings>
         <div class="container" :class="[designTheme , {blur: modal}]">
@@ -73,8 +73,6 @@
                 design: '' ,
                 theme: '' ,
                 modal: false ,
-                devMode: false ,
-                devCount: 0 ,
                 neverSettle: false ,
             }
         } ,
@@ -198,20 +196,11 @@
                     this.animationType = 'fade';
                     this.switchResult = !this.switchResult;
                 }
-                if (this.res === '69') {
-                    this.devCount++;
-                    if (this.devCount === 3) {
-                        this.devMode = !this.devMode;
-                        this.devCount = 0;
-                    }
-                } else {
-                    this.devCount = 0;
-                }
                 if (this.expr === '1+') {
                     this.neverSettle = true;
                     setTimeout(() => {
                         this.neverSettle = false;
-                    } , 2000);
+                    } , 1000);
                 }
             } ,
             calculate (a , op , b) {
