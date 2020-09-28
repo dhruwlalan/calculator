@@ -51,7 +51,7 @@
 					}
 					this.$emit('changeTheme' , e.target.id);
 				}
-				this.exitModal();
+				this.$emit('closeModal');
 			}
 		} ,
 	}
