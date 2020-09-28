@@ -5,7 +5,7 @@
 	background-color: $primary;
 	border-radius: 1rem;
 	border: 2px solid $primary;
-	@include pos-relative;
+	overflow: hidden;
 
 	&--neu-plane {
 		box-shadow: -4px -4px 8px $shadow-white1,
@@ -65,15 +65,15 @@
 	}
 
 	&__never-settle {
-		@include pos-absolute( $t: 0 , $b: null , $l: 0 , $r: null , $z: 999 );
+		@include pos-absolute( $t: 0 , $l: 0 , $z: 999 );
 		height: 84%;
 		width: 95%;
-		transform: translateX(12px) translateY(6px);
+		transform: translate3d(12px , 7px , 0);
 		background: $primary;
 		border-radius: 1rem;
 		font-weight: 900;
 		font-family: sans-serif;
-		font-size: 3.5rem;
+		font-size: 3.4rem;
 		color: #f72720;
 		@include flex( $jc: center , $ai: center );
 	}

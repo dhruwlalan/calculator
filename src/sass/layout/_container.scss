@@ -9,6 +9,7 @@
 
 	@media (max-width: 450px) {
 		align-items: flex-start;
+		@include box( $h: auto , $w: auto );
 	}
 }
 
