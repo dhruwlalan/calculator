@@ -1,7 +1,9 @@
+@use "../abstracts" as *;
 
 .grid {
-	@include box( $h: 66rem , $w: 42rem );
-	margin-bottom: 3rem;
+	@include size( $h: 66rem , $w: 42rem );
+	@include bg( $c: $primary , );
+	@include pbm( $b: 3px solid $primary , $rad: 2rem , $mb: 3rem , );
 	@include grid(
 		$cols:	repeat( 4 , 8rem ) ,
 		$rows:	12rem repeat( 5 , 8rem) ,
@@ -15,24 +17,20 @@
 				'one 	two 	three 	plus'
 				'zero 	zero 	dot 	equals'
 	);
-	border-radius: 2rem;
-	background: $primary;
-	border: 3px solid $primary;
 	@include disable-selection;
 
 
 	@media (max-width: 450px) {
-		@include box( $h: calc(92vw * 1.58) , $w: 92% );
+		@include size( $h: calc(92vw * 1.58) , $w: 92% );
+		@include pbm( $p: 1.5rem , $mt: 1.5rem , );
 		@include grid(
 			$cols:	repeat( 4 , 1fr ) ,
 			$rows:	12rem repeat( 5 , 1fr) ,
 			$gap:	1.5rem ,
 		);
-		margin-top: 1.5rem;
-		padding: 1.5rem;
 	}
 	@media (max-width: 400px) {
-		@include box( $h: calc(96vw * 1.58) , $w: 92% );
+		@include size( $h: calc(96vw * 1.58) , $w: 92% );
 	}
 
 
@@ -47,9 +45,8 @@
 					inset -1rem -1rem 2rem $shadow-dark1;
 	}
 	&--material {
-		border: none;
-		box-shadow: none;
 		border: 1px solid $numbers;
+		box-shadow: none;
 		@media (max-width: 450px) {
 			border: none;
 		}

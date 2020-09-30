@@ -1,10 +1,10 @@
+@use "../abstracts" as *;
 
 .output {
+	@include bg( $c: $primary , );
 	@include typo( $ls: 1px );
+	@include pbm( $b: 2px solid $primary , $rad: 1rem , );
 	@include pos-relative;
-	background-color: $primary;
-	border-radius: 1rem;
-	border: 2px solid $primary;
 	overflow: hidden;
 
 	&--neu-plane {
@@ -18,63 +18,56 @@
 					inset 3px 3px 6px $shadow-dark2;
 	}
 	&--material {
-		border: none;
+		@include pbm( $b: none , $rad: 0rem , );
+		@include pos-relative();
 		box-shadow: none;
-		border-radius: 0rem;
-		position: relative;
 
 		&::before {
 			content: '';
 			display: inline-block;
-			position: absolute;
-			bottom: 0;
-			height: 1px;
-			width: 100%;
-			border-radius: 5rem;
+			@include size( $h: 1px , $w: 100% , );
             background: radial-gradient(circle, $numbers 70%, transparent 100% );
+			@include pbm( $rad: 5rem , );
+			@include pos-absolute( $b: 0 , );
 		}
 	}
 
 	&__expression {
+		@include size( $h: 4rem );
 		@include typo( $c: $numbers , $fs: 4rem );
-		@include flex( $jc: flex-end , $ai: center );
-		@include box( $h: 4rem );
 		@include pos-absolute( $t: 1.1rem , $r: 1rem , $z: 1 );
+		@include flex( $jc: flex-end , $ai: center );
 		overflow: hidden;
 
 		&--num {
 			@include typo( $c: inherit , $ff: $digital7 );
 		}
 		&--op {
-			@include typo( $c: $operators , $ff: $solway , $fw: 700 , $fs: 2.5rem );
+			@include typo( $c: $operators , $ff: $solway , $fs: 2.5rem , $fw: 700 , );
 			margin: 0 5px;
 		}
 		&--mod {
-			@include typo( $c: $operators , $ff: $coustard , $fw: 700 , $fs: 1.8rem );
+			@include typo( $c: $operators , $ff: $coustard , $fs: 1.8rem , $fw: 700 , );
 			margin: 0 5px;
 			transform: translateY(2px);
 		}
 	}
 
 	&__result {
-		@include typo( $c: $result , $fs: 3rem , $ff: $digital7 );
+		@include size( $h: 4rem , );
+		@include typo( $c: $result , $ff: $digital7 , $fs: 3rem , );
 		@include pos-absolute( $t: 1rem , $r: 1rem );
 		@include flex( $ai: center );
-		height: 4rem;
 		transform: translateY(6.2rem);	
 	}
 
 	&__never-settle {
+		@include size( $h: 84% , $w: 95% , );
+		@include bg( $c: $primary , );
+		@include typo( $c: #f72720 , $ff: sans-serif , $fs: 3.4rem , $fw: 900 , );
+		@include pbm( $rad: 1rem , );
 		@include pos-absolute( $t: 0 , $l: 0 , $z: 999 );
-		height: 84%;
-		width: 95%;
-		transform: translate3d(12px , 7px , 0);
-		background: $primary;
-		border-radius: 1rem;
-		font-weight: 900;
-		font-family: sans-serif;
-		font-size: 3.4rem;
-		color: #f72720;
 		@include flex( $jc: center , $ai: center );
+		transform: translate3d(12px , 7px , 0);
 	}
 }

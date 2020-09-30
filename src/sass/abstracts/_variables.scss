@@ -1,39 +1,38 @@
 
 /* colors */
-$primary: var(--primary);
-$primary-filter: var(--primary-filter);
-$numbers: var(--numbers);
-$result: var(--result);
-$operators: var(--operators);
-$operators-filter: var(--operators-filter);
-$others: var(--others);
-$others-filter: var(--others-filter);
+	$primary: var(--primary);
+	$primary-filter: var(--primary-filter);
+	$numbers: var(--numbers);
+	$result: var(--result);
+	$operators: var(--operators);
+	$operators-filter: var(--operators-filter);
+	$others: var(--others);
+	$others-filter: var(--others-filter);
 /* gradient */
-$gd-in: var(--gd-in);
-$gd-out: var(--gd-out);
+	$gd-in: var(--gd-in);
+	$gd-out: var(--gd-out);
 /* modal colors*/
-$modal-g-start: var(--modal-g-start);
-$modal-g-end: var(--modal-g-end);
-$modal-text: var(--modal-text);
-$modal-shadow: var(--modal-shadow);
+	$modal-g-start: var(--modal-g-start);
+	$modal-g-end: var(--modal-g-end);
+	$modal-text: var(--modal-text);
+	$modal-shadow: var(--modal-shadow);
 /* shadow colors */
-$shadow-white1: var(--shadow-white1);
-$shadow-white2: var(--shadow-white2);
-$shadow-dark1: var(--shadow-dark1);
-$shadow-dark2: var(--shadow-dark2);
-$shadow: var(--shadow);
-
+	$shadow-white1: var(--shadow-white1);
+	$shadow-white2: var(--shadow-white2);
+	$shadow-dark1: var(--shadow-dark1);
+	$shadow-dark2: var(--shadow-dark2);
+	$shadow: var(--shadow);
 
 /* font-family */
-@font-face {
-	font-family: "digital7";
-	src: url("./assets/fonts/digital7.ttf");
-} $digital7: 'digital7';
-@font-face {
-	font-family: "Coustard";
-	src: url("./assets/fonts/Coustard.ttf");
-} $coustard: 'Coustard', serif;
-@font-face {
-	font-family: "Solway";
-	src: url("./assets/fonts/Solway.ttf");
-} $solway: 'Solway', serif;
+	@font-face {
+		font-family: "digital7";
+		src: url("./assets/fonts/digital7.ttf");
+	} $digital7: 'digital7';
+	@font-face {
+		font-family: "Coustard";
+		src: url("./assets/fonts/Coustard.ttf");
+	} $coustard: 'Coustard', serif;
+	@font-face {
+		font-family: "Solway";
+		src: url("./assets/fonts/Solway.ttf");
+	} $solway: 'Solway', serif;
