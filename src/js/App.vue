@@ -38,7 +38,7 @@
                             <span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
                         </div>
                     </transition>
-                    <transition name="modal-fade">
+                    <transition name="fade">
                         <div v-if="neverSettle" class="output__never-settle">
                             NEVER SETTLE
                         </div>
@@ -193,7 +193,7 @@
             display () {
                 if (typeof this.res === 'number') {
                     this.expr = String(this.res);
-                    this.animationType = 'fade';
+                    this.animationType = 'result';
                     this.switchResult = !this.switchResult;
                 }
                 if (this.expr === '1+') {

@@ -1,5 +1,5 @@
-
-@keyframes fade-in {
+// Output Animations
+@keyframes slide-up {
     from {
         opacity: 1;
         color: $result;
@@ -8,49 +8,52 @@
     }
     to { opacity: 1; }
 }
-@keyframes fade-out {
-    from { opacity: 1; }
-    to { transform: perspective(300px) rotateX(90deg); opacity: 0; }
-}
-@keyframes clear-in {
+@keyframes flip-in {
     from { transform: perspective(100px) rotateX(-90deg); }
-    to { opacity: 1; }
+    to   { opacity: 1; }
 }
-@keyframes modal-zoom-in {
-    from { opacity: 0; transform: scale3d(0.7, 0.7, 0.7); }
-    to { opacity: 1; }
-}
-@keyframes modal-zoom-out {
+@keyframes flip-out {
     from { opacity: 1; }
-    50% { opacity: 0; transform: scale3d(0.7, 0.7, 0.7); }
-    to { opacity: 0; }
+    to   { transform: perspective(300px) rotateX(90deg); opacity: 0; }
 }
-@keyframes modal-fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.result {
+    &-leave-active { animation: flip-out .5s ease forwards; }
+    &-enter-active { animation: slide-up .5s ease forwards; }
 }
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+.clear {
+    &-leave-active { animation: flip-out .5s ease forwards; }
+    &-enter-active { opacity: 0; animation: flip-in .5s ease forwards .3s; }
 }
 
+
+// Modal Animation
+@keyframes modal-slide {
+    from { opacity: 0; transform: translate3d(0, -20%, 0); }
+    to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+.modal-slide {
+    &-enter-active { animation: modal-slide .5s ease forwards; }
+    &-leave-active { animation: modal-slide .5s ease-in reverse; }
+}
+
+
+// Preloader Spinner Animation
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+} 
 .loader {
     &-leave-active { animation: modal-fade .5s ease reverse; }
     &-enter-active { animation: modal-fade .5s ease forwards; }
 }
+
+
+// Never Settle Animation
+@keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} 
 .fade {
-    &-leave-active { animation: fade-out .5s ease forwards; }
-    &-enter-active { animation: fade-in .5s ease forwards; }
-}
-.clear {
-    &-leave-active { animation: fade-out .5s ease forwards; }
-    &-enter-active { opacity: 0; animation: clear-in .5s ease forwards .3s; }
-}
-.modal-zoom {
-    &-enter-active { animation: modal-zoom-in .6s ease forwards; }
-    &-leave-active { animation: modal-zoom-out .6s ease-in forwards; }
-}
-.modal-fade {
-    &-enter-active { animation: modal-fade .5s ease forwards; }
-    &-leave-active { animation: modal-fade .5s ease reverse; }
+    &-leave-active { animation: fade .5s ease reverse; }
+    &-enter-active { animation: fade .5s ease forwards; }
 }
