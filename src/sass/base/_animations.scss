@@ -27,13 +27,27 @@
 
 
 // Modal Animation
-@keyframes modal-slide {
+@keyframes modal-slide-down {
     from { opacity: 0; transform: translate3d(0, -5%, 0); }
-    to   { opacity: 1; transform: translate3d(0, 0, 0); }
+    to   { opacity: 1; }
 }
-.modal-slide {
-    &-enter-active { animation: modal-slide .5s ease forwards; }
-    &-leave-active { animation: modal-slide .5s ease-in reverse; }
+@keyframes modal-slide-up {
+    from { opacity: 1; }
+    to   { opacity: 0; transform: translate3d(0, -5%, 0); }
+}
+.modal-slide-down {
+    animation-name: modal-slide-down;
+    animation-timing-function: ease;
+}
+.modal-slide-up {
+    animation-name: modal-slide-up;
+    animation-timing-function: ease;
+}
+.animation-base {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 
