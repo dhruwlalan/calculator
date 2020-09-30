@@ -1,6 +1,7 @@
 
 .modal {
     @include box( $h: 40rem , $w: 40rem );
+    will-change: transform;
     position: absolute;
     margin: auto;
     top: 0;
@@ -36,7 +37,7 @@
         @include box( $h: 100% , $w: 100% );
         @include flex( $fd: column, $jc: center );
 
-        &--card {
+        &--row {
             @include flex( $fd: column, $jc: center , $ai: center );
 
             &-heading {

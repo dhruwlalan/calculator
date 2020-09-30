@@ -9,9 +9,9 @@
 			<div class="modal" v-show="modal">
 				<div class="modal__close" @click="$emit('closeModal')">×</div>
 				<div class="modal__content">
-					<div class="modal__content--card">
-						<h1 class="modal__content--card-heading">Design</h1>
-						<div class="modal__content--card-body">
+					<div class="modal__content--row">
+						<h1 class="modal__content--row-heading">Design</h1>
+						<div class="modal__content--row-body">
 							<span :class="{active:design==='neu-plane'?true:false}"
 								  @click="updateDesignTheme" id="neu-plane">Neu-Plane</span>
 							<span :class="{active:design==='neu-3d'?true:false}"
@@ -20,9 +20,9 @@
 								  @click="updateDesignTheme" id="material">Material</span>
 						</div>
 					</div>
-					<div class="modal__content--card">
-						<h1 class="modal__content--card-heading">Theme</h1>
-						<div class="modal__content--card-body">
+					<div class="modal__content--row">
+						<h1 class="modal__content--row-heading">Theme</h1>
+						<div class="modal__content--row-body">
 							<span :class="{active:theme==='light'?true:false}"
 								  @click="updateDesignTheme" id="light">Light</span>
 							<span :class="{active:theme==='dark'?true:false}"
