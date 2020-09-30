@@ -1,15 +1,16 @@
+@use '../abstracts' as *;
 
 .container {
+	@include size( $h: 100vh , $w: 100vw );
+	@include bg( $c: $primary , );
 	@include flex( $jc: center , $ai: center );
-	@include box( $h: 100vh , $w: 100vw );
-	background-color: $primary;
-	-webkit-tap-highlight-color: transparent;
 	overflow: hidden;
 	transition: filter .5s;
+	-webkit-tap-highlight-color: transparent;
 
 	@media (max-width: 450px) {
+		@include size( $h: auto , $w: auto );
 		align-items: flex-start;
-		@include box( $h: auto , $w: auto );
 	}
 }
 

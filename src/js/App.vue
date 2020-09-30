@@ -38,7 +38,7 @@
                             <span :class="`output__expression--${token.s }`" v-for="token in tokens">{{ token.v }}</span>
                         </div>
                     </transition>
-                    <transition name="modal-fade">
+                    <transition name="fade">
                         <div v-if="neverSettle" class="output__never-settle">
                             NEVER SETTLE
                         </div>
@@ -56,26 +56,24 @@
         components: {
             appSettings: Settings ,
         } ,
-        data () {
-            return {
-                nums: [ {s:'zero',v:0},{s:'one',v:1},{s:'two',v:2},{s:'three',v:3},{s:'four',v:4},{s:'five',v:5},
-                        {s:'six',v:6},{s:'seven',v:7},{s:'eight',v:8},{s:'nine',v:9},{s:'dot',v:'.'} ] ,
-                ops: [ {s:'plus',v:'+'},{s:'minus',v:'-'},{s:'multiply',v:'*'},{s:'divide',v:'/'},{s:'modulus',v:'%'} ] ,
-                precedence: { '+':2 , '^':2 , '*':5, '/':5, '%':1 } ,
-                expr: '0' ,
-                res: '' ,
-                totalDigits: 14 ,
-                curExprArr: [] ,
-                operands: [] ,
-                operators: [] ,
-                switchResult: true ,
-                animationType: 'fade' ,
-                design: '' ,
-                theme: '' ,
-                modal: false ,
-                neverSettle: false ,
-            }
-        } ,
+        data () { return {
+            nums: [ {s:'zero',v:0},{s:'one',v:1},{s:'two',v:2},{s:'three',v:3},{s:'four',v:4},{s:'five',v:5},
+                    {s:'six',v:6},{s:'seven',v:7},{s:'eight',v:8},{s:'nine',v:9},{s:'dot',v:'.'} ] ,
+            ops: [ {s:'plus',v:'+'},{s:'minus',v:'-'},{s:'multiply',v:'*'},{s:'divide',v:'/'},{s:'modulus',v:'%'} ] ,
+            precedence: { '+':2 , '^':2 , '*':5, '/':5, '%':1 } ,
+            expr: '0' ,
+            res: '' ,
+            totalDigits: 14 ,
+            curExprArr: [] ,
+            operands: [] ,
+            operators: [] ,
+            switchResult: true ,
+            animationType: 'fade' ,
+            design: '' ,
+            theme: '' ,
+            modal: false ,
+            neverSettle: false ,
+        } } ,
         created () {
             const d = localStorage.getItem('calcDesign');
             const t = localStorage.getItem('calcTheme');
@@ -193,7 +191,7 @@
             display () {
                 if (typeof this.res === 'number') {
                     this.expr = String(this.res);
-                    this.animationType = 'fade';
+                    this.animationType = 'result';
                     this.switchResult = !this.switchResult;
                 }
                 if (this.expr === '1+') {

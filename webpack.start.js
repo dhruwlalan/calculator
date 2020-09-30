@@ -13,13 +13,15 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.vue$/ ,
-				loader: 'vue-loader' ,
+				test: /\.html$/ ,
+				use: ['html-loader'] ,
 			} ,
 			{
-				test: /\.js$/ ,
-				exclude: /node_modules/ ,
-				use: ['babel-loader'] ,
+				test: /\.css$/ ,
+				use: [
+					'style-loader' ,
+					{ loader: 'css-loader' , options: { url: false } } ,
+				] ,
 			} ,
 			{
 				test: /\.scss$/ ,
@@ -30,8 +32,27 @@ module.exports = {
 				] ,
 			} ,
 			{
-				test: /\.html$/ ,
-				use: ['html-loader'] ,
+				test: /\.js$/ ,
+				exclude: /node_modules/ ,
+				use: ['babel-loader'] ,
+			} ,
+			{
+				test: /\.vue$/ ,
+				loader: 'vue-loader' ,
+			} ,
+			{
+				test: /\.ico$/ ,
+				use: {
+					loader: 'file-loader' ,
+					options: { name: 'favicon.ico' , outputPath: 'assets/favicon' } ,
+				} ,
+			} ,
+			{
+				test: /\.svg$/ ,
+				use: {
+					loader: 'file-loader' ,
+					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/svg' } ,
+				} ,
 			} ,
 			{ 
 				test: /\.(jpeg|png|jpg|gif)$/ ,
@@ -41,27 +62,13 @@ module.exports = {
 				} ,
 			} ,
 			{
-				test: /\.svg$/ ,
+				test: /\.(ttf|woff|woff2)$/ ,
 				use: {
 					loader: 'file-loader' ,
-					options: { name: '[name].[ext]' , outputPath: 'assets/svg' , esModule: false } ,
+					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/fonts' } ,
 				} ,
 			} ,
-			{
-				test: /\.ttf$/ ,
-				use: {
-					loader: 'file-loader' ,
-					options: { name: '[name].[ext]' , outputPath: 'assets/fonts' } ,
-				} ,
-			} ,
-			{
-				test: /\.ico$/ ,
-				use: {
-					loader: 'file-loader' ,
-					options: { name: 'favicon.ico' , outputPath: 'assets/favicon' } ,
-				} ,
-			} ,
-		]
+		] ,
 	} ,
 	plugins: [
 		new HtmlWebpackPlugin({ 

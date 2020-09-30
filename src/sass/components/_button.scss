@@ -1,15 +1,14 @@
+@use "../abstracts" as *;
 
 .btn {
-	@include flex( $jc: center , $ai: center );
-	@include typo( $ff: $digital7 , $fw: 500 , $fs: 3.3rem );
-	outline: none;
+	@include bg( $c: $primary , );
+	@include typo( $c: $numbers , $ff: $digital7 , $fs: 3.3rem , $fw: 500 , );
+	@include pbm( $b: 2px solid $primary , $rad: 5rem , );
+	@include flex( $jc: center , $ai: center , );
 	cursor: pointer;
-	background-color: $primary;
-	color: $numbers;
-	border-radius: 5rem;
-	border: 2px solid $primary;
-	&-op { @include box( $h: 1.8rem , $w: 1.8rem ); filter: $operators-filter; }
-	&-ot { @include box( $h: 1.8rem , $w: 1.8rem ); filter: $others-filter; }
+	outline: none;
+	&-op { @include size( $h: 1.8rem , $w: 1.8rem ); filter: $operators-filter; }
+	&-ot { @include size( $h: 1.8rem , $w: 1.8rem ); filter: $others-filter; }
 
 	&--neu-plane {
 		box-shadow: -4px -4px 8px $shadow-white2 , 4px 4px 8px $shadow-dark2;
@@ -46,19 +45,11 @@
 }
 
 
-#plus.btn--material {
-	&:active { border: 1px solid $operators; } }
-#minus.btn--material {
-	&:active { border: 1px solid $operators; } }
-#divide.btn--material {
-	&:active { border: 1px solid $operators; } }
-#multiply.btn--material {
-	&:active { border: 1px solid $operators; } }
-#modulus.btn--material {
-	&:active { border: 1px solid $operators; } }
-#equals.btn--material {
-	&:active { border: 1px solid $operators; } }
-#clear.btn--material {
-	&:active { border: 1px solid $others; } }
-#backspace.btn--material {
-	&:active { border: 1px solid $others; } }
+#plus.btn--material:active 		{ border: 1px solid $operators; }
+#minus.btn--material:active 	{ border: 1px solid $operators; }
+#divide.btn--material:active 	{ border: 1px solid $operators; }
+#multiply.btn--material:active 	{ border: 1px solid $operators; }
+#modulus.btn--material:active 	{ border: 1px solid $operators; }
+#equals.btn--material:active 	{ border: 1px solid $operators; }
+#clear.btn--material:active 	{ border: 1px solid $others; 	}
+#backspace.btn--material:active { border: 1px solid $others; 	}
