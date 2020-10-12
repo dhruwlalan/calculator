@@ -9,10 +9,10 @@ const { VueLoaderPlugin } = require('vue-loader');
 module.exports = {
 	mode: 'production' ,
 	devtool: 'source-map' ,
-	entry: { index: './src/js/index.js' } ,
+	entry: { index: path.resolve(__dirname, '../src/js/index.js') } ,
 	output: {
 		filename: '[name].[contentHash].bundle.js' ,
-		path: path.resolve(__dirname, 'dist') ,
+		path: path.resolve(__dirname, '../dist') ,
 	} ,
 	module: {
 		rules: [
@@ -23,15 +23,15 @@ module.exports = {
 			{
 				test: /\.css$/ ,
 				use: [
-					MiniCssExtractPlugin.loader ,
-					{ loader: 'css-loader', options: { url: false } } ,
+					'style-loader' ,
+					{ loader: 'css-loader' , options: { url: false } } ,
 				] ,
 			} ,
 			{
 				test: /\.scss$/ ,
 				use: [
-					MiniCssExtractPlugin.loader ,
-					{ loader: 'css-loader', options: { url: false } } ,
+					'style-loader' ,
+					{ loader: 'css-loader' , options: { url: false } } ,
 					'sass-loader' ,
 				] ,
 			} ,
@@ -58,7 +58,7 @@ module.exports = {
 					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/svg' } ,
 				} ,
 			} ,
-			{
+			{ 
 				test: /\.(jpeg|png|jpg|gif)$/ ,
 				use: {
 					loader: 'file-loader' ,
@@ -77,7 +77,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			filename: 'index.html' ,
-			template: path.resolve(__dirname, 'src', 'index.html') ,
+			template: path.resolve(__dirname, '../src', 'index.html') ,
 			chunks: ['index'] ,
 		}) ,
 		new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }) ,
