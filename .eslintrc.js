@@ -14,6 +14,7 @@ module.exports = {
       },
    },
    rules: {
+      'vue/no-side-effects-in-computed-properties': 0,
       'no-console': 0,
       'guard-for-in': 0,
       'no-restricted-syntax': 0,

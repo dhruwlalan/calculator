@@ -1,69 +1,74 @@
 <template>
-   <div>
-      <app-settings
-         :design="design"
-         @changeDesign="updateDesign"
-         :theme="theme"
-         @changeTheme="updateTheme"
-         :class="designTheme"
-         :modal="modal"
-         @openModal="modal = true"
-         @closeModal="modal = false"
-      >
-      </app-settings>
-      <div class="container" :class="[designTheme, { blur: modal }]">
-         <div class="grid" :class="`grid--${design}`">
-            <!-- numbers -->
-            <button
-               class="btn"
-               :class="`btn--${design}`"
-               :id="num.s"
-               v-for="num in nums"
-               @click="insertNum"
-            >
-               <span class="btn-num">{{ num.v }}</span>
-            </button>
-            <!-- operators -->
-            <button
-               class="btn"
-               :class="`btn--${design}`"
-               v-for="op in ops"
-               :id="op.s"
-               @click="insertOp"
-            >
-               <img class="btn-op" :src="require(`../assets/svg/${op.s}.svg`)" :alt="op.s" />
-            </button>
-            <!-- clear , backspace & equals -->
-            <button class="btn" :class="`btn--${design}`" id="clear" @click="clear">
-               <img class="btn-ot" src="../assets/svg/clear.svg" />
-            </button>
-            <button class="btn" :class="`btn--${design}`" id="backspace" @click="backspace">
-               <img class="btn-ot" src="../assets/svg/backspace.svg" />
-            </button>
-            <button class="btn" :class="`btn--${design}`" id="equals" @click="display">
-               <img class="btn-op" src="../assets/svg/equals.svg" />
-            </button>
-            <!-- output -->
-            <div id="output" class="output" :class="`output--${design}`">
-               <transition :name="animationType">
-                  <div class="output__expression" v-if="switchResult">
-                     <span :class="`output__expression--${token.s}`" v-for="token in tokens">{{
-                        token.v
-                     }}</span>
-                  </div>
-               </transition>
-               <transition :name="animationType">
-                  <div class="output__expression" v-if="!switchResult">
-                     <span :class="`output__expression--${token.s}`" v-for="token in tokens">{{
-                        token.v
-                     }}</span>
-                  </div>
-               </transition>
-               <transition name="fade">
-                  <div v-if="neverSettle" class="output__never-settle">NEVER SETTLE</div>
-               </transition>
-               <span class="output__result" :class="`output__result`">{{ result }}</span>
-            </div>
+   <app-settings
+      :design="design"
+      @changeDesign="updateDesign"
+      :theme="theme"
+      @changeTheme="updateTheme"
+      :class="designTheme"
+      :modal="modal"
+      @openModal="modal = true"
+      @closeModal="modal = false"
+   />
+   <div class="container" :class="[designTheme, { blur: modal }]">
+      <div class="grid" :class="`grid--${design}`">
+         <!-- numbers -->
+         <button
+            class="btn"
+            :class="`btn--${design}`"
+            :id="num.s"
+            v-for="num in nums"
+            :key="num.s"
+            @click="insertNum"
+         >
+            <span class="btn-num">{{ num.v }}</span>
+         </button>
+         <!-- operators -->
+         <button
+            class="btn"
+            :class="`btn--${design}`"
+            :id="op.s"
+            v-for="op in ops"
+            :key="op.s"
+            @click="insertOp"
+         >
+            <img class="btn-op" :src="require(`./assets/svg/${op.s}.svg`)" :alt="op.s" />
+         </button>
+         <!-- clear , backspace & equals -->
+         <button class="btn" :class="`btn--${design}`" id="clear" @click="clear">
+            <img class="btn-ot" src="./assets/svg/clear.svg" />
+         </button>
+         <button class="btn" :class="`btn--${design}`" id="backspace" @click="backspace">
+            <img class="btn-ot" src="./assets/svg/backspace.svg" />
+         </button>
+         <button class="btn" :class="`btn--${design}`" id="equals" @click="display">
+            <img class="btn-op" src="./assets/svg/equals.svg" />
+         </button>
+         <!-- output -->
+         <div id="output" class="output" :class="`output--${design}`">
+            <transition :name="animationType">
+               <div class="output__expression" v-if="switchResult">
+                  <span
+                     :class="`output__expression--${token.s}`"
+                     v-for="token in tokens"
+                     :key="token"
+                     >{{ token.v }}</span
+                  >
+               </div>
+            </transition>
+            <transition :name="animationType">
+               <div class="output__expression" v-if="!switchResult">
+                  <span
+                     :class="`output__expression--${token.s}`"
+                     v-for="token in tokens"
+                     :key="token"
+                     >{{ token.v }}</span
+                  >
+               </div>
+            </transition>
+            <transition name="fade">
+               <div v-if="neverSettle" class="output__never-settle">NEVER SETTLE</div>
+            </transition>
+            <span class="output__result" :class="`output__result`">{{ result }}</span>
          </div>
       </div>
    </div>
@@ -148,7 +153,7 @@ export default {
          if (this.expr.length > 1) {
             const pop = this.expr[this.expr.length - 1];
             // check if the poped character is an operator
-            if (pop.match(/[\+\^\*\%\/]+/)) {
+            if (pop.match(/[+^*%/]+/)) {
                this.operators.pop();
             }
             this.expr = this.expr.substring(0, this.expr.length - 1);
@@ -212,11 +217,10 @@ export default {
                this.operators.pop();
                this.operators.push(`${op}`);
             }
-         // first digit can be minus as operand:
+            // first digit can be minus as operand:
          } else if (this.expr.length < this.totalDigits - 1) {
-               if (op === '-') {
-                  this.expr = op;
-               }
+            if (op === '-') {
+               this.expr = op;
             }
          }
       },
@@ -250,8 +254,8 @@ export default {
          }
       },
       exprType(expr) {
-         const isOperand = expr.split(/[\+\^\*\%\/]+/).length === 1;
-         const isOperator = expr.split(/[\+\^\*\%\/]+/).length === 2;
+         const isOperand = expr.split(/[+^*%/]+/).length === 1;
+         const isOperator = expr.split(/[+^*%/]+/).length === 2;
          if (isOperand) {
             return 'operand';
          }
@@ -278,10 +282,10 @@ export default {
    computed: {
       result() {
          // split latest expr to extract all the operands:
-         this.operands = this.expr.split(/[\+\^\*\%\/]+/);
+         this.operands = this.expr.split(/[+^*%/]+/);
 
          // split latest expr into array of operands and operators:
-         this.curExprArr = this.expr.split(/([\+\^\*\%\/]+)/g);
+         this.curExprArr = this.expr.split(/([+^*%/]+)/g);
 
          const localOperands = [];
          const localOperators = [];
@@ -347,6 +351,7 @@ export default {
          if (typeof this.res === 'number') {
             return this.res;
          }
+         return '';
       },
       tokens() {
          const tokensArr = [];
