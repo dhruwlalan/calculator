@@ -1,0 +1,264 @@
+
+@mixin size(
+	$h:		null, // height:
+	$minh:	null, // min-height:
+	$maxh:	null, // max-height:
+	$w:		null, // width:
+	$minw:	null, // min-width:
+	$maxw:	null, // max-width:
+) {
+	height: $h;
+	min-height: $minh;
+	max-height: $maxh;
+	width: $w;
+	min-width: $minw;
+	max-width: $maxw;
+	}
+
+@mixin bg(
+	$i: 	null, // background-image: url()
+	$lg: 	null, // background-image: linear-gradient()
+	$rg: 	null, // background-image: linear-gradient()
+	$p: 	null, // background-position
+	$s: 	null, // background-size
+	$r: 	null, // background-repeat
+	$o: 	null, // background-origin
+	$clip:	null, // background-clip
+	$a: 	null, // background-attachment
+	$c: 	null, // background-color
+){
+	@if $i != null { background: url(#{$i}) $p $s $r $o $clip $a $c; }
+	@else if $lg != null { background: linear-gradient(#{$lg}) $p $s $r $o $clip $a $c; }
+	@else if $rg != null { background: radial-gradient(#{$lg}) $p $s $r $o $clip $a $c; }
+	@else { background: $p $s $r $o $clip $a $c; }
+	}
+
+@mixin typo(
+	$c: 		null, // color:
+	$ff: 		null, // font-family:
+	$fs: 		null, // font-size:
+	$fw: 		null, // font-weight:
+	$style: 	null, // font-style:
+	$fv: 		null, // font-variant:
+	$lh: 		null, // line-height:
+	$ls:		null, // letter-spacing:
+	$ta:		null, // text-align:
+	$td:		null, // text-decoration:
+	$ti:		null, // text-indent:
+	$to:		null, // text-overflow:
+	$ts:		null, // text-shadow:
+	$tt:		null, // text-transform:
+	$wb:		null, // word-break:
+	$ws:		null, // word-spacing:
+	$wspace:	null, // white-space:
+) {
+	color: $c;
+	@if $fs != null and $ff != null { font: $style $fv $fw $fs $ff; }
+	@else {
+		font-style: $style;
+		font-variant: $fv;
+		font-weight: $fw;
+		font-size: $fs;
+		font-family: $ff;
+	}
+	line-height: $lh;
+	letter-spacing: $ls;
+	text-align: $ta;
+	text-decoration: $td;
+	text-indent: $ti;
+	text-overflow: $to;
+	text-shadow: $ts;
+	text-transform: $tt;
+	word-break: $wb;
+	word-spacing: $ws;
+	white-space: $wspace;
+	}
+
+@mixin pbm(
+	$p: 	null, // padding:
+	$pt: 	null, // padding-top:
+	$pr: 	null, // padding-right:
+	$pb: 	null, // padding-bottom:
+	$pl: 	null, // padding-left:
+	$b:		null, // border:
+	$bt:	null, // border-top:
+	$br: 	null, // border-right:
+	$bb: 	null, // border-bottom:
+	$bl: 	null, // border-left:
+	$rad:	null, // border-radius:
+	$m:		null, // margin:
+	$mt:	null, // margin-top:
+	$mr:	null, // margin-right:
+	$mb:	null, // margin-bottom:
+	$ml:	null, // margin-left:
+){
+	padding: $p;
+	padding-top: $pt;
+	padding-right: $pr;
+	padding-bottom: $pb;
+	padding-left: $pl;
+	border: $b;
+	border-top: $bt;
+	border-right: $br;
+	border-bottom: $bb;
+	border-left: $bl;
+	border-radius: $rad;
+	margin: $m;
+	margin-top: $mt;
+	margin-right: $mr;
+	margin-bottom: $mb;
+	margin-left: $ml;
+	}
+
+@mixin pos-relative(
+	$t: null, // top:
+	$b: null, // bottom:
+	$l: null, // left:
+	$r: null, // right:
+	$z: null, // z-index:
+) {
+	position: relative;
+	top: $t;
+	bottom: $b;
+	left: $l;
+	right: $r;
+	z-index: $z;
+	}
+
+@mixin pos-absolute(
+	$t: null, // top:
+	$b: null, // bottom:
+	$l: null, // left:
+	$r: null, // right:
+	$z: null, // z-index:
+	$c: null, // absolute-centering:
+) {
+	position: absolute;
+	@if $c == mcenter {
+		margin: auto;
+		$t: 0; $b: 0; $l: 0; $r: 0;
+		}
+	@if $c == tcenter {
+		$t: 50%; $l: 50%;
+		transform: translate(-50% , -50%);
+		}
+	top: $t;
+	bottom: $b;
+	left: $l;
+	right: $r;
+	z-index: $z;
+	}
+
+@mixin pos-fixed(
+    $t: null, // top:
+    $b: null, // bottom:
+    $l: null, // left:
+    $r: null, // right:
+    $z: null, // z-index:
+) {
+    position: fixed;
+    top: $t;
+    bottom: $b;
+    left: $l;
+    right: $r;
+    z-index: $z;
+    }
+
+@mixin pos-sticky(
+	$t: null, // top:
+	$b: null, // bottom:
+	$l: null, // left:
+	$r: null, // right:
+	$z: null, // z-index:
+) {
+	position: sticky;
+	top: $t;
+	bottom: $b;
+	left: $l;
+	right: $r;
+	z-index: $z;
+	}
+
+@mixin flex(
+	$fd: null, // flex-direction:
+	$jc: null, // justify-content:
+	$ai: null, // align-items:
+	$ac: null, // align-content:
+	$fw: null, // flex-wrap:
+) {
+	display: flex;
+	flex-direction: $fd;
+	justify-content: $jc;
+	align-items: $ai;
+	align-content: $ac;
+	flex-wrap: $fw;
+	}
+
+@mixin flex-item(
+	$grow: 		null, // flex-grow:
+	$shrink: 	null, // flex-shrink:
+	$basis: 	null, // flex-basis:
+	$order: 	null, // order:
+	$aself: 	null, // align-self:
+) {
+	@if $grow != null and $shrink != null and $basis != null { flex: $grow $shrink $basis; }
+	@else { flex-grow: $grow; flex-shrink: $shrink; flex-basis: $basis; }
+	order: $order;
+	align-self: $aself;
+	}
+
+@mixin grid(
+	$rows: 		null, // grid-template-rows:
+	$cols: 		null, // grid-template-columns:
+	$areas: 	null, // grid-template-areas:
+	$arows: 	null, // grid-auto-rows:
+	$acols: 	null, // grid-auto-columns:
+	$aflow: 	null, // grid-auto-flow:
+	$gap: 		null, // gap:
+	$rgap: 		null, // row-gap:
+	$cgap: 		null, // column-gap:
+	$ji: 		null, // justify-items:
+	$ai: 		null, // align-items:
+	$jc: 		null, // justify-content:
+	$ac: 		null, // align-content:
+) {
+	display: grid;
+	grid-template-rows: $rows;
+	grid-template-columns: $cols;
+	grid-template-areas: $areas;
+	grid-auto-rows: $arows;
+	grid-auto-columns: $acols;
+	grid-auto-flow: $aflow;
+	gap: $gap;
+	@if $rgap != null and $cgap != null { gap: $rgap $cgap; }
+	@else { row-gap: $rgap; column-gap: $cgap; }
+	justify-items: $ji;
+	align-items: $ai;
+	justify-content: $jc;
+	align-content: $ac;
+	}
+
+@mixin grid-item(
+	$row: 		null, // grid-row:
+	$col: 		null, // grid-column:
+	$area: 		null, // grid-area:
+	$order: 	null, // order:
+	$js: 		null, // justify-self:
+	$as: 		null, // align-self:
+) {
+	grid-row: $row;
+	grid-column: $col;
+	justify-self: $js;
+	align-self: $as;
+	order: $order;
+	grid-area: $area;
+	}
+
+@mixin disable-selection {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by Chrome and Opera */
+}
