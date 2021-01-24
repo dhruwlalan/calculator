@@ -1,14 +1,15 @@
 <template>
-   <app-settings
-      :class="designTheme"
-      :design="design"
-      @changeDesign="updateDesign"
-      :theme="theme"
-      @changeTheme="updateTheme"
-      :modal="modal"
-      @openModal="modal = true"
-      @closeModal="modal = false"
-   />
+   <teleport to="body">
+      <app-settings
+         :design="design"
+         @changeDesign="updateDesign"
+         :theme="theme"
+         @changeTheme="updateTheme"
+         :modal="modal"
+         @openModal="modal = true"
+         @closeModal="modal = false"
+      />
+   </teleport>
    <div class="container" :class="[designTheme, { blur: modal }]">
       <div class="grid" :class="`grid--${design}`">
          <!-- numbers -->
