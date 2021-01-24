@@ -1,10 +1,10 @@
 <template>
    <app-settings
+      :class="designTheme"
       :design="design"
       @changeDesign="updateDesign"
       :theme="theme"
       @changeTheme="updateTheme"
-      :class="designTheme"
       :modal="modal"
       @openModal="modal = true"
       @closeModal="modal = false"
@@ -16,8 +16,8 @@
             class="btn"
             :class="`btn--${design}`"
             :id="num.s"
-            v-for="num in nums"
             :key="num.s"
+            v-for="num in nums"
             @click="insertNum"
          >
             <span class="btn-num">{{ num.v }}</span>
@@ -27,8 +27,8 @@
             class="btn"
             :class="`btn--${design}`"
             :id="op.s"
-            v-for="op in ops"
             :key="op.s"
+            v-for="op in ops"
             @click="insertOp"
          >
             <component :is="op.c" class="btn-op" />
@@ -43,7 +43,8 @@
          <button class="btn" :class="`btn--${design}`" id="equals" @click="display">
             <equals-svg class="btn-op" />
          </button>
-         <!-- output -->
+
+         <!-- OUTPUT -->
          <div id="output" class="output" :class="`output--${design}`">
             <transition :name="animationType">
                <div class="output__expression" v-if="switchResult">
@@ -75,7 +76,7 @@
 </template>
 
 <script>
-import Settings from './components/Settings.vue';
+import AppSettings from './components/AppSettings.vue';
 import BackspaceSvg from './components/svg/BackspaceSvg.vue';
 import ClearSvg from './components/svg/ClearSvg.vue';
 import DivideSvg from './components/svg/DivideSvg.vue';
@@ -87,7 +88,7 @@ import PlusSvg from './components/svg/PlusSvg.vue';
 
 export default {
    components: {
-      appSettings: Settings,
+      AppSettings,
       BackspaceSvg,
       ClearSvg,
       DivideSvg,
@@ -134,35 +135,17 @@ export default {
          neverSettle: false,
       };
    },
-   created() {
-      const d = localStorage.getItem('calcDesign');
-      const t = localStorage.getItem('calcTheme');
-      if (d && t) {
-         this.design = d;
-         this.theme = t;
-         if (t === 'dark') {
-            document.body.style.backgroundColor = '#243441';
-         } else {
-            document.body.style.backgroundColor = '#eeeeee';
-         }
-      } else {
-         localStorage.setItem('calcDesign', 'neu-plane');
-         localStorage.setItem('calcTheme', 'light');
-         this.design = 'neu-plane';
-         this.theme = 'light';
-      }
-   },
    methods: {
       clear() {
          // clear only if something to be cleared:
          if (this.expr !== '0') {
+            this.animationType = 'clear';
             this.expr = '0';
             this.res = '0';
             this.curExprArr = [];
             this.operands = [];
             this.operators = [];
             this.switchResult = !this.switchResult;
-            this.animationType = 'clear';
          }
       },
       backspace() {
@@ -190,8 +173,8 @@ export default {
                   this.expr = key;
                }
             } else if (key === '.') {
-               // only append single dot in an operand:
-               if (!this.latestOperand.includes('.') && this.isValidLatestOperand) {
+               // only append single dot in an operand (a valid operand):
+               if (this.isValidLatestOperand && !this.latestOperand.includes('.')) {
                   if (this.expr.length !== this.totalDigits - 1) {
                      this.expr += key;
                   }
@@ -233,8 +216,8 @@ export default {
                this.operators.pop();
                this.operators.push(`${op}`);
             }
-            // first digit can be minus as operand:
          } else if (this.expr.length < this.totalDigits - 1) {
+            // first digit can be minus as operand:
             if (op === '-') {
                this.expr = op;
             }
@@ -278,6 +261,7 @@ export default {
          if (isOperator) {
             return 'operator';
          }
+         return null;
       },
       sanatizeAns(ans) {
          const isDec = Number(ans.toFixed(0)) === Number(ans.toFixed(2));
@@ -286,13 +270,13 @@ export default {
          }
          return Number(ans.toFixed(2));
       },
-      updateDesign(e) {
-         this.design = e;
-         localStorage.setItem('calcDesign', e);
+      updateDesign(newDesign) {
+         this.design = newDesign;
+         localStorage.setItem('calcDesign', newDesign);
       },
-      updateTheme(e) {
-         this.theme = e;
-         localStorage.setItem('calcTheme', e);
+      updateTheme(newTheme) {
+         this.theme = newTheme;
+         localStorage.setItem('calcTheme', newTheme);
       },
    },
    computed: {
@@ -398,6 +382,24 @@ export default {
       designTheme() {
          return `${this.design}--${this.theme}`;
       },
+   },
+   created() {
+      const savedDesign = localStorage.getItem('calcDesign');
+      const savedTheme = localStorage.getItem('calcTheme');
+      if (savedDesign && savedTheme) {
+         this.design = savedDesign;
+         this.theme = savedTheme;
+         if (savedTheme === 'dark') {
+            document.body.style.backgroundColor = '#243441';
+         } else {
+            document.body.style.backgroundColor = '#eeeeee';
+         }
+      } else {
+         localStorage.setItem('calcDesign', 'neu-plane');
+         localStorage.setItem('calcTheme', 'light');
+         this.design = 'neu-plane';
+         this.theme = 'light';
+      }
    },
 };
 </script>
