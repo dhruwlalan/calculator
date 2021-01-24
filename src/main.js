@@ -2,8 +2,8 @@
 import './assets/assets';
 
 ///MAIN///
-import { createApp } from 'vue';
 import './components/vanilla/preloader';
+import { createApp } from 'vue';
 
 import App from './App.vue';
 
