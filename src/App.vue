@@ -400,6 +400,7 @@ export default {
          localStorage.setItem('calcTheme', 'light');
          this.design = 'neu-plane';
          this.theme = 'light';
+         document.body.style.backgroundColor = '#eeeeee';
       }
    },
 };

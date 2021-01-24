@@ -79,14 +79,6 @@
       transform: rotate(360deg);
    }
 }
-.loader {
-   &-leave-active {
-      animation: modal-fade 0.5s ease reverse;
-   }
-   &-enter-active {
-      animation: modal-fade 0.5s ease forwards;
-   }
-}
 
 // Never Settle Animation
 @keyframes fade {
