@@ -2,74 +2,81 @@
 
 // Output Animations
 @keyframes slide-up {
-    from {
-        opacity: 1;
-        color: $result;
-        font-size: 3rem;
-        transform: translateY(6.1rem);
-    }
-    to { opacity: 1; }
+   from {
+      opacity: 1;
+      color: $result;
+      font-size: 3rem;
+      transform: translateY(6.1rem);
+   }
+   to {
+      opacity: 1;
+   }
 }
 @keyframes flip-in {
-    from { transform: perspective(100px) rotateX(-90deg); }
-    to   { opacity: 1; }
+   from {
+      transform: perspective(100px) rotateX(-90deg);
+   }
+   to {
+      opacity: 1;
+   }
 }
 @keyframes flip-out {
-    from { opacity: 1; }
-    to   { transform: perspective(300px) rotateX(90deg); opacity: 0; }
+   from {
+      opacity: 1;
+   }
+   to {
+      transform: perspective(300px) rotateX(90deg);
+      opacity: 0;
+   }
 }
 .result {
-    &-leave-active { animation: flip-out .5s ease forwards; }
-    &-enter-active { animation: slide-up .5s ease forwards; }
+   &-leave-active {
+      animation: flip-out 0.5s ease forwards;
+   }
+   &-enter-active {
+      animation: slide-up 0.5s ease forwards;
+   }
 }
 .clear {
-    &-leave-active { animation: flip-out .5s ease forwards; }
-    &-enter-active { opacity: 0; animation: flip-in .5s ease forwards .3s; }
+   &-leave-active {
+      animation: flip-out 0.5s ease forwards;
+   }
+   &-enter-active {
+      opacity: 0;
+      animation: flip-in 0.5s ease forwards 0.3s;
+   }
 }
-
-
-// Modal Animation
-@keyframes modal-slide-down {
-    from { opacity: 0; transform: translate3d(0, -5%, 0); }
-    to   { opacity: 1; }
-}
-@keyframes modal-slide-up {
-    from { opacity: 1; }
-    to   { opacity: 0; transform: translate3d(0, -5%, 0); }
-}
-.modal-slide-down {
-    animation-name: modal-slide-down;
-    animation-timing-function: ease;
-}
-.modal-slide-up {
-    animation-name: modal-slide-up;
-    animation-timing-function: ease;
-}
-.animation-base {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 
 // Preloader Spinner Animation
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-} 
-.loader {
-    &-leave-active { animation: modal-fade .5s ease reverse; }
-    &-enter-active { animation: modal-fade .5s ease forwards; }
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
 }
 
-
-// Never Settle Animation
+// Simple Fade
 @keyframes fade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-} 
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
 .fade {
-    &-leave-active { animation: fade .5s ease reverse; }
-    &-enter-active { animation: fade .5s ease forwards; }
+   &-leave-active {
+      animation: fade 0.5s ease reverse;
+   }
+   &-enter-active {
+      animation: fade 0.5s ease forwards;
+   }
+}
+.fade-in {
+   animation: fade 0.5s ease forwards;
+}
+.fade-out {
+   animation: fade 0.5s ease reverse;
 }

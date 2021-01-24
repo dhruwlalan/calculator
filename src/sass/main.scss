@@ -1,18 +1,18 @@
-// BASE
+///BASE///
 @use "base/base";
 @use "base/reset";
 @use "base/animations";
-// COMPONENTS
+///COMPONENTS///
 @use "components/button";
 @use "components/settings";
 @use "components/modal";
 @use "components/preloader";
-// LAYOUT
+///LAYOUT///
 @use "layout/container";
 @use "layout/grid";
 @use "layout/grid-items";
 @use "layout/output";
-// THEMES
+///THEMES///
 @use "themes/neuplane";
 @use "themes/neu3d";
 @use "themes/material";

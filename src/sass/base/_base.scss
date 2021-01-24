@@ -1,6 +1,14 @@
 @use '../abstracts' as *;
 
+:root {
+   //#fonts:#//
+   --digital7: "digital7";
+   --coustard: "Coustard", serif;
+   --solway: "Solway", serif;
+}
+
 body {
-	-webkit-tap-highlight-color: transparent;
-    overflow: hidden;
+   -webkit-tap-highlight-color: transparent;
+   tap-highlight-color: transparent;
+   overflow: hidden;
 }
