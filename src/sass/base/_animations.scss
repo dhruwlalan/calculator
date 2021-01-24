@@ -47,29 +47,6 @@
    }
 }
 
-// Modal Animation
-@keyframes modal-slide-down {
-   from {
-      opacity: 0;
-   }
-}
-@keyframes modal-slide-up {
-   to {
-      opacity: 0;
-   }
-}
-.modal-slide-down {
-   animation-name: modal-slide-down;
-   animation-timing-function: ease;
-}
-.modal-slide-up {
-   animation-name: modal-slide-up;
-   animation-timing-function: ease;
-}
-.animation-base {
-   animation-duration: 0.5s;
-}
-
 // Preloader Spinner Animation
 @keyframes spin {
    from {
@@ -80,7 +57,7 @@
    }
 }
 
-// Never Settle Animation
+// Simple Fade
 @keyframes fade {
    from {
       opacity: 0;
@@ -96,4 +73,10 @@
    &-enter-active {
       animation: fade 0.5s ease forwards;
    }
+}
+.fade-in {
+   animation: fade 0.5s ease forwards;
+}
+.fade-out {
+   animation: fade 0.5s ease reverse;
 }

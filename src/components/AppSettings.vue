@@ -2,10 +2,7 @@
    <div :class="['settings', designTheme]" @click="$emit('openModal')">
       <settings-svg class="settings-btn" />
    </div>
-   <transition
-      enter-active-class="animation-base modal-slide-down"
-      leave-active-class="animation-base modal-slide-up"
-   >
+   <transition name="fade">
       <div :class="['modal', designTheme]" v-show="modal">
          <div class="modal__close" @click="$emit('closeModal')">×</div>
          <div class="modal__content">

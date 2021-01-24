@@ -10,7 +10,7 @@
          @closeModal="modal = false"
       />
    </teleport>
-   <div class="container" :class="[designTheme, { blur: modal }]">
+   <div class="container" :class="[designTheme, { blur: false }]">
       <div class="grid" :class="`grid--${design}`">
          <!-- numbers -->
          <button

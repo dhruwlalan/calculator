@@ -8,9 +8,8 @@ if (!savedTheme) {
 preloader.classList.add(`loader--${savedTheme}`);
 
 window.addEventListener('load', () => {
-   preloader.classList.remove('fade-enter-active');
    setTimeout(() => {
-      preloader.classList.add('fade-leave-active');
+      preloader.classList.add('fade-out');
       setTimeout(() => {
          preloader.remove();
       }, 400);
