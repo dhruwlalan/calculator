@@ -2,15 +2,12 @@
    <teleport to="body">
       <app-settings
          :design="design"
-         @changeDesign="updateDesign"
          :theme="theme"
+         @changeDesign="updateDesign"
          @changeTheme="updateTheme"
-         :modal="modal"
-         @openModal="modal = true"
-         @closeModal="modal = false"
       />
    </teleport>
-   <div class="container" :class="[designTheme, { blur: false }]">
+   <div class="container" :class="designTheme">
       <div class="grid" :class="`grid--${design}`">
          <!-- numbers -->
          <button
@@ -132,7 +129,6 @@ export default {
          animationType: 'fade',
          design: '',
          theme: '',
-         modal: false,
          neverSettle: false,
       };
    },

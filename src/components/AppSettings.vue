@@ -1,10 +1,10 @@
 <template>
-   <div :class="['settings', designTheme]" @click="$emit('openModal')">
+   <div :class="['settings', designTheme]" @click="modal = true">
       <settings-svg class="settings-btn" />
    </div>
    <transition name="fade">
       <div :class="['modal', designTheme]" v-show="modal">
-         <div class="modal__close" @click="$emit('closeModal')">×</div>
+         <div class="modal__close" @click="modal = false">×</div>
          <div class="modal__content">
             <div class="modal__content--row">
                <h1 class="modal__content--row-heading">Design</h1>
@@ -58,8 +58,13 @@ export default {
    components: {
       SettingsSvg,
    },
-   props: ['design', 'theme', 'modal'],
-   emits: ['changeDesign', 'changeTheme', 'closeModal', 'openModal'],
+   props: ['design', 'theme'],
+   emits: ['changeDesign', 'changeTheme'],
+   data() {
+      return {
+         modal: false,
+      };
+   },
    methods: {
       updateDesignTheme(e) {
          if (
@@ -77,7 +82,7 @@ export default {
             }
             this.$emit('changeTheme', e.target.id);
          }
-         this.$emit('closeModal');
+         this.modal = false;
       },
    },
    computed: {
