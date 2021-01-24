@@ -31,17 +31,17 @@
             :key="op.s"
             @click="insertOp"
          >
-            <img class="btn-op" :src="require(`./assets/svg/${op.s}.svg`)" :alt="op.s" />
+            <component :is="op.c" class="btn-op" />
          </button>
          <!-- clear , backspace & equals -->
          <button class="btn" :class="`btn--${design}`" id="clear" @click="clear">
-            <img class="btn-ot" src="./assets/svg/clear.svg" />
+            <clear-svg class="btn-ot" />
          </button>
          <button class="btn" :class="`btn--${design}`" id="backspace" @click="backspace">
-            <img class="btn-ot" src="./assets/svg/backspace.svg" />
+            <backspace-svg class="btn-ot" />
          </button>
          <button class="btn" :class="`btn--${design}`" id="equals" @click="display">
-            <img class="btn-op" src="./assets/svg/equals.svg" />
+            <equals-svg class="btn-op" />
          </button>
          <!-- output -->
          <div id="output" class="output" :class="`output--${design}`">
@@ -76,10 +76,26 @@
 
 <script>
 import Settings from './components/Settings.vue';
+import BackspaceSvg from './components/svg/BackspaceSvg.vue';
+import ClearSvg from './components/svg/ClearSvg.vue';
+import DivideSvg from './components/svg/DivideSvg.vue';
+import EqualsSvg from './components/svg/EqualsSvg.vue';
+import MinusSvg from './components/svg/MinusSvg.vue';
+import ModulusSvg from './components/svg/ModulusSvg.vue';
+import MultiplySvg from './components/svg/MultiplySvg.vue';
+import PlusSvg from './components/svg/PlusSvg.vue';
 
 export default {
    components: {
       appSettings: Settings,
+      BackspaceSvg,
+      ClearSvg,
+      DivideSvg,
+      EqualsSvg,
+      MinusSvg,
+      ModulusSvg,
+      MultiplySvg,
+      PlusSvg,
    },
    data() {
       return {
@@ -97,11 +113,11 @@ export default {
             { s: 'dot', v: '.' },
          ],
          ops: [
-            { s: 'plus', v: '+' },
-            { s: 'minus', v: '-' },
-            { s: 'multiply', v: '*' },
-            { s: 'divide', v: '/' },
-            { s: 'modulus', v: '%' },
+            { c: 'PlusSvg', s: 'plus', v: '+' },
+            { c: 'MinusSvg', s: 'minus', v: '-' },
+            { c: 'MultiplySvg', s: 'multiply', v: '*' },
+            { c: 'DivideSvg', s: 'divide', v: '/' },
+            { c: 'ModulusSvg', s: 'modulus', v: '%' },
          ],
          precedence: { '+': 2, '^': 2, '*': 5, '/': 5, '%': 1 },
          expr: '0',
