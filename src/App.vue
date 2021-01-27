@@ -7,12 +7,11 @@
          @changeTheme="updateTheme"
       />
    </teleport>
-   <div class="container" :class="[designTheme, `container--${designTheme}`]">
-      <div class="grid" :class="`grid--${designTheme}`">
+   <div :class="['container', `container--${designTheme}`]">
+      <div :class="['grid', `grid--${designTheme}`]">
          <!-- numbers -->
          <button
-            class="btn"
-            :class="`btn--${design}`"
+            :class="['btn', `btn--${design}`]"
             :id="num.s"
             :key="num.s"
             v-for="num in nums"
@@ -22,8 +21,7 @@
          </button>
          <!-- operators -->
          <button
-            class="btn"
-            :class="`btn--${design}`"
+            :class="['btn', `btn--${design}`]"
             :id="op.s"
             :key="op.s"
             v-for="op in ops"
@@ -32,18 +30,18 @@
             <component :is="op.c" class="btn-op" />
          </button>
          <!-- clear , backspace & equals -->
-         <button class="btn" :class="`btn--${design}`" id="clear" @click="clear">
+         <button :class="['btn', `btn--${design}`]" id="clear" @click="clear">
             <clear-svg class="btn-ot" />
          </button>
-         <button class="btn" :class="`btn--${design}`" id="backspace" @click="backspace">
+         <button :class="['btn', `btn--${design}`]" id="backspace" @click="backspace">
             <backspace-svg class="btn-ot" />
          </button>
-         <button class="btn" :class="`btn--${design}`" id="equals" @click="display">
+         <button :class="['btn', `btn--${design}`]" id="equals" @click="display">
             <equals-svg class="btn-op" />
          </button>
 
          <!-- OUTPUT -->
-         <div id="output" class="output" :class="`output--${design}`">
+         <div :class="['output', `output--${design}`]" id="output">
             <transition :name="animationType">
                <div class="output__expression" v-if="switchResult">
                   <span
@@ -67,7 +65,7 @@
             <transition name="fade">
                <div v-if="neverSettle" class="output__never-settle">NEVER SETTLE</div>
             </transition>
-            <span class="output__result" :class="`output__result`">{{ result }}</span>
+            <span class="output__result">{{ result }}</span>
          </div>
       </div>
    </div>
@@ -386,17 +384,13 @@ export default {
       if (savedDesign && savedTheme) {
          this.design = savedDesign;
          this.theme = savedTheme;
-         if (savedTheme === 'dark') {
-            document.body.style.backgroundColor = '#243441';
-         } else {
-            document.body.style.backgroundColor = '#eeeeee';
-         }
+         document.body.classList.add(`${this.designTheme}`);
       } else {
          localStorage.setItem('calcDesign', 'neu-plane');
          localStorage.setItem('calcTheme', 'light');
          this.design = 'neu-plane';
          this.theme = 'light';
-         document.body.style.backgroundColor = '#eeeeee';
+         document.body.classList.add(`${this.designTheme}`);
       }
    },
 };

@@ -14,7 +14,7 @@
       fill: $others;
    }
 
-   &--neu-plane {
+   &--neu {
       box-shadow: -4px -4px 8px $shadow-white2, 4px 4px 8px $shadow-dark2;
 
       &:active {
@@ -29,7 +29,7 @@
          }
       }
    }
-   &--neu-3d {
+   &--glass {
       background-color: transparent;
       border: none;
 

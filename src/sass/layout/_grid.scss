@@ -24,13 +24,13 @@
       @include size($h: calc(96vw * 1.58), $w: 92%);
    }
 
-   &--neu-plane {
+   &--neu {
       &--light,
       &--dark {
          box-shadow: -1rem -1rem 2rem $shadow-white1, 1rem 1rem 2rem $shadow-dark1;
       }
    }
-   &--neu-3d {
+   &--glass {
       &--light {
          background: rgba(255, 255, 255, 0.2);
          border: solid 1px rgba(255, 255, 255, 0.3);

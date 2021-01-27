@@ -7,11 +7,11 @@
    @include pos-relative;
    overflow: hidden;
 
-   &--neu-plane {
+   &--neu {
       box-shadow: -4px -4px 8px $shadow-white1, 4px 4px 8px $shadow-dark2, inset -3px -3px 6px $shadow-white1,
          inset 3px 3px 6px $shadow-dark2;
    }
-   &--neu-3d {
+   &--glass {
       background-color: transparent;
       border: none;
    }
