@@ -14,6 +14,10 @@
       fill: $others;
    }
 
+   @media (max-width: 450px) {
+      font-size: 2.8rem;
+   }
+
    &--neu {
       box-shadow: -4px -4px 8px $shadow-white2, 4px 4px 8px $shadow-dark2;
 

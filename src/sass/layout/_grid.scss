@@ -3,7 +3,7 @@
 .grid {
    @include size($h: 66rem, $w: 42rem);
    @include bg($c: $primary);
-   @include pbm($b: 3px solid $primary, $rad: 2rem, $mb: 3rem);
+   @include pbm($b: 3px solid $primary, $rad: 2rem);
    @include grid(
       $cols: repeat(4, 8rem),
       $rows: 12rem repeat(5, 8rem),
@@ -14,6 +14,7 @@
          "one 	two 	three 	plus" "zero 	zero 	dot 	equals"
    );
    @include disable-selection;
+   @include pos-relative;
 
    @media (max-width: 450px) {
       @include size($h: calc(92vw * 1.58), $w: 92%);

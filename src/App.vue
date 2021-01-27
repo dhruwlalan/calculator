@@ -8,6 +8,8 @@
       />
    </teleport>
    <div class="container">
+      <span class="circle1" v-if="design === 'glass'" />
+      <span class="circle2" v-if="design === 'glass'" />
       <div :class="['grid', `grid--${designTheme}`]">
          <!-- numbers -->
          <button
@@ -386,9 +388,9 @@ export default {
          this.theme = savedTheme;
          document.body.classList.add(`${this.designTheme}`);
       } else {
-         localStorage.setItem('calcDesign', 'neu-plane');
+         localStorage.setItem('calcDesign', 'neu');
          localStorage.setItem('calcTheme', 'light');
-         this.design = 'neu-plane';
+         this.design = 'neu';
          this.theme = 'light';
          document.body.classList.add(`${this.designTheme}`);
       }
