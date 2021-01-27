@@ -25,17 +25,31 @@
    }
 
    &--neu-plane {
-      box-shadow: -1rem -1rem 2rem $shadow-white1, 1rem 1rem 2rem $shadow-dark1;
+      &--light,
+      &--dark {
+         box-shadow: -1rem -1rem 2rem $shadow-white1, 1rem 1rem 2rem $shadow-dark1;
+      }
    }
    &--neu-3d {
-      box-shadow: -1rem -1rem 2rem $shadow-white1, 1rem 1rem 2rem $shadow-dark1, inset 1rem 1rem 2rem $shadow-white1,
-         inset -1rem -1rem 2rem $shadow-dark1;
+      &--light {
+         background: rgba(255, 255, 255, 0.2);
+         border: solid 1px rgba(255, 255, 255, 0.3);
+         backdrop-filter: blur(10px);
+      }
+      &--dark {
+         background: rgba(0, 0, 0, 0.2);
+         border: solid 1px rgba(255, 255, 255, 0.3);
+         backdrop-filter: blur(10px);
+      }
    }
    &--material {
-      border: 1px solid $numbers;
-      box-shadow: none;
-      @media (max-width: 450px) {
-         border: none;
+      &--light,
+      &--dark {
+         border: 1px solid $numbers;
+         box-shadow: none;
+         @media (max-width: 450px) {
+            border: none;
+         }
       }
    }
 }

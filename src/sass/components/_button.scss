@@ -30,20 +30,11 @@
       }
    }
    &--neu-3d {
-      background: linear-gradient(145deg, $gd-in, $gd-out);
-      box-shadow: -4px -4px 8px $shadow-white2, 4px 4px 8px $shadow-dark2;
+      background-color: transparent;
+      border: none;
 
       &:active {
-         background: linear-gradient(145deg, $gd-out, $gd-in);
-         font-size: 3.4rem;
-         box-shadow: -4px -4px 8px $shadow-white2, 4px 4px 8px $shadow-dark2, inset -3px -3px 6px $shadow-white2,
-            inset 3px 3px 6px $shadow-dark2;
-         .btn-ot {
-            transform: scale(0.9);
-         }
-         .btn-op {
-            transform: scale(0.9);
-         }
+         border: solid 1px rgba(255, 255, 255, 0.3);
       }
    }
    &--material {

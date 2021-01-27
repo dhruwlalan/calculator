@@ -4,15 +4,15 @@
    &--light {
       /* colors */
       --primary: #eeeeee;
-      --numbers: #318a9d;
-      --result: #84b6c1;
-      --operators: #9f3430;
-      --others: #329e58;
+      --numbers: #ffffff;
+      --result: rgb(255 255 255 / 60%);
+      --operators: #81feff;
+      --others: #79ffb7;
       /* gradient */
       --gd-in: #ffffff;
       --gd-out: #d6d6d6;
       /* modal */
-      --modal-g-start: #45639d;
+      --modal-g-start: #0055ff;
       --modal-g-end: #289799;
       --modal-text: white;
       --modal-shadow: rgb(10 10 93 / 63%);
