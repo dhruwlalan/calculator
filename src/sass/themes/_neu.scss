@@ -18,6 +18,8 @@
       --shadow-white2: rgb(255 255 255);
       --shadow-dark1: rgb(70 81 81 / 10%);
       --shadow-dark2: rgb(67 75 75 / 20%);
+
+      @include bg($c: $primary);
    }
    &--dark {
       /* colors */
@@ -36,5 +38,7 @@
       --shadow-white2: rgb(44 64 80 / 80%);
       --shadow-dark1: rgb(0 0 0 / 16%);
       --shadow-dark2: rgb(0 0 0 / 26%);
+
+      @include bg($c: $primary);
    }
 }

@@ -7,7 +7,7 @@
          @changeTheme="updateTheme"
       />
    </teleport>
-   <div :class="['container', `container--${designTheme}`]">
+   <div class="container">
       <div :class="['grid', `grid--${designTheme}`]">
          <!-- numbers -->
          <button
