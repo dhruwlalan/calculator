@@ -3,7 +3,7 @@
 .grid {
    @include size($h: 66rem, $w: 42rem);
    @include bg($c: $primary);
-   @include pbm($b: 3px solid $primary, $rad: 2rem);
+   @include pbm($b: 3px solid $primary, $rad: 2rem, $mb: 4rem);
    @include grid(
       $cols: repeat(4, 8rem),
       $rows: 12rem repeat(5, 8rem),

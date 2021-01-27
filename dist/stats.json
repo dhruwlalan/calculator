@@ -2,14 +2,14 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "fbeee0d5127bbe9fe73f",
-  "time": 11506,
-  "builtAt": 1611769531216,
+  "hash": "1605f17da84c74db9d30",
+  "time": 10687,
+  "builtAt": 1611770186549,
   "publicPath": "",
   "outputPath": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\dist",
   "assetsByChunkName": {
     "main": [
-      "style.a1882e506a03706b27c6.css",
+      "style.d91e72435fa0fe1dbf86.css",
       "main.aa98758eb6e462c4532d.bundle.js"
     ],
     "vendor": "vendor.441b71bd2ac15de1d0cd.bundle.js"
@@ -58,8 +58,8 @@
       "emitted": true
     },
     {
-      "name": "style.a1882e506a03706b27c6.css",
-      "size": 20418,
+      "name": "style.d91e72435fa0fe1dbf86.css",
+      "size": 20437,
       "chunks": [
         0
       ],
@@ -95,7 +95,7 @@
       ],
       "assets": [
         "vendor.441b71bd2ac15de1d0cd.bundle.js",
-        "style.a1882e506a03706b27c6.css",
+        "style.d91e72435fa0fe1dbf86.css",
         "main.aa98758eb6e462c4532d.bundle.js"
       ],
       "children": {},
@@ -110,7 +110,7 @@
       ],
       "assets": [
         "vendor.441b71bd2ac15de1d0cd.bundle.js",
-        "style.a1882e506a03706b27c6.css",
+        "style.d91e72435fa0fe1dbf86.css",
         "main.aa98758eb6e462c4532d.bundle.js"
       ],
       "children": {},
@@ -123,15 +123,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 56916,
+      "size": 56935,
       "names": [
         "main"
       ],
       "files": [
-        "style.a1882e506a03706b27c6.css",
+        "style.d91e72435fa0fe1dbf86.css",
         "main.aa98758eb6e462c4532d.bundle.js"
       ],
-      "hash": "c041369ab692cb179a1f",
+      "hash": "71462f3a977f1ddeb323",
       "siblings": [
         1
       ],
@@ -3355,7 +3355,7 @@
           "name": "css ./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/postcss-loader/dist/cjs.js??ref--2-2!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss",
           "index": 3,
           "index2": 0,
-          "size": 21742,
+          "size": 21761,
           "built": false,
           "optional": false,
           "prefetched": false,
@@ -11841,9 +11841,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-          "issuerId": 103,
-          "issuerName": "./node_modules/core-js/modules/es.string.match.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+          "issuerId": 105,
+          "issuerName": "./node_modules/core-js/modules/es.string.split.js",
           "issuerPath": [
             {
               "id": null,
@@ -11866,9 +11866,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 103,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-              "name": "./node_modules/core-js/modules/es.string.match.js"
+              "id": 105,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+              "name": "./node_modules/core-js/modules/es.string.split.js"
             }
           ],
           "failed": false,
@@ -12007,9 +12007,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "issuerId": 87,
-          "issuerName": "./node_modules/core-js/modules/es.array.index-of.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+          "issuerId": 82,
+          "issuerName": "./node_modules/core-js/modules/es.array.find.js",
           "issuerPath": [
             {
               "id": null,
@@ -12032,9 +12032,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 87,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-              "name": "./node_modules/core-js/modules/es.array.index-of.js"
+              "id": 82,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+              "name": "./node_modules/core-js/modules/es.array.find.js"
             }
           ],
           "failed": false,
@@ -13380,9 +13380,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "issuerId": 87,
-          "issuerName": "./node_modules/core-js/modules/es.array.index-of.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+          "issuerId": 82,
+          "issuerName": "./node_modules/core-js/modules/es.array.find.js",
           "issuerPath": [
             {
               "id": null,
@@ -13405,9 +13405,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 87,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-              "name": "./node_modules/core-js/modules/es.array.index-of.js"
+              "id": 82,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+              "name": "./node_modules/core-js/modules/es.array.find.js"
             }
           ],
           "failed": false,
@@ -14173,9 +14173,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 87,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-              "name": "./node_modules/core-js/modules/es.array.index-of.js"
+              "id": 82,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+              "name": "./node_modules/core-js/modules/es.array.find.js"
             },
             {
               "id": 7,
@@ -14533,9 +14533,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "issuerId": 87,
-          "issuerName": "./node_modules/core-js/modules/es.array.index-of.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.includes.js",
+          "issuerId": 86,
+          "issuerName": "./node_modules/core-js/modules/es.array.includes.js",
           "issuerPath": [
             {
               "id": null,
@@ -14558,9 +14558,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 87,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-              "name": "./node_modules/core-js/modules/es.array.index-of.js"
+              "id": 86,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.includes.js",
+              "name": "./node_modules/core-js/modules/es.array.includes.js"
             }
           ],
           "failed": false,
@@ -14618,9 +14618,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\object-get-own-property-names.js",
-          "issuerId": 47,
-          "issuerName": "./node_modules/core-js/internals/object-get-own-property-names.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\object-create.js",
+          "issuerId": 58,
+          "issuerName": "./node_modules/core-js/internals/object-create.js",
           "issuerPath": [
             {
               "id": null,
@@ -14648,9 +14648,9 @@
               "name": "./node_modules/core-js/modules/es.number.constructor.js"
             },
             {
-              "id": 47,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\object-get-own-property-names.js",
-              "name": "./node_modules/core-js/internals/object-get-own-property-names.js"
+              "id": 58,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\object-create.js",
+              "name": "./node_modules/core-js/internals/object-create.js"
             }
           ],
           "failed": false,
@@ -17284,9 +17284,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-          "issuerId": 103,
-          "issuerName": "./node_modules/core-js/modules/es.string.match.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+          "issuerId": 105,
+          "issuerName": "./node_modules/core-js/modules/es.string.split.js",
           "issuerPath": [
             {
               "id": null,
@@ -17309,9 +17309,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 103,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-              "name": "./node_modules/core-js/modules/es.string.match.js"
+              "id": 105,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+              "name": "./node_modules/core-js/modules/es.string.split.js"
             }
           ],
           "failed": false,
@@ -17360,9 +17360,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-          "issuerId": 103,
-          "issuerName": "./node_modules/core-js/modules/es.string.match.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+          "issuerId": 105,
+          "issuerName": "./node_modules/core-js/modules/es.string.split.js",
           "issuerPath": [
             {
               "id": null,
@@ -17385,9 +17385,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 103,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-              "name": "./node_modules/core-js/modules/es.string.match.js"
+              "id": 105,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+              "name": "./node_modules/core-js/modules/es.string.split.js"
             }
           ],
           "failed": false,
@@ -17436,9 +17436,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-          "issuerId": 103,
-          "issuerName": "./node_modules/core-js/modules/es.string.match.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+          "issuerId": 105,
+          "issuerName": "./node_modules/core-js/modules/es.string.split.js",
           "issuerPath": [
             {
               "id": null,
@@ -17461,9 +17461,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 103,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-              "name": "./node_modules/core-js/modules/es.string.match.js"
+              "id": 105,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+              "name": "./node_modules/core-js/modules/es.string.split.js"
             }
           ],
           "failed": false,
@@ -17684,9 +17684,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\is-array-iterator-method.js",
-          "issuerId": 117,
-          "issuerName": "./node_modules/core-js/internals/is-array-iterator-method.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\get-iterator-method.js",
+          "issuerId": 118,
+          "issuerName": "./node_modules/core-js/internals/get-iterator-method.js",
           "issuerPath": [
             {
               "id": null,
@@ -17734,9 +17734,9 @@
               "name": "./node_modules/core-js/internals/iterate.js"
             },
             {
-              "id": 117,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\is-array-iterator-method.js",
-              "name": "./node_modules/core-js/internals/is-array-iterator-method.js"
+              "id": 118,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\get-iterator-method.js",
+              "name": "./node_modules/core-js/internals/get-iterator-method.js"
             }
           ],
           "failed": false,
@@ -17876,9 +17876,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\task.js",
-          "issuerId": 70,
-          "issuerName": "./node_modules/core-js/internals/task.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\microtask.js",
+          "issuerId": 121,
+          "issuerName": "./node_modules/core-js/internals/microtask.js",
           "issuerPath": [
             {
               "id": null,
@@ -17921,9 +17921,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 70,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\task.js",
-              "name": "./node_modules/core-js/internals/task.js"
+              "id": 121,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\microtask.js",
+              "name": "./node_modules/core-js/internals/microtask.js"
             }
           ],
           "failed": false,
@@ -18247,9 +18247,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 87,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-              "name": "./node_modules/core-js/modules/es.array.index-of.js"
+              "id": 82,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+              "name": "./node_modules/core-js/modules/es.array.find.js"
             },
             {
               "id": 7,
@@ -18319,9 +18319,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 87,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-              "name": "./node_modules/core-js/modules/es.array.index-of.js"
+              "id": 82,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+              "name": "./node_modules/core-js/modules/es.array.find.js"
             },
             {
               "id": 7,
@@ -18483,9 +18483,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 87,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-              "name": "./node_modules/core-js/modules/es.array.index-of.js"
+              "id": 82,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+              "name": "./node_modules/core-js/modules/es.array.find.js"
             },
             {
               "id": 7,
@@ -20111,9 +20111,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
             },
             {
-              "id": 103,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-              "name": "./node_modules/core-js/modules/es.string.match.js"
+              "id": 105,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+              "name": "./node_modules/core-js/modules/es.string.split.js"
             },
             {
               "id": 65,
@@ -30232,9 +30232,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-      "issuerId": 103,
-      "issuerName": "./node_modules/core-js/modules/es.string.match.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+      "issuerId": 105,
+      "issuerName": "./node_modules/core-js/modules/es.string.split.js",
       "issuerPath": [
         {
           "id": null,
@@ -30257,9 +30257,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 103,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-          "name": "./node_modules/core-js/modules/es.string.match.js"
+          "id": 105,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+          "name": "./node_modules/core-js/modules/es.string.split.js"
         }
       ],
       "failed": false,
@@ -30398,9 +30398,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-      "issuerId": 87,
-      "issuerName": "./node_modules/core-js/modules/es.array.index-of.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+      "issuerId": 82,
+      "issuerName": "./node_modules/core-js/modules/es.array.find.js",
       "issuerPath": [
         {
           "id": null,
@@ -30423,9 +30423,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 87,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "name": "./node_modules/core-js/modules/es.array.index-of.js"
+          "id": 82,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+          "name": "./node_modules/core-js/modules/es.array.find.js"
         }
       ],
       "failed": false,
@@ -31771,9 +31771,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-      "issuerId": 87,
-      "issuerName": "./node_modules/core-js/modules/es.array.index-of.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+      "issuerId": 82,
+      "issuerName": "./node_modules/core-js/modules/es.array.find.js",
       "issuerPath": [
         {
           "id": null,
@@ -31796,9 +31796,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 87,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "name": "./node_modules/core-js/modules/es.array.index-of.js"
+          "id": 82,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+          "name": "./node_modules/core-js/modules/es.array.find.js"
         }
       ],
       "failed": false,
@@ -32564,9 +32564,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 87,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "name": "./node_modules/core-js/modules/es.array.index-of.js"
+          "id": 82,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+          "name": "./node_modules/core-js/modules/es.array.find.js"
         },
         {
           "id": 7,
@@ -32924,9 +32924,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-      "issuerId": 87,
-      "issuerName": "./node_modules/core-js/modules/es.array.index-of.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.includes.js",
+      "issuerId": 86,
+      "issuerName": "./node_modules/core-js/modules/es.array.includes.js",
       "issuerPath": [
         {
           "id": null,
@@ -32949,9 +32949,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 87,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "name": "./node_modules/core-js/modules/es.array.index-of.js"
+          "id": 86,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.includes.js",
+          "name": "./node_modules/core-js/modules/es.array.includes.js"
         }
       ],
       "failed": false,
@@ -33009,9 +33009,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\object-get-own-property-names.js",
-      "issuerId": 47,
-      "issuerName": "./node_modules/core-js/internals/object-get-own-property-names.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\object-create.js",
+      "issuerId": 58,
+      "issuerName": "./node_modules/core-js/internals/object-create.js",
       "issuerPath": [
         {
           "id": null,
@@ -33039,9 +33039,9 @@
           "name": "./node_modules/core-js/modules/es.number.constructor.js"
         },
         {
-          "id": 47,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\object-get-own-property-names.js",
-          "name": "./node_modules/core-js/internals/object-get-own-property-names.js"
+          "id": 58,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\object-create.js",
+          "name": "./node_modules/core-js/internals/object-create.js"
         }
       ],
       "failed": false,
@@ -35675,9 +35675,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-      "issuerId": 103,
-      "issuerName": "./node_modules/core-js/modules/es.string.match.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+      "issuerId": 105,
+      "issuerName": "./node_modules/core-js/modules/es.string.split.js",
       "issuerPath": [
         {
           "id": null,
@@ -35700,9 +35700,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 103,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-          "name": "./node_modules/core-js/modules/es.string.match.js"
+          "id": 105,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+          "name": "./node_modules/core-js/modules/es.string.split.js"
         }
       ],
       "failed": false,
@@ -35751,9 +35751,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-      "issuerId": 103,
-      "issuerName": "./node_modules/core-js/modules/es.string.match.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+      "issuerId": 105,
+      "issuerName": "./node_modules/core-js/modules/es.string.split.js",
       "issuerPath": [
         {
           "id": null,
@@ -35776,9 +35776,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 103,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-          "name": "./node_modules/core-js/modules/es.string.match.js"
+          "id": 105,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+          "name": "./node_modules/core-js/modules/es.string.split.js"
         }
       ],
       "failed": false,
@@ -35827,9 +35827,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-      "issuerId": 103,
-      "issuerName": "./node_modules/core-js/modules/es.string.match.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+      "issuerId": 105,
+      "issuerName": "./node_modules/core-js/modules/es.string.split.js",
       "issuerPath": [
         {
           "id": null,
@@ -35852,9 +35852,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 103,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-          "name": "./node_modules/core-js/modules/es.string.match.js"
+          "id": 105,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+          "name": "./node_modules/core-js/modules/es.string.split.js"
         }
       ],
       "failed": false,
@@ -36075,9 +36075,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\is-array-iterator-method.js",
-      "issuerId": 117,
-      "issuerName": "./node_modules/core-js/internals/is-array-iterator-method.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\get-iterator-method.js",
+      "issuerId": 118,
+      "issuerName": "./node_modules/core-js/internals/get-iterator-method.js",
       "issuerPath": [
         {
           "id": null,
@@ -36125,9 +36125,9 @@
           "name": "./node_modules/core-js/internals/iterate.js"
         },
         {
-          "id": 117,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\is-array-iterator-method.js",
-          "name": "./node_modules/core-js/internals/is-array-iterator-method.js"
+          "id": 118,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\get-iterator-method.js",
+          "name": "./node_modules/core-js/internals/get-iterator-method.js"
         }
       ],
       "failed": false,
@@ -36267,9 +36267,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\task.js",
-      "issuerId": 70,
-      "issuerName": "./node_modules/core-js/internals/task.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\microtask.js",
+      "issuerId": 121,
+      "issuerName": "./node_modules/core-js/internals/microtask.js",
       "issuerPath": [
         {
           "id": null,
@@ -36312,9 +36312,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 70,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\task.js",
-          "name": "./node_modules/core-js/internals/task.js"
+          "id": 121,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\internals\\microtask.js",
+          "name": "./node_modules/core-js/internals/microtask.js"
         }
       ],
       "failed": false,
@@ -36739,9 +36739,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 87,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "name": "./node_modules/core-js/modules/es.array.index-of.js"
+          "id": 82,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+          "name": "./node_modules/core-js/modules/es.array.find.js"
         },
         {
           "id": 7,
@@ -36811,9 +36811,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 87,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "name": "./node_modules/core-js/modules/es.array.index-of.js"
+          "id": 82,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+          "name": "./node_modules/core-js/modules/es.array.find.js"
         },
         {
           "id": 7,
@@ -36975,9 +36975,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 87,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.index-of.js",
-          "name": "./node_modules/core-js/modules/es.array.index-of.js"
+          "id": 82,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.array.find.js",
+          "name": "./node_modules/core-js/modules/es.array.find.js"
         },
         {
           "id": 7,
@@ -38603,9 +38603,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/App.vue?vue&type=script&lang=js"
         },
         {
-          "id": 103,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.match.js",
-          "name": "./node_modules/core-js/modules/es.string.match.js"
+          "id": 105,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\my-projects\\VUE\\vue-calculator\\node_modules\\core-js\\modules\\es.string.split.js",
+          "name": "./node_modules/core-js/modules/es.string.split.js"
         },
         {
           "id": 65,
@@ -43418,7 +43418,7 @@
       "name": "css ./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/postcss-loader/dist/cjs.js??ref--2-2!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss",
       "index": 3,
       "index2": 0,
-      "size": 21742,
+      "size": 21761,
       "built": false,
       "optional": false,
       "prefetched": false,
@@ -43687,14 +43687,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 23711,
+          "size": 23730,
           "names": [
             "mini-css-extract-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "ebe2ec98de0df657877a",
+          "hash": "4d7ab6f1ca69bc63b910",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -43764,7 +43764,7 @@
               "name": "./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/postcss-loader/dist/cjs.js??ref--2-2!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss",
               "index": 0,
               "index2": 1,
-              "size": 22106,
+              "size": 22125,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -43799,7 +43799,7 @@
                 "ModuleConcatenation bailout: Module uses module.id"
               ],
               "depth": 0,
-              "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@font-face{font-family:\\\"digital7\\\";src:url(\\\"./assets/fonts/digital7.ttf\\\")}:root{--digital7: \\\"digital7\\\";--solway: \\\"Solway\\\", serif}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;overflow:hidden}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}@-webkit-keyframes slide-up{from{opacity:1;color:var(--result);font-size:3rem;-webkit-transform:translateY(6.1rem);transform:translateY(6.1rem)}to{opacity:1}}@keyframes slide-up{from{opacity:1;color:var(--result);font-size:3rem;-webkit-transform:translateY(6.1rem);transform:translateY(6.1rem)}to{opacity:1}}@-webkit-keyframes flip-in{from{-webkit-transform:perspective(100px) rotateX(-90deg);transform:perspective(100px) rotateX(-90deg)}to{opacity:1}}@keyframes flip-in{from{-webkit-transform:perspective(100px) rotateX(-90deg);transform:perspective(100px) rotateX(-90deg)}to{opacity:1}}@-webkit-keyframes flip-out{from{opacity:1}to{-webkit-transform:perspective(300px) rotateX(90deg);transform:perspective(300px) rotateX(90deg);opacity:0}}@keyframes flip-out{from{opacity:1}to{-webkit-transform:perspective(300px) rotateX(90deg);transform:perspective(300px) rotateX(90deg);opacity:0}}.result-leave-active{-webkit-animation:flip-out .5s ease forwards;animation:flip-out .5s ease forwards}.result-enter-active{-webkit-animation:slide-up .5s ease forwards;animation:slide-up .5s ease forwards}.clear-leave-active{-webkit-animation:flip-out .5s ease forwards;animation:flip-out .5s ease forwards}.clear-enter-active{opacity:0;-webkit-animation:flip-in .5s ease forwards .3s;animation:flip-in .5s ease forwards .3s}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes fade{from{opacity:0}to{opacity:1}}@keyframes fade{from{opacity:0}to{opacity:1}}.fade-leave-active{animation:fade .5s ease reverse}.fade-enter-active{-webkit-animation:fade .5s ease forwards;animation:fade .5s ease forwards}.fade-in{-webkit-animation:fade .5s ease forwards;animation:fade .5s ease forwards}.fade-out{animation:fade .5s ease reverse}.btn{background:var(--primary);color:var(--numbers);font:500 3.3rem \\\"digital7\\\";font:500 3.3rem var(--digital7);border:2px solid var(--primary);border-radius:5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;outline:none}.btn-op{fill:var(--operators)}.btn-ot{fill:var(--others)}@media(max-width: 450px){.btn{font-size:2.8rem}}.btn--neu{-webkit-box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2)}.btn--neu:active{font-size:3.4rem;-webkit-box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white2),inset 3px 3px 6px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white2),inset 3px 3px 6px var(--shadow-dark2)}.btn--neu:active .btn-ot{-webkit-transform:scale(0.9);transform:scale(0.9)}.btn--neu:active .btn-op{-webkit-transform:scale(0.9);transform:scale(0.9)}.btn--glass{background-color:transparent;border:none}.btn--glass:active{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15)}.btn--material{border:none;-webkit-box-shadow:none;box-shadow:none}.btn--material:active{border:1px solid var(--numbers)}#plus.btn--material:active{border:1px solid var(--operators)}#minus.btn--material:active{border:1px solid var(--operators)}#divide.btn--material:active{border:1px solid var(--operators)}#multiply.btn--material:active{border:1px solid var(--operators)}#modulus.btn--material:active{border:1px solid var(--operators)}#equals.btn--material:active{border:1px solid var(--operators)}#clear.btn--material:active{border:1px solid var(--others)}#backspace.btn--material:active{border:1px solid var(--others)}.settings{height:3rem;width:3rem;position:fixed;top:2rem;right:2rem;z-index:100;cursor:pointer}@media(max-width: 450px){.settings{top:unset;bottom:1rem;right:1rem}}.settings-btn{height:100%;width:100%;fill:var(--numbers);cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.settings-btn:hover{fill:var(--operators);-webkit-transform:rotate(45deg) scale(1.2);transform:rotate(45deg) scale(1.2)}.modal{height:40rem;width:40rem;background:-webkit-gradient(linear, left top, right bottom, from(var(--modal-g-start)), to(var(--modal-g-end)));background:linear-gradient(to bottom right, var(--modal-g-start), var(--modal-g-end));padding:1rem;border-radius:2rem;position:fixed;top:50%;left:50%;-webkit-transform:translate3d(-50%, -50%, 0);transform:translate3d(-50%, -50%, 0);-webkit-box-shadow:0 0 5rem 1rem rgba(0,0,0,.4);box-shadow:0 0 5rem 1rem rgba(0,0,0,.4);will-change:transform;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}@media(max-width: 450px){.modal{width:90vw}}.modal__close{color:var(--modal-text);font:900 3rem \\\"Solway\\\", serif;font:900 3rem var(--solway);border-radius:5rem;position:absolute;top:1rem;right:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;-webkit-transform:scale(1.4);transform:scale(1.4);-webkit-transition:-webkit-transform .3s;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s, -webkit-transform .3s}.modal__close:hover{-webkit-transform:scale(1.7);transform:scale(1.7)}.modal__content{height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.modal__content--row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.modal__content--row-heading{background:var(--modal-text);color:var(--modal-g-start);font:700 3rem \\\"Solway\\\", serif;font:700 3rem var(--solway);padding:1rem 2rem;border-radius:2rem;margin-bottom:2rem;-webkit-box-shadow:0 0 2rem var(--modal-shadow);box-shadow:0 0 2rem var(--modal-shadow)}.modal__content--row-body{height:5rem;width:100%;color:var(--modal-text);font:400 2.5rem sans-serif;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.modal__content--row-body span{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer}.modal__content--row-body span::after{content:\\\"\\\";height:2px;width:0px;background:radial-gradient(circle, var(--modal-text) 30%, transparent 100%);border-radius:5rem;margin-top:5px;display:inline-block;-webkit-transition:width .4s;transition:width .4s}.modal__content--row-body span:hover::after{width:100%}.modal__content--row-body .active{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;cursor:pointer}.modal__content--row-body .active::after{width:100%}@media(max-width: 450px){.modal__content--row-body{font-size:2rem}}.modal__content--row:not(:last-child){margin-bottom:5rem}.loader--light{height:100vh;width:100vw;background:#eee;position:fixed;top:0;left:0;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.loader--light::after{content:\\\"\\\";height:4rem;width:4rem;border:4px solid #eee;border-radius:50%;border-top:4px solid #318a9d;border-bottom:4px solid #318a9d;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.loader--dark{height:100vh;width:100vw;background:#243441;position:fixed;top:0;left:0;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.loader--dark::after{content:\\\"\\\";height:4rem;width:4rem;border:4px solid #243441;border-radius:50%;border-top:4px solid #0affef;border-bottom:4px solid #0affef;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.container{height:100vh;width:100vw;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden}@media(max-width: 450px){.container{height:auto;width:auto;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}}.grid{height:66rem;width:42rem;background:var(--primary);border:3px solid var(--primary);border-radius:2rem;display:grid;grid-template-rows:12rem repeat(5, 8rem);grid-template-columns:repeat(4, 8rem);grid-template-areas:\\\"output output \\toutput \\toutput\\\" \\\"clear \\tback \\tmod \\tdivide\\\" \\\"seven \\teight \\tnine \\tmultiply\\\" \\\"four \\tfive \\tsix \\tminus\\\" \\\"one \\ttwo \\tthree \\tplus\\\" \\\"zero \\tzero \\tdot \\tequals\\\";grid-gap:2rem;gap:2rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative}@media(max-width: 450px){.grid{height:calc(92vw * 1.58);width:92%;padding:1.5rem;margin-top:1.5rem;display:grid;grid-template-rows:12rem repeat(5, 1fr);grid-template-columns:repeat(4, 1fr);grid-gap:1.5rem;gap:1.5rem}}@media(max-width: 400px){.grid{height:calc(96vw * 1.58);width:92%}}.grid--neu--light,.grid--neu--dark{-webkit-box-shadow:-1rem -1rem 2rem var(--shadow-white1),1rem 1rem 2rem var(--shadow-dark1);box-shadow:-1rem -1rem 2rem var(--shadow-white1),1rem 1rem 2rem var(--shadow-dark1)}.grid--glass--light{background:rgba(255,255,255,.2);border:solid 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-box-shadow:0 0 2rem rgba(0,0,0,.1);box-shadow:0 0 2rem rgba(0,0,0,.1)}.grid--glass--dark{background:rgba(255,255,255,.04);border:solid 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-box-shadow:0 0 2rem rgba(0,0,0,.1);box-shadow:0 0 2rem rgba(0,0,0,.1)}.grid--material--light,.grid--material--dark{border:1px solid var(--numbers);-webkit-box-shadow:none;box-shadow:none}@media(max-width: 450px){.grid--material--light,.grid--material--dark{border:none}}#output{grid-area:output}#clear{grid-area:clear}#backspace{grid-area:back}#modulus{grid-area:mod}#divide{grid-area:divide}#multiply{grid-area:multiply}#minus{grid-area:minus}#plus{grid-area:plus}#equals{grid-area:equals}#one{grid-area:one}#two{grid-area:two}#three{grid-area:three}#four{grid-area:four}#five{grid-area:five}#six{grid-area:six}#seven{grid-area:seven}#eight{grid-area:eight}#nine{grid-area:nine}#zero{grid-area:zero}#dot{grid-area:dot}.output{background:var(--primary);letter-spacing:1px;border:2px solid var(--primary);border-radius:1rem;position:relative;overflow:hidden}.output--neu{-webkit-box-shadow:-4px -4px 8px var(--shadow-white1),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white1),inset 3px 3px 6px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white1),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white1),inset 3px 3px 6px var(--shadow-dark2)}.output--glass{background-color:transparent;border:none;border-radius:0}.output--material{border:none;border-radius:0rem;position:relative;-webkit-box-shadow:none;box-shadow:none}.output--material::before{content:\\\"\\\";display:inline-block;height:1px;width:100%;background:radial-gradient(circle, var(--numbers) 70%, transparent 100%);border-radius:5rem;position:absolute;bottom:0}.output__expression{height:4rem;color:var(--numbers);font-size:4rem;position:absolute;top:1.1rem;right:1rem;z-index:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden}.output__expression--num{color:inherit;font-family:\\\"digital7\\\";font-family:var(--digital7)}.output__expression--op{color:var(--operators);font:700 2.5rem \\\"Solway\\\", serif;font:700 2.5rem var(--solway);margin:0 5px}.output__expression--mod{color:var(--operators);font:700 1.8rem \\\"Solway\\\", serif;font:700 1.8rem var(--solway);margin:0 5px;-webkit-transform:translateY(1px);transform:translateY(1px)}.output__result{height:4rem;color:var(--result);font:3rem \\\"digital7\\\";font:3rem var(--digital7);position:absolute;top:1rem;right:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transform:translateY(6.2rem);transform:translateY(6.2rem)}.output__never-settle{height:84%;width:95%;background:var(--primary);color:#f72720;font:900 3.4rem sans-serif;border-radius:1rem;position:absolute;top:0;left:0;z-index:999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transform:translate3d(12px, 7px, 0);transform:translate3d(12px, 7px, 0)}.neu--light{--primary: #eeeeee;--numbers: #318a9d;--result: #84b6c1;--operators: #9f3430;--others: #329e58;--modal-g-start: #45639d;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow-white1: rgb(255 255 255);--shadow-white2: rgb(255 255 255);--shadow-dark1: rgb(70 81 81 / 10%);--shadow-dark2: rgb(67 75 75 / 20%);background:var(--primary)}.neu--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow-white1: rgb(44 64 80 / 70%);--shadow-white2: rgb(44 64 80 / 80%);--shadow-dark1: rgb(0 0 0 / 16%);--shadow-dark2: rgb(0 0 0 / 26%);background:var(--primary)}.glass--light{--primary: #eeeeee;--numbers: #ffffff;--result: rgb(255 255 255 / 60%);--operators: #81feff;--others: #79ffb7;--circle: rgba(255, 255, 255, 0.2);--gd-in: #ffffff;--gd-out: #d6d6d6;--modal-g-start: #0055ff;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow-white1: rgb(255 255 255);--shadow-white2: rgb(255 255 255);--shadow-dark1: rgb(70 81 81 / 10%);--shadow-dark2: rgb(67 75 75 / 20%);background-color:#b409d2;background-image:url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23511ab1'/%3E%3Cstop offset='1' stop-color='%23511ab1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233211d2'/%3E%3Cstop offset='1' stop-color='%233211d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23224fb1'/%3E%3Cstop offset='1' stop-color='%23224fb1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23b409d2'/%3E%3Cstop offset='1' stop-color='%23b409d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23283593'/%3E%3Cstop offset='1' stop-color='%23283593' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231976d2'/%3E%3Cstop offset='1' stop-color='%231976d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E\\\");background-attachment:fixed;background-size:cover}.glass--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--circle: rgb(52 52 88 / 40%);--gd-in: #273846;--gd-out: #1e2a35;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow-white1: rgb(44 64 80 / 70%);--shadow-white2: rgb(44 64 80 / 80%);--shadow-dark1: rgb(0 0 0 / 16%);--shadow-dark2: rgb(0 0 0 / 26%);background-color:#330241;background-image:url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23090245'/%3E%3Cstop offset='1' stop-color='%23090245' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23290243'/%3E%3Cstop offset='1' stop-color='%23290243' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23020747'/%3E%3Cstop offset='1' stop-color='%23020747' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23330241'/%3E%3Cstop offset='1' stop-color='%23330241' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23012a49'/%3E%3Cstop offset='1' stop-color='%23012a49' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231e0246'/%3E%3Cstop offset='1' stop-color='%231e0246' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E\\\");background-attachment:fixed;background-size:cover}.circle1{height:40rem;width:40rem;background:var(--circle);border:1px solid rgba(255,255,255,.15);border-radius:50%;position:absolute;-webkit-transform:translate(-20rem, -30rem);transform:translate(-20rem, -30rem);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);-webkit-box-shadow:0 0 3rem rgba(0,0,0,.1);box-shadow:0 0 3rem rgba(0,0,0,.1)}@media(max-width: 450px){.circle1{-webkit-transform:translate(-20rem, -20rem);transform:translate(-20rem, -20rem)}}.circle2{height:20rem;width:20rem;background:var(--circle);border:1px solid rgba(255,255,255,.15);border-radius:50%;position:absolute;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);-webkit-transform:translate(20rem, 35rem);transform:translate(20rem, 35rem);-webkit-box-shadow:0 0 3rem rgba(0,0,0,.1);box-shadow:0 0 3rem rgba(0,0,0,.1)}.material--light{--primary: #eeeeee;--numbers: #318a9d;--result: #84b6c1;--operators: #9f3430;--others: #3ea362;--modal-g-start: #45639d;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow: rgb(0 0 0 / 10%);background:var(--primary)}.material--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow: rgb(255 255 255 / 10%);background:var(--primary)}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
+              "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@font-face{font-family:\\\"digital7\\\";src:url(\\\"./assets/fonts/digital7.ttf\\\")}:root{--digital7: \\\"digital7\\\";--solway: \\\"Solway\\\", serif}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;overflow:hidden}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}@-webkit-keyframes slide-up{from{opacity:1;color:var(--result);font-size:3rem;-webkit-transform:translateY(6.1rem);transform:translateY(6.1rem)}to{opacity:1}}@keyframes slide-up{from{opacity:1;color:var(--result);font-size:3rem;-webkit-transform:translateY(6.1rem);transform:translateY(6.1rem)}to{opacity:1}}@-webkit-keyframes flip-in{from{-webkit-transform:perspective(100px) rotateX(-90deg);transform:perspective(100px) rotateX(-90deg)}to{opacity:1}}@keyframes flip-in{from{-webkit-transform:perspective(100px) rotateX(-90deg);transform:perspective(100px) rotateX(-90deg)}to{opacity:1}}@-webkit-keyframes flip-out{from{opacity:1}to{-webkit-transform:perspective(300px) rotateX(90deg);transform:perspective(300px) rotateX(90deg);opacity:0}}@keyframes flip-out{from{opacity:1}to{-webkit-transform:perspective(300px) rotateX(90deg);transform:perspective(300px) rotateX(90deg);opacity:0}}.result-leave-active{-webkit-animation:flip-out .5s ease forwards;animation:flip-out .5s ease forwards}.result-enter-active{-webkit-animation:slide-up .5s ease forwards;animation:slide-up .5s ease forwards}.clear-leave-active{-webkit-animation:flip-out .5s ease forwards;animation:flip-out .5s ease forwards}.clear-enter-active{opacity:0;-webkit-animation:flip-in .5s ease forwards .3s;animation:flip-in .5s ease forwards .3s}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes fade{from{opacity:0}to{opacity:1}}@keyframes fade{from{opacity:0}to{opacity:1}}.fade-leave-active{animation:fade .5s ease reverse}.fade-enter-active{-webkit-animation:fade .5s ease forwards;animation:fade .5s ease forwards}.fade-in{-webkit-animation:fade .5s ease forwards;animation:fade .5s ease forwards}.fade-out{animation:fade .5s ease reverse}.btn{background:var(--primary);color:var(--numbers);font:500 3.3rem \\\"digital7\\\";font:500 3.3rem var(--digital7);border:2px solid var(--primary);border-radius:5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;outline:none}.btn-op{fill:var(--operators)}.btn-ot{fill:var(--others)}@media(max-width: 450px){.btn{font-size:2.8rem}}.btn--neu{-webkit-box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2)}.btn--neu:active{font-size:3.4rem;-webkit-box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white2),inset 3px 3px 6px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white2),inset 3px 3px 6px var(--shadow-dark2)}.btn--neu:active .btn-ot{-webkit-transform:scale(0.9);transform:scale(0.9)}.btn--neu:active .btn-op{-webkit-transform:scale(0.9);transform:scale(0.9)}.btn--glass{background-color:transparent;border:none}.btn--glass:active{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15)}.btn--material{border:none;-webkit-box-shadow:none;box-shadow:none}.btn--material:active{border:1px solid var(--numbers)}#plus.btn--material:active{border:1px solid var(--operators)}#minus.btn--material:active{border:1px solid var(--operators)}#divide.btn--material:active{border:1px solid var(--operators)}#multiply.btn--material:active{border:1px solid var(--operators)}#modulus.btn--material:active{border:1px solid var(--operators)}#equals.btn--material:active{border:1px solid var(--operators)}#clear.btn--material:active{border:1px solid var(--others)}#backspace.btn--material:active{border:1px solid var(--others)}.settings{height:3rem;width:3rem;position:fixed;top:2rem;right:2rem;z-index:100;cursor:pointer}@media(max-width: 450px){.settings{top:unset;bottom:1rem;right:1rem}}.settings-btn{height:100%;width:100%;fill:var(--numbers);cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.settings-btn:hover{fill:var(--operators);-webkit-transform:rotate(45deg) scale(1.2);transform:rotate(45deg) scale(1.2)}.modal{height:40rem;width:40rem;background:-webkit-gradient(linear, left top, right bottom, from(var(--modal-g-start)), to(var(--modal-g-end)));background:linear-gradient(to bottom right, var(--modal-g-start), var(--modal-g-end));padding:1rem;border-radius:2rem;position:fixed;top:50%;left:50%;-webkit-transform:translate3d(-50%, -50%, 0);transform:translate3d(-50%, -50%, 0);-webkit-box-shadow:0 0 5rem 1rem rgba(0,0,0,.4);box-shadow:0 0 5rem 1rem rgba(0,0,0,.4);will-change:transform;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}@media(max-width: 450px){.modal{width:90vw}}.modal__close{color:var(--modal-text);font:900 3rem \\\"Solway\\\", serif;font:900 3rem var(--solway);border-radius:5rem;position:absolute;top:1rem;right:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;-webkit-transform:scale(1.4);transform:scale(1.4);-webkit-transition:-webkit-transform .3s;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s, -webkit-transform .3s}.modal__close:hover{-webkit-transform:scale(1.7);transform:scale(1.7)}.modal__content{height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.modal__content--row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.modal__content--row-heading{background:var(--modal-text);color:var(--modal-g-start);font:700 3rem \\\"Solway\\\", serif;font:700 3rem var(--solway);padding:1rem 2rem;border-radius:2rem;margin-bottom:2rem;-webkit-box-shadow:0 0 2rem var(--modal-shadow);box-shadow:0 0 2rem var(--modal-shadow)}.modal__content--row-body{height:5rem;width:100%;color:var(--modal-text);font:400 2.5rem sans-serif;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.modal__content--row-body span{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer}.modal__content--row-body span::after{content:\\\"\\\";height:2px;width:0px;background:radial-gradient(circle, var(--modal-text) 30%, transparent 100%);border-radius:5rem;margin-top:5px;display:inline-block;-webkit-transition:width .4s;transition:width .4s}.modal__content--row-body span:hover::after{width:100%}.modal__content--row-body .active{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;cursor:pointer}.modal__content--row-body .active::after{width:100%}@media(max-width: 450px){.modal__content--row-body{font-size:2rem}}.modal__content--row:not(:last-child){margin-bottom:5rem}.loader--light{height:100vh;width:100vw;background:#eee;position:fixed;top:0;left:0;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.loader--light::after{content:\\\"\\\";height:4rem;width:4rem;border:4px solid #eee;border-radius:50%;border-top:4px solid #318a9d;border-bottom:4px solid #318a9d;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.loader--dark{height:100vh;width:100vw;background:#243441;position:fixed;top:0;left:0;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.loader--dark::after{content:\\\"\\\";height:4rem;width:4rem;border:4px solid #243441;border-radius:50%;border-top:4px solid #0affef;border-bottom:4px solid #0affef;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.container{height:100vh;width:100vw;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden}@media(max-width: 450px){.container{height:auto;width:auto;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}}.grid{height:66rem;width:42rem;background:var(--primary);border:3px solid var(--primary);border-radius:2rem;margin-bottom:4rem;display:grid;grid-template-rows:12rem repeat(5, 8rem);grid-template-columns:repeat(4, 8rem);grid-template-areas:\\\"output output \\toutput \\toutput\\\" \\\"clear \\tback \\tmod \\tdivide\\\" \\\"seven \\teight \\tnine \\tmultiply\\\" \\\"four \\tfive \\tsix \\tminus\\\" \\\"one \\ttwo \\tthree \\tplus\\\" \\\"zero \\tzero \\tdot \\tequals\\\";grid-gap:2rem;gap:2rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative}@media(max-width: 450px){.grid{height:calc(92vw * 1.58);width:92%;padding:1.5rem;margin-top:1.5rem;display:grid;grid-template-rows:12rem repeat(5, 1fr);grid-template-columns:repeat(4, 1fr);grid-gap:1.5rem;gap:1.5rem}}@media(max-width: 400px){.grid{height:calc(96vw * 1.58);width:92%}}.grid--neu--light,.grid--neu--dark{-webkit-box-shadow:-1rem -1rem 2rem var(--shadow-white1),1rem 1rem 2rem var(--shadow-dark1);box-shadow:-1rem -1rem 2rem var(--shadow-white1),1rem 1rem 2rem var(--shadow-dark1)}.grid--glass--light{background:rgba(255,255,255,.2);border:solid 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-box-shadow:0 0 2rem rgba(0,0,0,.1);box-shadow:0 0 2rem rgba(0,0,0,.1)}.grid--glass--dark{background:rgba(255,255,255,.04);border:solid 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-box-shadow:0 0 2rem rgba(0,0,0,.1);box-shadow:0 0 2rem rgba(0,0,0,.1)}.grid--material--light,.grid--material--dark{border:1px solid var(--numbers);-webkit-box-shadow:none;box-shadow:none}@media(max-width: 450px){.grid--material--light,.grid--material--dark{border:none}}#output{grid-area:output}#clear{grid-area:clear}#backspace{grid-area:back}#modulus{grid-area:mod}#divide{grid-area:divide}#multiply{grid-area:multiply}#minus{grid-area:minus}#plus{grid-area:plus}#equals{grid-area:equals}#one{grid-area:one}#two{grid-area:two}#three{grid-area:three}#four{grid-area:four}#five{grid-area:five}#six{grid-area:six}#seven{grid-area:seven}#eight{grid-area:eight}#nine{grid-area:nine}#zero{grid-area:zero}#dot{grid-area:dot}.output{background:var(--primary);letter-spacing:1px;border:2px solid var(--primary);border-radius:1rem;position:relative;overflow:hidden}.output--neu{-webkit-box-shadow:-4px -4px 8px var(--shadow-white1),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white1),inset 3px 3px 6px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white1),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white1),inset 3px 3px 6px var(--shadow-dark2)}.output--glass{background-color:transparent;border:none;border-radius:0}.output--material{border:none;border-radius:0rem;position:relative;-webkit-box-shadow:none;box-shadow:none}.output--material::before{content:\\\"\\\";display:inline-block;height:1px;width:100%;background:radial-gradient(circle, var(--numbers) 70%, transparent 100%);border-radius:5rem;position:absolute;bottom:0}.output__expression{height:4rem;color:var(--numbers);font-size:4rem;position:absolute;top:1.1rem;right:1rem;z-index:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden}.output__expression--num{color:inherit;font-family:\\\"digital7\\\";font-family:var(--digital7)}.output__expression--op{color:var(--operators);font:700 2.5rem \\\"Solway\\\", serif;font:700 2.5rem var(--solway);margin:0 5px}.output__expression--mod{color:var(--operators);font:700 1.8rem \\\"Solway\\\", serif;font:700 1.8rem var(--solway);margin:0 5px;-webkit-transform:translateY(1px);transform:translateY(1px)}.output__result{height:4rem;color:var(--result);font:3rem \\\"digital7\\\";font:3rem var(--digital7);position:absolute;top:1rem;right:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transform:translateY(6.2rem);transform:translateY(6.2rem)}.output__never-settle{height:84%;width:95%;background:var(--primary);color:#f72720;font:900 3.4rem sans-serif;border-radius:1rem;position:absolute;top:0;left:0;z-index:999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transform:translate3d(12px, 7px, 0);transform:translate3d(12px, 7px, 0)}.neu--light{--primary: #eeeeee;--numbers: #318a9d;--result: #84b6c1;--operators: #9f3430;--others: #329e58;--modal-g-start: #45639d;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow-white1: rgb(255 255 255);--shadow-white2: rgb(255 255 255);--shadow-dark1: rgb(70 81 81 / 10%);--shadow-dark2: rgb(67 75 75 / 20%);background:var(--primary)}.neu--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow-white1: rgb(44 64 80 / 70%);--shadow-white2: rgb(44 64 80 / 80%);--shadow-dark1: rgb(0 0 0 / 16%);--shadow-dark2: rgb(0 0 0 / 26%);background:var(--primary)}.glass--light{--primary: #eeeeee;--numbers: #ffffff;--result: rgb(255 255 255 / 60%);--operators: #81feff;--others: #79ffb7;--circle: rgba(255, 255, 255, 0.2);--gd-in: #ffffff;--gd-out: #d6d6d6;--modal-g-start: #0055ff;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow-white1: rgb(255 255 255);--shadow-white2: rgb(255 255 255);--shadow-dark1: rgb(70 81 81 / 10%);--shadow-dark2: rgb(67 75 75 / 20%);background-color:#b409d2;background-image:url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23511ab1'/%3E%3Cstop offset='1' stop-color='%23511ab1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233211d2'/%3E%3Cstop offset='1' stop-color='%233211d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23224fb1'/%3E%3Cstop offset='1' stop-color='%23224fb1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23b409d2'/%3E%3Cstop offset='1' stop-color='%23b409d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23283593'/%3E%3Cstop offset='1' stop-color='%23283593' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231976d2'/%3E%3Cstop offset='1' stop-color='%231976d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E\\\");background-attachment:fixed;background-size:cover}.glass--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--circle: rgb(52 52 88 / 40%);--gd-in: #273846;--gd-out: #1e2a35;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow-white1: rgb(44 64 80 / 70%);--shadow-white2: rgb(44 64 80 / 80%);--shadow-dark1: rgb(0 0 0 / 16%);--shadow-dark2: rgb(0 0 0 / 26%);background-color:#330241;background-image:url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23090245'/%3E%3Cstop offset='1' stop-color='%23090245' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23290243'/%3E%3Cstop offset='1' stop-color='%23290243' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23020747'/%3E%3Cstop offset='1' stop-color='%23020747' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23330241'/%3E%3Cstop offset='1' stop-color='%23330241' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23012a49'/%3E%3Cstop offset='1' stop-color='%23012a49' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231e0246'/%3E%3Cstop offset='1' stop-color='%231e0246' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E\\\");background-attachment:fixed;background-size:cover}.circle1{height:40rem;width:40rem;background:var(--circle);border:1px solid rgba(255,255,255,.15);border-radius:50%;position:absolute;-webkit-transform:translate(-20rem, -30rem);transform:translate(-20rem, -30rem);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);-webkit-box-shadow:0 0 3rem rgba(0,0,0,.1);box-shadow:0 0 3rem rgba(0,0,0,.1)}@media(max-width: 450px){.circle1{-webkit-transform:translate(-20rem, -20rem);transform:translate(-20rem, -20rem)}}.circle2{height:20rem;width:20rem;background:var(--circle);border:1px solid rgba(255,255,255,.15);border-radius:50%;position:absolute;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);-webkit-transform:translate(20rem, 35rem);transform:translate(20rem, 35rem);-webkit-box-shadow:0 0 3rem rgba(0,0,0,.1);box-shadow:0 0 3rem rgba(0,0,0,.1)}.material--light{--primary: #eeeeee;--numbers: #318a9d;--result: #84b6c1;--operators: #9f3430;--others: #3ea362;--modal-g-start: #45639d;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow: rgb(0 0 0 / 10%);background:var(--primary)}.material--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow: rgb(255 255 255 / 10%);background:var(--primary)}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
             }
           ],
           "filteredModules": 0,
@@ -43880,7 +43880,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/postcss-loader/dist/cjs.js??ref--2-2!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss",
           "index": 0,
           "index2": 1,
-          "size": 22106,
+          "size": 22125,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -43915,7 +43915,7 @@
             "ModuleConcatenation bailout: Module uses module.id"
           ],
           "depth": 0,
-          "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@font-face{font-family:\\\"digital7\\\";src:url(\\\"./assets/fonts/digital7.ttf\\\")}:root{--digital7: \\\"digital7\\\";--solway: \\\"Solway\\\", serif}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;overflow:hidden}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}@-webkit-keyframes slide-up{from{opacity:1;color:var(--result);font-size:3rem;-webkit-transform:translateY(6.1rem);transform:translateY(6.1rem)}to{opacity:1}}@keyframes slide-up{from{opacity:1;color:var(--result);font-size:3rem;-webkit-transform:translateY(6.1rem);transform:translateY(6.1rem)}to{opacity:1}}@-webkit-keyframes flip-in{from{-webkit-transform:perspective(100px) rotateX(-90deg);transform:perspective(100px) rotateX(-90deg)}to{opacity:1}}@keyframes flip-in{from{-webkit-transform:perspective(100px) rotateX(-90deg);transform:perspective(100px) rotateX(-90deg)}to{opacity:1}}@-webkit-keyframes flip-out{from{opacity:1}to{-webkit-transform:perspective(300px) rotateX(90deg);transform:perspective(300px) rotateX(90deg);opacity:0}}@keyframes flip-out{from{opacity:1}to{-webkit-transform:perspective(300px) rotateX(90deg);transform:perspective(300px) rotateX(90deg);opacity:0}}.result-leave-active{-webkit-animation:flip-out .5s ease forwards;animation:flip-out .5s ease forwards}.result-enter-active{-webkit-animation:slide-up .5s ease forwards;animation:slide-up .5s ease forwards}.clear-leave-active{-webkit-animation:flip-out .5s ease forwards;animation:flip-out .5s ease forwards}.clear-enter-active{opacity:0;-webkit-animation:flip-in .5s ease forwards .3s;animation:flip-in .5s ease forwards .3s}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes fade{from{opacity:0}to{opacity:1}}@keyframes fade{from{opacity:0}to{opacity:1}}.fade-leave-active{animation:fade .5s ease reverse}.fade-enter-active{-webkit-animation:fade .5s ease forwards;animation:fade .5s ease forwards}.fade-in{-webkit-animation:fade .5s ease forwards;animation:fade .5s ease forwards}.fade-out{animation:fade .5s ease reverse}.btn{background:var(--primary);color:var(--numbers);font:500 3.3rem \\\"digital7\\\";font:500 3.3rem var(--digital7);border:2px solid var(--primary);border-radius:5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;outline:none}.btn-op{fill:var(--operators)}.btn-ot{fill:var(--others)}@media(max-width: 450px){.btn{font-size:2.8rem}}.btn--neu{-webkit-box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2)}.btn--neu:active{font-size:3.4rem;-webkit-box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white2),inset 3px 3px 6px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white2),inset 3px 3px 6px var(--shadow-dark2)}.btn--neu:active .btn-ot{-webkit-transform:scale(0.9);transform:scale(0.9)}.btn--neu:active .btn-op{-webkit-transform:scale(0.9);transform:scale(0.9)}.btn--glass{background-color:transparent;border:none}.btn--glass:active{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15)}.btn--material{border:none;-webkit-box-shadow:none;box-shadow:none}.btn--material:active{border:1px solid var(--numbers)}#plus.btn--material:active{border:1px solid var(--operators)}#minus.btn--material:active{border:1px solid var(--operators)}#divide.btn--material:active{border:1px solid var(--operators)}#multiply.btn--material:active{border:1px solid var(--operators)}#modulus.btn--material:active{border:1px solid var(--operators)}#equals.btn--material:active{border:1px solid var(--operators)}#clear.btn--material:active{border:1px solid var(--others)}#backspace.btn--material:active{border:1px solid var(--others)}.settings{height:3rem;width:3rem;position:fixed;top:2rem;right:2rem;z-index:100;cursor:pointer}@media(max-width: 450px){.settings{top:unset;bottom:1rem;right:1rem}}.settings-btn{height:100%;width:100%;fill:var(--numbers);cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.settings-btn:hover{fill:var(--operators);-webkit-transform:rotate(45deg) scale(1.2);transform:rotate(45deg) scale(1.2)}.modal{height:40rem;width:40rem;background:-webkit-gradient(linear, left top, right bottom, from(var(--modal-g-start)), to(var(--modal-g-end)));background:linear-gradient(to bottom right, var(--modal-g-start), var(--modal-g-end));padding:1rem;border-radius:2rem;position:fixed;top:50%;left:50%;-webkit-transform:translate3d(-50%, -50%, 0);transform:translate3d(-50%, -50%, 0);-webkit-box-shadow:0 0 5rem 1rem rgba(0,0,0,.4);box-shadow:0 0 5rem 1rem rgba(0,0,0,.4);will-change:transform;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}@media(max-width: 450px){.modal{width:90vw}}.modal__close{color:var(--modal-text);font:900 3rem \\\"Solway\\\", serif;font:900 3rem var(--solway);border-radius:5rem;position:absolute;top:1rem;right:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;-webkit-transform:scale(1.4);transform:scale(1.4);-webkit-transition:-webkit-transform .3s;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s, -webkit-transform .3s}.modal__close:hover{-webkit-transform:scale(1.7);transform:scale(1.7)}.modal__content{height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.modal__content--row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.modal__content--row-heading{background:var(--modal-text);color:var(--modal-g-start);font:700 3rem \\\"Solway\\\", serif;font:700 3rem var(--solway);padding:1rem 2rem;border-radius:2rem;margin-bottom:2rem;-webkit-box-shadow:0 0 2rem var(--modal-shadow);box-shadow:0 0 2rem var(--modal-shadow)}.modal__content--row-body{height:5rem;width:100%;color:var(--modal-text);font:400 2.5rem sans-serif;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.modal__content--row-body span{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer}.modal__content--row-body span::after{content:\\\"\\\";height:2px;width:0px;background:radial-gradient(circle, var(--modal-text) 30%, transparent 100%);border-radius:5rem;margin-top:5px;display:inline-block;-webkit-transition:width .4s;transition:width .4s}.modal__content--row-body span:hover::after{width:100%}.modal__content--row-body .active{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;cursor:pointer}.modal__content--row-body .active::after{width:100%}@media(max-width: 450px){.modal__content--row-body{font-size:2rem}}.modal__content--row:not(:last-child){margin-bottom:5rem}.loader--light{height:100vh;width:100vw;background:#eee;position:fixed;top:0;left:0;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.loader--light::after{content:\\\"\\\";height:4rem;width:4rem;border:4px solid #eee;border-radius:50%;border-top:4px solid #318a9d;border-bottom:4px solid #318a9d;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.loader--dark{height:100vh;width:100vw;background:#243441;position:fixed;top:0;left:0;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.loader--dark::after{content:\\\"\\\";height:4rem;width:4rem;border:4px solid #243441;border-radius:50%;border-top:4px solid #0affef;border-bottom:4px solid #0affef;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.container{height:100vh;width:100vw;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden}@media(max-width: 450px){.container{height:auto;width:auto;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}}.grid{height:66rem;width:42rem;background:var(--primary);border:3px solid var(--primary);border-radius:2rem;display:grid;grid-template-rows:12rem repeat(5, 8rem);grid-template-columns:repeat(4, 8rem);grid-template-areas:\\\"output output \\toutput \\toutput\\\" \\\"clear \\tback \\tmod \\tdivide\\\" \\\"seven \\teight \\tnine \\tmultiply\\\" \\\"four \\tfive \\tsix \\tminus\\\" \\\"one \\ttwo \\tthree \\tplus\\\" \\\"zero \\tzero \\tdot \\tequals\\\";grid-gap:2rem;gap:2rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative}@media(max-width: 450px){.grid{height:calc(92vw * 1.58);width:92%;padding:1.5rem;margin-top:1.5rem;display:grid;grid-template-rows:12rem repeat(5, 1fr);grid-template-columns:repeat(4, 1fr);grid-gap:1.5rem;gap:1.5rem}}@media(max-width: 400px){.grid{height:calc(96vw * 1.58);width:92%}}.grid--neu--light,.grid--neu--dark{-webkit-box-shadow:-1rem -1rem 2rem var(--shadow-white1),1rem 1rem 2rem var(--shadow-dark1);box-shadow:-1rem -1rem 2rem var(--shadow-white1),1rem 1rem 2rem var(--shadow-dark1)}.grid--glass--light{background:rgba(255,255,255,.2);border:solid 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-box-shadow:0 0 2rem rgba(0,0,0,.1);box-shadow:0 0 2rem rgba(0,0,0,.1)}.grid--glass--dark{background:rgba(255,255,255,.04);border:solid 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-box-shadow:0 0 2rem rgba(0,0,0,.1);box-shadow:0 0 2rem rgba(0,0,0,.1)}.grid--material--light,.grid--material--dark{border:1px solid var(--numbers);-webkit-box-shadow:none;box-shadow:none}@media(max-width: 450px){.grid--material--light,.grid--material--dark{border:none}}#output{grid-area:output}#clear{grid-area:clear}#backspace{grid-area:back}#modulus{grid-area:mod}#divide{grid-area:divide}#multiply{grid-area:multiply}#minus{grid-area:minus}#plus{grid-area:plus}#equals{grid-area:equals}#one{grid-area:one}#two{grid-area:two}#three{grid-area:three}#four{grid-area:four}#five{grid-area:five}#six{grid-area:six}#seven{grid-area:seven}#eight{grid-area:eight}#nine{grid-area:nine}#zero{grid-area:zero}#dot{grid-area:dot}.output{background:var(--primary);letter-spacing:1px;border:2px solid var(--primary);border-radius:1rem;position:relative;overflow:hidden}.output--neu{-webkit-box-shadow:-4px -4px 8px var(--shadow-white1),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white1),inset 3px 3px 6px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white1),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white1),inset 3px 3px 6px var(--shadow-dark2)}.output--glass{background-color:transparent;border:none;border-radius:0}.output--material{border:none;border-radius:0rem;position:relative;-webkit-box-shadow:none;box-shadow:none}.output--material::before{content:\\\"\\\";display:inline-block;height:1px;width:100%;background:radial-gradient(circle, var(--numbers) 70%, transparent 100%);border-radius:5rem;position:absolute;bottom:0}.output__expression{height:4rem;color:var(--numbers);font-size:4rem;position:absolute;top:1.1rem;right:1rem;z-index:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden}.output__expression--num{color:inherit;font-family:\\\"digital7\\\";font-family:var(--digital7)}.output__expression--op{color:var(--operators);font:700 2.5rem \\\"Solway\\\", serif;font:700 2.5rem var(--solway);margin:0 5px}.output__expression--mod{color:var(--operators);font:700 1.8rem \\\"Solway\\\", serif;font:700 1.8rem var(--solway);margin:0 5px;-webkit-transform:translateY(1px);transform:translateY(1px)}.output__result{height:4rem;color:var(--result);font:3rem \\\"digital7\\\";font:3rem var(--digital7);position:absolute;top:1rem;right:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transform:translateY(6.2rem);transform:translateY(6.2rem)}.output__never-settle{height:84%;width:95%;background:var(--primary);color:#f72720;font:900 3.4rem sans-serif;border-radius:1rem;position:absolute;top:0;left:0;z-index:999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transform:translate3d(12px, 7px, 0);transform:translate3d(12px, 7px, 0)}.neu--light{--primary: #eeeeee;--numbers: #318a9d;--result: #84b6c1;--operators: #9f3430;--others: #329e58;--modal-g-start: #45639d;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow-white1: rgb(255 255 255);--shadow-white2: rgb(255 255 255);--shadow-dark1: rgb(70 81 81 / 10%);--shadow-dark2: rgb(67 75 75 / 20%);background:var(--primary)}.neu--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow-white1: rgb(44 64 80 / 70%);--shadow-white2: rgb(44 64 80 / 80%);--shadow-dark1: rgb(0 0 0 / 16%);--shadow-dark2: rgb(0 0 0 / 26%);background:var(--primary)}.glass--light{--primary: #eeeeee;--numbers: #ffffff;--result: rgb(255 255 255 / 60%);--operators: #81feff;--others: #79ffb7;--circle: rgba(255, 255, 255, 0.2);--gd-in: #ffffff;--gd-out: #d6d6d6;--modal-g-start: #0055ff;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow-white1: rgb(255 255 255);--shadow-white2: rgb(255 255 255);--shadow-dark1: rgb(70 81 81 / 10%);--shadow-dark2: rgb(67 75 75 / 20%);background-color:#b409d2;background-image:url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23511ab1'/%3E%3Cstop offset='1' stop-color='%23511ab1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233211d2'/%3E%3Cstop offset='1' stop-color='%233211d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23224fb1'/%3E%3Cstop offset='1' stop-color='%23224fb1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23b409d2'/%3E%3Cstop offset='1' stop-color='%23b409d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23283593'/%3E%3Cstop offset='1' stop-color='%23283593' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231976d2'/%3E%3Cstop offset='1' stop-color='%231976d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E\\\");background-attachment:fixed;background-size:cover}.glass--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--circle: rgb(52 52 88 / 40%);--gd-in: #273846;--gd-out: #1e2a35;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow-white1: rgb(44 64 80 / 70%);--shadow-white2: rgb(44 64 80 / 80%);--shadow-dark1: rgb(0 0 0 / 16%);--shadow-dark2: rgb(0 0 0 / 26%);background-color:#330241;background-image:url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23090245'/%3E%3Cstop offset='1' stop-color='%23090245' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23290243'/%3E%3Cstop offset='1' stop-color='%23290243' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23020747'/%3E%3Cstop offset='1' stop-color='%23020747' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23330241'/%3E%3Cstop offset='1' stop-color='%23330241' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23012a49'/%3E%3Cstop offset='1' stop-color='%23012a49' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231e0246'/%3E%3Cstop offset='1' stop-color='%231e0246' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E\\\");background-attachment:fixed;background-size:cover}.circle1{height:40rem;width:40rem;background:var(--circle);border:1px solid rgba(255,255,255,.15);border-radius:50%;position:absolute;-webkit-transform:translate(-20rem, -30rem);transform:translate(-20rem, -30rem);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);-webkit-box-shadow:0 0 3rem rgba(0,0,0,.1);box-shadow:0 0 3rem rgba(0,0,0,.1)}@media(max-width: 450px){.circle1{-webkit-transform:translate(-20rem, -20rem);transform:translate(-20rem, -20rem)}}.circle2{height:20rem;width:20rem;background:var(--circle);border:1px solid rgba(255,255,255,.15);border-radius:50%;position:absolute;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);-webkit-transform:translate(20rem, 35rem);transform:translate(20rem, 35rem);-webkit-box-shadow:0 0 3rem rgba(0,0,0,.1);box-shadow:0 0 3rem rgba(0,0,0,.1)}.material--light{--primary: #eeeeee;--numbers: #318a9d;--result: #84b6c1;--operators: #9f3430;--others: #3ea362;--modal-g-start: #45639d;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow: rgb(0 0 0 / 10%);background:var(--primary)}.material--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow: rgb(255 255 255 / 10%);background:var(--primary)}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
+          "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@font-face{font-family:\\\"digital7\\\";src:url(\\\"./assets/fonts/digital7.ttf\\\")}:root{--digital7: \\\"digital7\\\";--solway: \\\"Solway\\\", serif}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;overflow:hidden}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}@-webkit-keyframes slide-up{from{opacity:1;color:var(--result);font-size:3rem;-webkit-transform:translateY(6.1rem);transform:translateY(6.1rem)}to{opacity:1}}@keyframes slide-up{from{opacity:1;color:var(--result);font-size:3rem;-webkit-transform:translateY(6.1rem);transform:translateY(6.1rem)}to{opacity:1}}@-webkit-keyframes flip-in{from{-webkit-transform:perspective(100px) rotateX(-90deg);transform:perspective(100px) rotateX(-90deg)}to{opacity:1}}@keyframes flip-in{from{-webkit-transform:perspective(100px) rotateX(-90deg);transform:perspective(100px) rotateX(-90deg)}to{opacity:1}}@-webkit-keyframes flip-out{from{opacity:1}to{-webkit-transform:perspective(300px) rotateX(90deg);transform:perspective(300px) rotateX(90deg);opacity:0}}@keyframes flip-out{from{opacity:1}to{-webkit-transform:perspective(300px) rotateX(90deg);transform:perspective(300px) rotateX(90deg);opacity:0}}.result-leave-active{-webkit-animation:flip-out .5s ease forwards;animation:flip-out .5s ease forwards}.result-enter-active{-webkit-animation:slide-up .5s ease forwards;animation:slide-up .5s ease forwards}.clear-leave-active{-webkit-animation:flip-out .5s ease forwards;animation:flip-out .5s ease forwards}.clear-enter-active{opacity:0;-webkit-animation:flip-in .5s ease forwards .3s;animation:flip-in .5s ease forwards .3s}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes fade{from{opacity:0}to{opacity:1}}@keyframes fade{from{opacity:0}to{opacity:1}}.fade-leave-active{animation:fade .5s ease reverse}.fade-enter-active{-webkit-animation:fade .5s ease forwards;animation:fade .5s ease forwards}.fade-in{-webkit-animation:fade .5s ease forwards;animation:fade .5s ease forwards}.fade-out{animation:fade .5s ease reverse}.btn{background:var(--primary);color:var(--numbers);font:500 3.3rem \\\"digital7\\\";font:500 3.3rem var(--digital7);border:2px solid var(--primary);border-radius:5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;outline:none}.btn-op{fill:var(--operators)}.btn-ot{fill:var(--others)}@media(max-width: 450px){.btn{font-size:2.8rem}}.btn--neu{-webkit-box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2)}.btn--neu:active{font-size:3.4rem;-webkit-box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white2),inset 3px 3px 6px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white2),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white2),inset 3px 3px 6px var(--shadow-dark2)}.btn--neu:active .btn-ot{-webkit-transform:scale(0.9);transform:scale(0.9)}.btn--neu:active .btn-op{-webkit-transform:scale(0.9);transform:scale(0.9)}.btn--glass{background-color:transparent;border:none}.btn--glass:active{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15)}.btn--material{border:none;-webkit-box-shadow:none;box-shadow:none}.btn--material:active{border:1px solid var(--numbers)}#plus.btn--material:active{border:1px solid var(--operators)}#minus.btn--material:active{border:1px solid var(--operators)}#divide.btn--material:active{border:1px solid var(--operators)}#multiply.btn--material:active{border:1px solid var(--operators)}#modulus.btn--material:active{border:1px solid var(--operators)}#equals.btn--material:active{border:1px solid var(--operators)}#clear.btn--material:active{border:1px solid var(--others)}#backspace.btn--material:active{border:1px solid var(--others)}.settings{height:3rem;width:3rem;position:fixed;top:2rem;right:2rem;z-index:100;cursor:pointer}@media(max-width: 450px){.settings{top:unset;bottom:1rem;right:1rem}}.settings-btn{height:100%;width:100%;fill:var(--numbers);cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.settings-btn:hover{fill:var(--operators);-webkit-transform:rotate(45deg) scale(1.2);transform:rotate(45deg) scale(1.2)}.modal{height:40rem;width:40rem;background:-webkit-gradient(linear, left top, right bottom, from(var(--modal-g-start)), to(var(--modal-g-end)));background:linear-gradient(to bottom right, var(--modal-g-start), var(--modal-g-end));padding:1rem;border-radius:2rem;position:fixed;top:50%;left:50%;-webkit-transform:translate3d(-50%, -50%, 0);transform:translate3d(-50%, -50%, 0);-webkit-box-shadow:0 0 5rem 1rem rgba(0,0,0,.4);box-shadow:0 0 5rem 1rem rgba(0,0,0,.4);will-change:transform;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}@media(max-width: 450px){.modal{width:90vw}}.modal__close{color:var(--modal-text);font:900 3rem \\\"Solway\\\", serif;font:900 3rem var(--solway);border-radius:5rem;position:absolute;top:1rem;right:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;-webkit-transform:scale(1.4);transform:scale(1.4);-webkit-transition:-webkit-transform .3s;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s, -webkit-transform .3s}.modal__close:hover{-webkit-transform:scale(1.7);transform:scale(1.7)}.modal__content{height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.modal__content--row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.modal__content--row-heading{background:var(--modal-text);color:var(--modal-g-start);font:700 3rem \\\"Solway\\\", serif;font:700 3rem var(--solway);padding:1rem 2rem;border-radius:2rem;margin-bottom:2rem;-webkit-box-shadow:0 0 2rem var(--modal-shadow);box-shadow:0 0 2rem var(--modal-shadow)}.modal__content--row-body{height:5rem;width:100%;color:var(--modal-text);font:400 2.5rem sans-serif;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.modal__content--row-body span{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer}.modal__content--row-body span::after{content:\\\"\\\";height:2px;width:0px;background:radial-gradient(circle, var(--modal-text) 30%, transparent 100%);border-radius:5rem;margin-top:5px;display:inline-block;-webkit-transition:width .4s;transition:width .4s}.modal__content--row-body span:hover::after{width:100%}.modal__content--row-body .active{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;cursor:pointer}.modal__content--row-body .active::after{width:100%}@media(max-width: 450px){.modal__content--row-body{font-size:2rem}}.modal__content--row:not(:last-child){margin-bottom:5rem}.loader--light{height:100vh;width:100vw;background:#eee;position:fixed;top:0;left:0;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.loader--light::after{content:\\\"\\\";height:4rem;width:4rem;border:4px solid #eee;border-radius:50%;border-top:4px solid #318a9d;border-bottom:4px solid #318a9d;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.loader--dark{height:100vh;width:100vw;background:#243441;position:fixed;top:0;left:0;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.loader--dark::after{content:\\\"\\\";height:4rem;width:4rem;border:4px solid #243441;border-radius:50%;border-top:4px solid #0affef;border-bottom:4px solid #0affef;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.container{height:100vh;width:100vw;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden}@media(max-width: 450px){.container{height:auto;width:auto;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}}.grid{height:66rem;width:42rem;background:var(--primary);border:3px solid var(--primary);border-radius:2rem;margin-bottom:4rem;display:grid;grid-template-rows:12rem repeat(5, 8rem);grid-template-columns:repeat(4, 8rem);grid-template-areas:\\\"output output \\toutput \\toutput\\\" \\\"clear \\tback \\tmod \\tdivide\\\" \\\"seven \\teight \\tnine \\tmultiply\\\" \\\"four \\tfive \\tsix \\tminus\\\" \\\"one \\ttwo \\tthree \\tplus\\\" \\\"zero \\tzero \\tdot \\tequals\\\";grid-gap:2rem;gap:2rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative}@media(max-width: 450px){.grid{height:calc(92vw * 1.58);width:92%;padding:1.5rem;margin-top:1.5rem;display:grid;grid-template-rows:12rem repeat(5, 1fr);grid-template-columns:repeat(4, 1fr);grid-gap:1.5rem;gap:1.5rem}}@media(max-width: 400px){.grid{height:calc(96vw * 1.58);width:92%}}.grid--neu--light,.grid--neu--dark{-webkit-box-shadow:-1rem -1rem 2rem var(--shadow-white1),1rem 1rem 2rem var(--shadow-dark1);box-shadow:-1rem -1rem 2rem var(--shadow-white1),1rem 1rem 2rem var(--shadow-dark1)}.grid--glass--light{background:rgba(255,255,255,.2);border:solid 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-box-shadow:0 0 2rem rgba(0,0,0,.1);box-shadow:0 0 2rem rgba(0,0,0,.1)}.grid--glass--dark{background:rgba(255,255,255,.04);border:solid 1px rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-box-shadow:0 0 2rem rgba(0,0,0,.1);box-shadow:0 0 2rem rgba(0,0,0,.1)}.grid--material--light,.grid--material--dark{border:1px solid var(--numbers);-webkit-box-shadow:none;box-shadow:none}@media(max-width: 450px){.grid--material--light,.grid--material--dark{border:none}}#output{grid-area:output}#clear{grid-area:clear}#backspace{grid-area:back}#modulus{grid-area:mod}#divide{grid-area:divide}#multiply{grid-area:multiply}#minus{grid-area:minus}#plus{grid-area:plus}#equals{grid-area:equals}#one{grid-area:one}#two{grid-area:two}#three{grid-area:three}#four{grid-area:four}#five{grid-area:five}#six{grid-area:six}#seven{grid-area:seven}#eight{grid-area:eight}#nine{grid-area:nine}#zero{grid-area:zero}#dot{grid-area:dot}.output{background:var(--primary);letter-spacing:1px;border:2px solid var(--primary);border-radius:1rem;position:relative;overflow:hidden}.output--neu{-webkit-box-shadow:-4px -4px 8px var(--shadow-white1),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white1),inset 3px 3px 6px var(--shadow-dark2);box-shadow:-4px -4px 8px var(--shadow-white1),4px 4px 8px var(--shadow-dark2),inset -3px -3px 6px var(--shadow-white1),inset 3px 3px 6px var(--shadow-dark2)}.output--glass{background-color:transparent;border:none;border-radius:0}.output--material{border:none;border-radius:0rem;position:relative;-webkit-box-shadow:none;box-shadow:none}.output--material::before{content:\\\"\\\";display:inline-block;height:1px;width:100%;background:radial-gradient(circle, var(--numbers) 70%, transparent 100%);border-radius:5rem;position:absolute;bottom:0}.output__expression{height:4rem;color:var(--numbers);font-size:4rem;position:absolute;top:1.1rem;right:1rem;z-index:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden}.output__expression--num{color:inherit;font-family:\\\"digital7\\\";font-family:var(--digital7)}.output__expression--op{color:var(--operators);font:700 2.5rem \\\"Solway\\\", serif;font:700 2.5rem var(--solway);margin:0 5px}.output__expression--mod{color:var(--operators);font:700 1.8rem \\\"Solway\\\", serif;font:700 1.8rem var(--solway);margin:0 5px;-webkit-transform:translateY(1px);transform:translateY(1px)}.output__result{height:4rem;color:var(--result);font:3rem \\\"digital7\\\";font:3rem var(--digital7);position:absolute;top:1rem;right:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transform:translateY(6.2rem);transform:translateY(6.2rem)}.output__never-settle{height:84%;width:95%;background:var(--primary);color:#f72720;font:900 3.4rem sans-serif;border-radius:1rem;position:absolute;top:0;left:0;z-index:999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transform:translate3d(12px, 7px, 0);transform:translate3d(12px, 7px, 0)}.neu--light{--primary: #eeeeee;--numbers: #318a9d;--result: #84b6c1;--operators: #9f3430;--others: #329e58;--modal-g-start: #45639d;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow-white1: rgb(255 255 255);--shadow-white2: rgb(255 255 255);--shadow-dark1: rgb(70 81 81 / 10%);--shadow-dark2: rgb(67 75 75 / 20%);background:var(--primary)}.neu--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow-white1: rgb(44 64 80 / 70%);--shadow-white2: rgb(44 64 80 / 80%);--shadow-dark1: rgb(0 0 0 / 16%);--shadow-dark2: rgb(0 0 0 / 26%);background:var(--primary)}.glass--light{--primary: #eeeeee;--numbers: #ffffff;--result: rgb(255 255 255 / 60%);--operators: #81feff;--others: #79ffb7;--circle: rgba(255, 255, 255, 0.2);--gd-in: #ffffff;--gd-out: #d6d6d6;--modal-g-start: #0055ff;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow-white1: rgb(255 255 255);--shadow-white2: rgb(255 255 255);--shadow-dark1: rgb(70 81 81 / 10%);--shadow-dark2: rgb(67 75 75 / 20%);background-color:#b409d2;background-image:url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23511ab1'/%3E%3Cstop offset='1' stop-color='%23511ab1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233211d2'/%3E%3Cstop offset='1' stop-color='%233211d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23224fb1'/%3E%3Cstop offset='1' stop-color='%23224fb1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23b409d2'/%3E%3Cstop offset='1' stop-color='%23b409d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23283593'/%3E%3Cstop offset='1' stop-color='%23283593' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231976d2'/%3E%3Cstop offset='1' stop-color='%231976d2' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E\\\");background-attachment:fixed;background-size:cover}.glass--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--circle: rgb(52 52 88 / 40%);--gd-in: #273846;--gd-out: #1e2a35;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow-white1: rgb(44 64 80 / 70%);--shadow-white2: rgb(44 64 80 / 80%);--shadow-dark1: rgb(0 0 0 / 16%);--shadow-dark2: rgb(0 0 0 / 26%);background-color:#330241;background-image:url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23090245'/%3E%3Cstop offset='1' stop-color='%23090245' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23290243'/%3E%3Cstop offset='1' stop-color='%23290243' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23020747'/%3E%3Cstop offset='1' stop-color='%23020747' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23330241'/%3E%3Cstop offset='1' stop-color='%23330241' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23012a49'/%3E%3Cstop offset='1' stop-color='%23012a49' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231e0246'/%3E%3Cstop offset='1' stop-color='%231e0246' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E\\\");background-attachment:fixed;background-size:cover}.circle1{height:40rem;width:40rem;background:var(--circle);border:1px solid rgba(255,255,255,.15);border-radius:50%;position:absolute;-webkit-transform:translate(-20rem, -30rem);transform:translate(-20rem, -30rem);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);-webkit-box-shadow:0 0 3rem rgba(0,0,0,.1);box-shadow:0 0 3rem rgba(0,0,0,.1)}@media(max-width: 450px){.circle1{-webkit-transform:translate(-20rem, -20rem);transform:translate(-20rem, -20rem)}}.circle2{height:20rem;width:20rem;background:var(--circle);border:1px solid rgba(255,255,255,.15);border-radius:50%;position:absolute;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);-webkit-transform:translate(20rem, 35rem);transform:translate(20rem, 35rem);-webkit-box-shadow:0 0 3rem rgba(0,0,0,.1);box-shadow:0 0 3rem rgba(0,0,0,.1)}.material--light{--primary: #eeeeee;--numbers: #318a9d;--result: #84b6c1;--operators: #9f3430;--others: #3ea362;--modal-g-start: #45639d;--modal-g-end: #289799;--modal-text: white;--modal-shadow: rgb(10 10 93 / 63%);--shadow: rgb(0 0 0 / 10%);background:var(--primary)}.material--dark{--primary: #243441;--numbers: #0affef;--result: #00879b;--operators: #ff565d;--others: #00ff64;--modal-g-start: #003231;--modal-g-end: #000b1e;--modal-text: #00ffd8;--modal-shadow: rgb(0 225 255 / 60%);--shadow: rgb(255 255 255 / 10%);background:var(--primary)}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
         }
       ],
       "filteredModules": 0,
