@@ -1,26 +1,25 @@
 @use "../abstracts" as *;
-    
+
 .settings {
-    @include size( $h: 3rem , $w: 3rem );
-    @include pos-fixed( $t: 2rem , $r: 2rem , $z: 100 );
-	cursor: pointer;
+   @include size($h: 3rem, $w: 3rem);
+   @include pos-fixed($t: 2rem, $r: 2rem, $z: 100);
+   cursor: pointer;
 
-    @media (max-width: 450px) {
-        top: unset;
-        bottom: 1rem;
-        right: 1rem;
-    }
+   @media (max-width: 450px) {
+      top: unset;
+      bottom: 1rem;
+      right: 1rem;
+   }
 
-    &-btn {
-        @include size( $h: 100% , $w: 100% );
-    	fill: $numbers;
-    	cursor: pointer;
-        transition: all .3s;
+   &-btn {
+      @include size($h: 100%, $w: 100%);
+      fill: $numbers;
+      cursor: pointer;
+      transition: all 0.3s;
 
-        &:hover {
-            fill: $operators;
-            transform: rotate(45deg) scale(1.2);
-        }
-    }
+      &:hover {
+         fill: $operators;
+         transform: rotate(45deg) scale(1.2);
+      }
+   }
 }
-

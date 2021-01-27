@@ -45,9 +45,9 @@
          margin: 0 5px;
       }
       &--mod {
-         @include typo($c: $operators, $ff: $coustard, $fs: 1.8rem, $fw: 700);
+         @include typo($c: $operators, $ff: $solway, $fs: 1.8rem, $fw: 700);
          margin: 0 5px;
-         transform: translateY(2px);
+         transform: translateY(1px);
       }
    }
 

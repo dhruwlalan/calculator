@@ -5,8 +5,6 @@
    @include bg($c: $primary);
    @include flex($jc: center, $ai: center);
    overflow: hidden;
-   transition: filter 0.5s;
-   -webkit-tap-highlight-color: transparent;
 
    @media (max-width: 450px) {
       @include size($h: auto, $w: auto);

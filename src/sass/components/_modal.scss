@@ -37,7 +37,7 @@
 
          &-heading {
             @include bg($c: $modal-text);
-            @include typo($c: $modal-g-start, $ff: $digital7, $fs: 4rem, $fw: 900, $ls: 3px);
+            @include typo($c: $modal-g-start, $ff: $solway, $fs: 3rem, $fw: 700);
             @include pbm($p: 1rem 2rem, $mb: 2rem, $rad: 2rem);
             box-shadow: 0 0 2rem $modal-shadow;
          }
@@ -45,7 +45,7 @@
          &-body {
             @include size($w: 100%, $h: 5rem);
             @include typo($c: $modal-text, $ff: sans-serif, $fw: 400, $fs: 2.5rem);
-            @include flex($jc: space-evenly, $ai: center, $fw: wrap);
+            @include flex($jc: space-evenly, $ai: center);
 
             span {
                @include flex($fd: column, $ai: center);
