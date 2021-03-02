@@ -1,5 +1,5 @@
 {
-   "editor.formatOnSave": false,
+   "editor.formatOnPaste": false,
    "[javascript]": {
       "editor.formatOnSave": false
    },
